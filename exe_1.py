@@ -17,4 +17,7 @@ print(z)
 
 # function is predefined set of actions, can have an input aka argument or can have an output
 
-
+# casting
+x=input("Enter a decimal: ")
+y=float(x)
+print(x)
