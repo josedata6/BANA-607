@@ -25,3 +25,12 @@ print(y)
 
 x=int(input("give me a whole number: ")) #this code is not executed
 print("You gave me", x)
+
+
+x=int(input("give me the first number to multiply: ")) 
+y=int(input("give me the second number to multiply: ")) 
+z=int(input("give me the third number to multiply: ")) 
+
+a=x*y*z
+
+print("the 3 number time each other is", a)
