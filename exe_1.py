@@ -15,4 +15,6 @@ y=22
 z=int(x+y)
 print(z)
 
+# function is predefined set of actions, can have an input aka argument or can have an output
+
 
