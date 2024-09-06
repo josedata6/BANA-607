@@ -27,10 +27,15 @@ x=int(input("give me a whole number: ")) #this code is not executed
 print("You gave me", x)
 
 
-x=int(input("give me the first number to multiply: ")) 
+x=int(input("give me the first number to multiply: ")) #first user input
 y=int(input("give me the second number to multiply: ")) 
 z=int(input("give me the third number to multiply: ")) 
 
 a=x*y*z
 
 print("the 3 number time each other is", a)
+
+x=input("what is your name: ") #first user input
+y=input("what is your lastname: ")
+
+print("your name is", x, y)
