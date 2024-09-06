@@ -20,4 +20,4 @@ print(z)
 # casting
 x=input("Enter a decimal: ")
 y=float(x)
-print(x)
+print(y)
