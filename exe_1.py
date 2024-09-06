@@ -21,3 +21,7 @@ print(z)
 x=input("Enter a decimal: ")
 y=float(x)
 print(y)
+
+
+x=int(input("give me a whole number: ")) #this code is not executed
+print("You gave me", x)
