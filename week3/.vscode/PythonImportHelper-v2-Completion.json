@@ -1,0 +1,101 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "df = pd.read_csv('Sample.csv') # here we are importing the csv file\nprint(df.head()) # print out the first 5 lines of sample file\n#data= df['Salary'] # read an specific column from the dataframe\n#print(data.head())\n# Calculate descriptive statistics\n#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#mean",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#median",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#maximum",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#minimum",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#variance",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#std_dev",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')\n#print(f'Standard Deviation: {std_dev}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#skewness",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')\n#print(f'Standard Deviation: {std_dev}')\n#print(f'Skewness: {skewness}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#kurtosis",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')\n#print(f'Standard Deviation: {std_dev}')\n#print(f'Skewness: {skewness}')\n#print(f'Kurtosis: {kurtosis}')",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#summary",
+        "kind": 5,
+        "importPath": "Week 3 Python",
+        "description": "Week 3 Python",
+        "peekOfCode": "#summary = data.describe()\n#print(summary)\n# Percentiles (25th, 50th, 75th percentiles)\n# percentile_25 = data.quantile(0.25)\n# percentile_50 = data.quantile(0.50)  # Same as median\n# percentile_75 = data.quantile(0.75)\n# print(f'25th Percentile: {percentile_25}')\n# print(f'50th Percentile (Median): {percentile_50}')\n# print(f'75th Percentile: {percentile_75}')\n# # Mode using Pandas Library",
+        "detail": "Week 3 Python",
+        "documentation": {}
+    }
+]

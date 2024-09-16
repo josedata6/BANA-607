@@ -1,0 +1,128 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "df = pd.read_csv('Sample.csv') # here we are importing the csv file\n#print(df.head()) # print out the first 5 lines of sample file\n#data= df['Salary'] # read an specific column from the dataframe\n#print(data.head())\n# Calculate descriptive statistics\n#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#mean",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#median",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#maximum",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#minimum",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#minimum = data.min()\n#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#variance",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#variance = data.var()\n#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#std_dev",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#std_dev = data.std()\n#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')\n#print(f'Standard Deviation: {std_dev}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#skewness",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#skewness = data.skew()\n#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')\n#print(f'Standard Deviation: {std_dev}')\n#print(f'Skewness: {skewness}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#kurtosis",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#kurtosis = data.kurtosis()\n# Display the results\n#print(f'Mean: {mean}')\n#print(f'Median: {median}')\n#print(f'Maximum: {maximum}')\n#print(f'Minimum: {minimum}')\n#print(f'Variance: {variance}')\n#print(f'Standard Deviation: {std_dev}')\n#print(f'Skewness: {skewness}')\n#print(f'Kurtosis: {kurtosis}')",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "#summary",
+        "kind": 5,
+        "importPath": "week3.Week 3 Python",
+        "description": "week3.Week 3 Python",
+        "peekOfCode": "#summary = data.describe()\n#print(summary)\n# Percentiles (25th, 50th, 75th percentiles)\n# percentile_25 = data.quantile(0.25)\n# percentile_50 = data.quantile(0.50)  # Same as median\n# percentile_75 = data.quantile(0.75)\n# print(f'25th Percentile: {percentile_25}')\n# print(f'50th Percentile (Median): {percentile_50}')\n# print(f'75th Percentile: {percentile_75}')\n# # Mode using Pandas Library",
+        "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "exe_1",
+        "description": "exe_1",
+        "peekOfCode": "num1 = 5\nnum2 = 10\n# Multiply the numbers\nresult = num1 * num2\n# Print the result\nprint(\"The result of multiplying\", num1, \"and\", num2, \"is\", result)\nx=int(input(\"Enter your first number: \"))\nprint(x)\ny=22\nz=int(x+y)",
+        "detail": "exe_1",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "exe_1",
+        "description": "exe_1",
+        "peekOfCode": "num2 = 10\n# Multiply the numbers\nresult = num1 * num2\n# Print the result\nprint(\"The result of multiplying\", num1, \"and\", num2, \"is\", result)\nx=int(input(\"Enter your first number: \"))\nprint(x)\ny=22\nz=int(x+y)\nprint(z)",
+        "detail": "exe_1",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "exe_1",
+        "description": "exe_1",
+        "peekOfCode": "result = num1 * num2\n# Print the result\nprint(\"The result of multiplying\", num1, \"and\", num2, \"is\", result)\nx=int(input(\"Enter your first number: \"))\nprint(x)\ny=22\nz=int(x+y)\nprint(z)\n# function is predefined set of actions, can have an input aka argument or can have an output\n# casting",
+        "detail": "exe_1",
+        "documentation": {}
+    }
+]
