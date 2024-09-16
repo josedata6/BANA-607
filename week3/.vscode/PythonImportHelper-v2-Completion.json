@@ -13,7 +13,7 @@
         "kind": 5,
         "importPath": "Week 3 Python",
         "description": "Week 3 Python",
-        "peekOfCode": "df = pd.read_csv('Sample.csv') # here we are importing the csv file\nprint(df.head()) # print out the first 5 lines of sample file\n#data= df['Salary'] # read an specific column from the dataframe\n#print(data.head())\n# Calculate descriptive statistics\n#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()",
+        "peekOfCode": "df = pd.read_csv('Sample.csv') # here we are importing the csv file\n#print(df.head()) # print out the first 5 lines of sample file\ndata= df['Salary'] # read an specific column from the dataframe\nprint(data.head())\n# Calculate descriptive statistics\n#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()",
         "detail": "Week 3 Python",
         "documentation": {}
     },
