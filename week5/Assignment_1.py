@@ -55,12 +55,18 @@ print(df_bfill)
 
 # detect outliers
 
-# # # 3.1. Detect and Remove Outliers Using IQR (Interquartile Range)
-# #     # Outliers in the Age column can be detected and removed using the IQR method.
+# # # Remove outliers Age
+# # df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
+
+# # print("\nDataFrame after removing outliers:")
+# # print(df_no_outliers)
+
+# # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore
+# #     # Outliers in the MathScore column can be detected and removed using the IQR method.
 
 # # # Calculate Q1 (25th percentile) and Q3 (75th percentile)
-# # Q1 = df['Age'].quantile(0.25)
-# # Q3 = df['Age'].quantile(0.75)
+# # Q1 = df['MathScore'].quantile(0.25)
+# # Q3 = df['MathScore'].quantile(0.75)
 # # IQR = Q3 - Q1
 
 # # # Define outlier bounds
@@ -68,12 +74,8 @@ print(df_bfill)
 # # upper_bound = Q3 + 1.5 * IQR
 
 # # # Detect outliers
-# # outliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]
+# # outliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]
 
-# # print(f"\nOutliers detected in Age column (using IQR):\n{outliers}")
+# # print(f"\nOutliers detected in MathScore column (using IQR):\n{outliers}")
 
-# # # Remove outliers
-# # df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
 
-# # print("\nDataFrame after removing outliers:")
-# # print(df_no_outliers)
