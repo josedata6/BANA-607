@@ -43,29 +43,65 @@
         "documentation": {}
     },
     {
-        "label": "df_filled_mode",
+        "label": "Q1",
         "kind": 5,
         "importPath": "Assignment_1",
         "description": "Assignment_1",
-        "peekOfCode": "df_filled_mode = df.fillna(df.mode().iloc[0])\nprint(\"\\nDataFrame after filling missing values with Median:\")\nprint(df_filled_mode)\n# using FWD fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with Median:\")\nprint(df_ffill)\n# using BWD fill\ndf_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with Median:\")",
+        "peekOfCode": "Q1 = df['MathScore'].quantile(0.25)\nQ3 = df['MathScore'].quantile(0.75)\nIQR = Q3 - Q1\n# # # Define outlier bounds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age",
         "detail": "Assignment_1",
         "documentation": {}
     },
     {
-        "label": "df_ffill",
+        "label": "Q3",
         "kind": 5,
         "importPath": "Assignment_1",
         "description": "Assignment_1",
-        "peekOfCode": "df_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with Median:\")\nprint(df_ffill)\n# using BWD fill\ndf_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with Median:\")\nprint(df_bfill)\n# detect outliers\n# # # Remove outliers Age\n# # df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]",
+        "peekOfCode": "Q3 = df['MathScore'].quantile(0.75)\nIQR = Q3 - Q1\n# # # Define outlier bounds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]",
         "detail": "Assignment_1",
         "documentation": {}
     },
     {
-        "label": "df_bfill",
+        "label": "IQR",
         "kind": 5,
         "importPath": "Assignment_1",
         "description": "Assignment_1",
-        "peekOfCode": "df_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with Median:\")\nprint(df_bfill)\n# detect outliers\n# # # Remove outliers Age\n# # df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\n# # print(\"\\nDataFrame after removing outliers:\")\n# # print(df_no_outliers)\n# # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore\n# #     # Outliers in the MathScore column can be detected and removed using the IQR method.",
+        "peekOfCode": "IQR = Q3 - Q1\n# # # Define outlier bounds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "lower_bound",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "lower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "upper_bound",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "upper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "outliers",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "outliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_no_outliers",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
         "detail": "Assignment_1",
         "documentation": {}
     },

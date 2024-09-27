@@ -39,43 +39,42 @@ print(df)
 
 # using Mode
 
-df_filled_mode = df.fillna(df.mode().iloc[0])
-print("\nDataFrame after filling missing values with Median:")
-print(df_filled_mode)
+# df_filled_mode = df.fillna(df.mode().iloc[0])
+# print("\nDataFrame after filling missing values with Median:")
+# print(df_filled_mode)
 
 # using FWD fill
-df_ffill = df.fillna(method='ffill')
-print("\nDataFrame after filling missing values with Median:")
-print(df_ffill)
+# df_ffill = df.fillna(method='ffill')
+# print("\nDataFrame after filling missing values with Median:")
+# print(df_ffill)
 
 # using BWD fill
-df_bfill = df.fillna(method='bfill')
-print("\nDataFrame after filling missing values with Median:")
-print(df_bfill)
+# df_bfill = df.fillna(method='bfill')
+# print("\nDataFrame after filling missing values with Median:")
+# print(df_bfill)
 
-# detect outliers
-
-# # # Remove outliers Age
-# # df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
-
-# # print("\nDataFrame after removing outliers:")
-# # print(df_no_outliers)
+#### 3. detect outliers
 
 # # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore
 # #     # Outliers in the MathScore column can be detected and removed using the IQR method.
 
 # # # Calculate Q1 (25th percentile) and Q3 (75th percentile)
-# # Q1 = df['MathScore'].quantile(0.25)
-# # Q3 = df['MathScore'].quantile(0.75)
-# # IQR = Q3 - Q1
+Q1 = df['MathScore'].quantile(0.25)
+Q3 = df['MathScore'].quantile(0.75)
+IQR = Q3 - Q1
 
 # # # Define outlier bounds
-# # lower_bound = Q1 - 1.5 * IQR
-# # upper_bound = Q3 + 1.5 * IQR
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
 
 # # # Detect outliers
-# # outliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]
+outliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]
 
-# # print(f"\nOutliers detected in MathScore column (using IQR):\n{outliers}")
+print(f"\nOutliers detected in MathScore column (using IQR):\n{outliers}")
 
+# # # Remove outliers Age
+df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
+
+print("\nDataFrame after removing outliers:")
+print(df_no_outliers)
 
