@@ -1,0 +1,270 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Dealing with missing values and outliers",
+        "description": "Dealing with missing values and outliers",
+        "peekOfCode": "df = pd.read_csv('Sales_Age_Income.csv')\n# # Show the dataset\nprint(\"Original DataFrame:\")\nprint(df)\n# #-----------------------------------#\n# #Step 2: Dealing with Missing Values\n# # 2.1. Remove Rows with Missing Values\n#     # Remove rows where any column has a missing value\n# df_dropped_rows = df.dropna()\n# print(\"\\nDataFrame after removing rows with missing values:\")",
+        "detail": "Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "df_ffill",
+        "kind": 5,
+        "importPath": "Dealing with missing values and outliers",
+        "description": "Dealing with missing values and outliers",
+        "peekOfCode": "df_ffill = df.fillna(method='ffill')\n# print(\"\\nDataFrame after forward filling missing values:\")\n# print(df_ffill)\n# # 2.5. Impute Missing Values Using Backward Fill\n#     # Fill missing values using backward fill (fills with the next row's value)\n# df_bfill = df.fillna(method='bfill')\n# print(\"\\nDataFrame after backward filling missing values:\")\n# print(df_bfill)\n# #-----------------------------------#\n# # Step 3: Handling Outliers",
+        "detail": "Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Sample 1",
+        "description": "Sample 1",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],\n    'Age': [25, np.nan, 35, 45, np.nan],\n    'Salary': [50000, 60000, np.nan, 80000, 90000]\n}\ndf = pd.DataFrame(data)\n# Show the dataset with missing values\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Removing rows with missing values",
+        "detail": "Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Sample 1",
+        "description": "Sample 1",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Show the dataset with missing values\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Removing rows with missing values\ndf_dropped = df.dropna()\nprint(\"\\nDataFrame after dropping missing values:\")\nprint(df_dropped)\n# 2. Filling missing values with a specific value (e.g., mean, median, or 0)\ndf_filled_mean = df.fillna(df.mean(numeric_only=True))",
+        "detail": "Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df_dropped",
+        "kind": 5,
+        "importPath": "Sample 1",
+        "description": "Sample 1",
+        "peekOfCode": "df_dropped = df.dropna()\nprint(\"\\nDataFrame after dropping missing values:\")\nprint(df_dropped)\n# 2. Filling missing values with a specific value (e.g., mean, median, or 0)\ndf_filled_mean = df.fillna(df.mean(numeric_only=True))\nprint(\"\\nDataFrame after filling missing values with mean:\")\nprint(df_filled_mean)\n# 3. Imputation with forward fill or backward fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after forward filling missing values:\")",
+        "detail": "Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df_filled_mean",
+        "kind": 5,
+        "importPath": "Sample 1",
+        "description": "Sample 1",
+        "peekOfCode": "df_filled_mean = df.fillna(df.mean(numeric_only=True))\nprint(\"\\nDataFrame after filling missing values with mean:\")\nprint(df_filled_mean)\n# 3. Imputation with forward fill or backward fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after forward filling missing values:\")\nprint(df_ffill)",
+        "detail": "Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df_ffill",
+        "kind": 5,
+        "importPath": "Sample 1",
+        "description": "Sample 1",
+        "peekOfCode": "df_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after forward filling missing values:\")\nprint(df_ffill)",
+        "detail": "Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],\n    'Age': [25, 200, 35, 45, 23],  # 200 is an outlier\n    'Salary': [50000, 60000, 70000, 80000, 90000]\n}\ndf = pd.DataFrame(data)\n# Show the dataset\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Detecting outliers using IQR (Interquartile Range)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Show the dataset\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Detecting outliers using IQR (Interquartile Range)\nQ1 = df['Age'].quantile(0.25)\nQ3 = df['Age'].quantile(0.75)\nIQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "Q1",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "Q1 = df['Age'].quantile(0.25)\nQ3 = df['Age'].quantile(0.75)\nIQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "Q3",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "Q3 = df['Age'].quantile(0.75)\nIQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "IQR",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "IQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "lower_bound",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "lower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "upper_bound",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "upper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "outliers",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "outliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)\n# 3. Capping outliers (e.g., setting a maximum/minimum limit)\ndf['Age_capped'] = np.where(df['Age'] > upper_bound, upper_bound, \n                            np.where(df['Age'] < lower_bound, lower_bound, df['Age']))",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df_no_outliers",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)\n# 3. Capping outliers (e.g., setting a maximum/minimum limit)\ndf['Age_capped'] = np.where(df['Age'] > upper_bound, upper_bound, \n                            np.where(df['Age'] < lower_bound, lower_bound, df['Age']))\nprint(\"\\nDataFrame after capping outliers:\")\nprint(df)\n# 2. Z-Score\nfrom scipy import stats",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df['Age_capped']",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "df['Age_capped'] = np.where(df['Age'] > upper_bound, upper_bound, \n                            np.where(df['Age'] < lower_bound, lower_bound, df['Age']))\nprint(\"\\nDataFrame after capping outliers:\")\nprint(df)\n# 2. Z-Score\nfrom scipy import stats\n# Using Z-score for outlier detection\nz_scores = np.abs(stats.zscore(df['Age']))\nthreshold = 3  # Common threshold is 3 for Z-score\noutliers_z = df[z_scores > threshold]",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "z_scores",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "z_scores = np.abs(stats.zscore(df['Age']))\nthreshold = 3  # Common threshold is 3 for Z-score\noutliers_z = df[z_scores > threshold]\nprint(\"\\nOutliers detected using Z-score:\")\nprint(outliers_z)\n# Removing Z-score outliers\ndf_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "threshold = 3  # Common threshold is 3 for Z-score\noutliers_z = df[z_scores > threshold]\nprint(\"\\nOutliers detected using Z-score:\")\nprint(outliers_z)\n# Removing Z-score outliers\ndf_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "outliers_z",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "outliers_z = df[z_scores > threshold]\nprint(\"\\nOutliers detected using Z-score:\")\nprint(outliers_z)\n# Removing Z-score outliers\ndf_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df_no_outliers_z",
+        "kind": 5,
+        "importPath": "Sample 2",
+        "description": "Sample 2",
+        "peekOfCode": "df_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Z_Score_Sample",
+        "description": "Z_Score_Sample",
+        "peekOfCode": "data = {'Age': [23, 25, 30, 21, 19, 29, 32, 34, 200, 22]}  # 200 is an outlier\ndf = pd.DataFrame(data)\n# Calculate Z-scores\ndf['Z_score'] = stats.zscore(df['Age'])\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)",
+        "detail": "Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Z_Score_Sample",
+        "description": "Z_Score_Sample",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Calculate Z-scores\ndf['Z_score'] = stats.zscore(df['Age'])\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")",
+        "detail": "Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "df['Z_score']",
+        "kind": 5,
+        "importPath": "Z_Score_Sample",
+        "description": "Z_Score_Sample",
+        "peekOfCode": "df['Z_score'] = stats.zscore(df['Age'])\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "Z_Score_Sample",
+        "description": "Z_Score_Sample",
+        "peekOfCode": "threshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "outliers",
+        "kind": 5,
+        "importPath": "Z_Score_Sample",
+        "description": "Z_Score_Sample",
+        "peekOfCode": "outliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "Z_Score_Sample",
+        "documentation": {}
+    }
+]
