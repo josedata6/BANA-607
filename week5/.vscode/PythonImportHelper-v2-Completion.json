@@ -36,18 +36,27 @@
     {
         "label": "df",
         "kind": 5,
-        "importPath": "Dealing with missing values and outliers",
-        "description": "Dealing with missing values and outliers",
-        "peekOfCode": "df = pd.read_csv('Sales_Age_Income.csv')\n# # Show the dataset\nprint(\"Original DataFrame:\")\nprint(df)\n# #-----------------------------------#\n# #Step 2: Dealing with Missing Values\n# # 2.1. Remove Rows with Missing Values\n#     # Remove rows where any column has a missing value\n# df_dropped_rows = df.dropna()\n# print(\"\\nDataFrame after removing rows with missing values:\")",
-        "detail": "Dealing with missing values and outliers",
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df = pd.read_csv('Student_Grades.csv')\nprint(\"Original DataFrame:\")\nprint(df)\n# Remove Rows with Missing Values\n# Remove rows where any column has a missing value\n# df_dropped_rows = df.dropna()\n# print(\"\\nDataFrame after removing rows with missing values:\")\n# print(df_dropped_rows)\n# Remove Columns with Missing Values\n# #     # Remove columns that contain any missing values",
+        "detail": "Assignment_1",
         "documentation": {}
     },
     {
-        "label": "df_ffill",
+        "label": "df_filled_mode",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df_filled_mode = df.fillna(df.mode().iloc[0])\nprint(\"\\nDataFrame after filling missing values with Median:\")\nprint(df_filled_mode)",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_bfill",
         "kind": 5,
         "importPath": "Dealing with missing values and outliers",
         "description": "Dealing with missing values and outliers",
-        "peekOfCode": "df_ffill = df.fillna(method='ffill')\n# print(\"\\nDataFrame after forward filling missing values:\")\n# print(df_ffill)\n# # 2.5. Impute Missing Values Using Backward Fill\n#     # Fill missing values using backward fill (fills with the next row's value)\n# df_bfill = df.fillna(method='bfill')\n# print(\"\\nDataFrame after backward filling missing values:\")\n# print(df_bfill)\n# #-----------------------------------#\n# # Step 3: Handling Outliers",
+        "peekOfCode": "df_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after backward filling missing values:\")\nprint(df_bfill)\n# # #-----------------------------------#\n# # # Step 3: Handling Outliers\n# # # 3.1. Detect and Remove Outliers Using IQR (Interquartile Range)\n# #     # Outliers in the Age column can be detected and removed using the IQR method.\n# # # Calculate Q1 (25th percentile) and Q3 (75th percentile)\n# # Q1 = df['Age'].quantile(0.25)\n# # Q3 = df['Age'].quantile(0.75)",
         "detail": "Dealing with missing values and outliers",
         "documentation": {}
     },
