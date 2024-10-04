@@ -9,24 +9,6 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
         "label": "housing_df",
         "kind": 5,
         "importPath": "Visualization",
@@ -41,24 +23,6 @@
         "importPath": "Visualization",
         "description": "Visualization",
         "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()\n# ax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
-        "detail": "Visualization",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "Visualization",
-        "description": "Visualization",
-        "peekOfCode": "data = {'Sample_Variable': [10, 12, 14, 15, 16, 18, 20, 25, 30, 35, 40, 100]  # 100 is an outlier\n}\n# Create a DataFrame\ndf = pd.DataFrame(data)\n# Display the DataFrame\nprint(df)\nimport matplotlib.pyplot as plt\n# Create a box plot for the 'Sample_Variable' column\nplt.boxplot(df['Sample_Variable'])\n# Add labels and title",
-        "detail": "Visualization",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "Visualization",
-        "description": "Visualization",
-        "peekOfCode": "df = pd.DataFrame(data)\n# Display the DataFrame\nprint(df)\nimport matplotlib.pyplot as plt\n# Create a box plot for the 'Sample_Variable' column\nplt.boxplot(df['Sample_Variable'])\n# Add labels and title\nplt.title('Box Plot for Sample_Variable')\nplt.ylabel('Values')\n# Show the plot",
         "detail": "Visualization",
         "documentation": {}
     }
