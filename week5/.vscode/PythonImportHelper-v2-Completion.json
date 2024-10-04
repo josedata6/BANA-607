@@ -9,6 +9,30 @@
         "documentation": {}
     },
     {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
@@ -18,27 +42,47 @@
         "documentation": {}
     },
     {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
         "label": "df",
         "kind": 5,
         "importPath": "Assignment_1",
         "description": "Assignment_1",
         "peekOfCode": "df = pd.read_csv('Student_Grades.csv')\nprint(\"Original DataFrame:\")\nprint(df)\n# Remove Rows with Missing Values\n# Remove rows where any column has a missing value\n# df_dropped_rows = df.dropna()\n# print(\"\\nDataFrame after removing rows with missing values:\")\n# print(df_dropped_rows)\n# Remove Columns with Missing Values\n# #     # Remove columns that contain any missing values",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_filled_median",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df_filled_median = df.fillna(df.median(numeric_only=True))\n# print(\"\\nDataFrame after filling missing values with Median:\")\n# print(df_filled_median)\n# using Mode\ndf_filled_mode = df.fillna(df.mode().iloc[0])\nprint(\"\\nDataFrame after filling missing values with Mode:\")\nprint(df_filled_mode)\n# using FWD fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with FWD fill:\")",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_filled_mode",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df_filled_mode = df.fillna(df.mode().iloc[0])\nprint(\"\\nDataFrame after filling missing values with Mode:\")\nprint(df_filled_mode)\n# using FWD fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with FWD fill:\")\nprint(df_ffill)\n# using BWD fill\ndf_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with BWD fill:\")",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_ffill",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with FWD fill:\")\nprint(df_ffill)\n# using BWD fill\ndf_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with BWD fill:\")\nprint(df_bfill)\n#### 3. detect outliers\n# # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore\n# #     # Outliers in the MathScore column can be detected and removed using the IQR method.",
+        "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_bfill",
+        "kind": 5,
+        "importPath": "Assignment_1",
+        "description": "Assignment_1",
+        "peekOfCode": "df_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with BWD fill:\")\nprint(df_bfill)\n#### 3. detect outliers\n# # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore\n# #     # Outliers in the MathScore column can be detected and removed using the IQR method.\n# # # Calculate Q1 (25th percentile) and Q3 (75th percentile)\nQ1 = df['MathScore'].quantile(0.25)\nQ3 = df['MathScore'].quantile(0.75)\nIQR = Q3 - Q1",
         "detail": "Assignment_1",
         "documentation": {}
     },
@@ -103,6 +147,42 @@
         "description": "Assignment_1",
         "peekOfCode": "df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
         "detail": "Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Dealing with missing values and outliers",
+        "description": "Dealing with missing values and outliers",
+        "peekOfCode": "df = pd.read_csv('Sales_Age_Income.csv')\n# # # Show the dataset\n# print(\"Original DataFrame:\")\n# print(df)\n# # #-----------------------------------#\n# # #Step 2: Dealing with Missing Values\n# # # 2.1. Remove Rows with Missing Values\n# #     # Remove rows where any column has a missing value\n# # df_dropped_rows = df.dropna()\n# # print(\"\\nDataFrame after removing rows with missing values:\")",
+        "detail": "Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "z_scores",
+        "kind": 5,
+        "importPath": "Dealing with missing values and outliers",
+        "description": "Dealing with missing values and outliers",
+        "peekOfCode": "z_scores = np.abs(stats.zscore(df['Income'].dropna()))  # dropna to ignore NaNs\nthreshold = 3  # Common threshold for Z-scores\noutliers_z = df.iloc[(z_scores > threshold).values]\nprint(\"\\nOutliers detected in Age column (using Z-score):\")\nprint(outliers_z)\n# # # Remove outliers based on Z-score\n# # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]\n# # print(\"\\nDataFrame after removing outliers (based on Z-score):\")\n# # print(df_no_outliers_z)\n# # #Recap of Steps:",
+        "detail": "Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "Dealing with missing values and outliers",
+        "description": "Dealing with missing values and outliers",
+        "peekOfCode": "threshold = 3  # Common threshold for Z-scores\noutliers_z = df.iloc[(z_scores > threshold).values]\nprint(\"\\nOutliers detected in Age column (using Z-score):\")\nprint(outliers_z)\n# # # Remove outliers based on Z-score\n# # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]\n# # print(\"\\nDataFrame after removing outliers (based on Z-score):\")\n# # print(df_no_outliers_z)\n# # #Recap of Steps:\n# #     # Removing missing values: Demonstrates how to remove rows or columns with missing data.",
+        "detail": "Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "outliers_z",
+        "kind": 5,
+        "importPath": "Dealing with missing values and outliers",
+        "description": "Dealing with missing values and outliers",
+        "peekOfCode": "outliers_z = df.iloc[(z_scores > threshold).values]\nprint(\"\\nOutliers detected in Age column (using Z-score):\")\nprint(outliers_z)\n# # # Remove outliers based on Z-score\n# # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]\n# # print(\"\\nDataFrame after removing outliers (based on Z-score):\")\n# # print(df_no_outliers_z)\n# # #Recap of Steps:\n# #     # Removing missing values: Demonstrates how to remove rows or columns with missing data.\n# #     # Imputing missing values: Shows how to fill missing values with methods like mean, forward fill, or backward fill.",
+        "detail": "Dealing with missing values and outliers",
         "documentation": {}
     },
     {
@@ -281,7 +361,7 @@
         "kind": 5,
         "importPath": "Z_Score_Sample",
         "description": "Z_Score_Sample",
-        "peekOfCode": "data = {'Age': [23, 25, 30, 21, 19, 29, 32, 34, 200, 22]}  # 200 is an outlier\ndf = pd.DataFrame(data)\n# Calculate Z-scores\ndf['Z_score'] = stats.zscore(df['Age'])\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)",
+        "peekOfCode": "data = {'Age': [23, 25, 30, 21, 19, 29, 32, 34, 200, 22]}  # 200 is an outlier\ndf = pd.DataFrame(data)\nprint(df)\n# Calculate Z-scores\ndf['Z_score_Age'] = stats.zscore(df['Age'])\nprint(df)\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\nprint(threshold)\n# Detect outliers",
         "detail": "Z_Score_Sample",
         "documentation": {}
     },
@@ -290,16 +370,16 @@
         "kind": 5,
         "importPath": "Z_Score_Sample",
         "description": "Z_Score_Sample",
-        "peekOfCode": "df = pd.DataFrame(data)\n# Calculate Z-scores\ndf['Z_score'] = stats.zscore(df['Age'])\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)\n# Calculate Z-scores\ndf['Z_score_Age'] = stats.zscore(df['Age'])\nprint(df)\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\nprint(threshold)\n# Detect outliers\noutliers = df[np.abs(df['Z_score_Age']) > threshold]",
         "detail": "Z_Score_Sample",
         "documentation": {}
     },
     {
-        "label": "df['Z_score']",
+        "label": "df['Z_score_Age']",
         "kind": 5,
         "importPath": "Z_Score_Sample",
         "description": "Z_Score_Sample",
-        "peekOfCode": "df['Z_score'] = stats.zscore(df['Age'])\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "peekOfCode": "df['Z_score_Age'] = stats.zscore(df['Age'])\nprint(df)\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\nprint(threshold)\n# Detect outliers\noutliers = df[np.abs(df['Z_score_Age']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")",
         "detail": "Z_Score_Sample",
         "documentation": {}
     },
@@ -308,7 +388,7 @@
         "kind": 5,
         "importPath": "Z_Score_Sample",
         "description": "Z_Score_Sample",
-        "peekOfCode": "threshold = 3\n# Detect outliers\noutliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "peekOfCode": "threshold = 3\nprint(threshold)\n# Detect outliers\noutliers = df[np.abs(df['Z_score_Age']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
         "detail": "Z_Score_Sample",
         "documentation": {}
     },
@@ -317,7 +397,7 @@
         "kind": 5,
         "importPath": "Z_Score_Sample",
         "description": "Z_Score_Sample",
-        "peekOfCode": "outliers = df[np.abs(df['Z_score']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "peekOfCode": "outliers = df[np.abs(df['Z_score_Age']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
         "detail": "Z_Score_Sample",
         "documentation": {}
     }

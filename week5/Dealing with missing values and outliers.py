@@ -1,9 +1,9 @@
 # # # Step 1: Load Dataset
 
-# import pandas as pd
+import pandas as pd
 
 # # # Load the dataset
-# df = pd.read_csv('Sales_Age_Income.csv')
+df = pd.read_csv('Sales_Age_Income.csv')
 
 # # # Show the dataset
 # print("Original DataFrame:")
@@ -61,24 +61,27 @@
 # #     # Outliers in the Age column can be detected and removed using the IQR method.
 
 # # # Calculate Q1 (25th percentile) and Q3 (75th percentile)
-# # Q1 = df['Age'].quantile(0.25)
-# # Q3 = df['Age'].quantile(0.75)
-# # IQR = Q3 - Q1
+# Q1 = df['Age'].quantile(0.25)
+# Q3 = df['Age'].quantile(0.75)
+# IQR = Q3 - Q1
 
 # # # Define outlier bounds
-# # lower_bound = Q1 - 1.5 * IQR
-# # upper_bound = Q3 + 1.5 * IQR
+# lower_bound = Q1 - 1.5 * IQR
+# upper_bound = Q3 + 1.5 * IQR
 
 # # # Detect outliers
-# # outliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]
+# outliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]
 
-# # print(f"\nOutliers detected in Age column (using IQR):\n{outliers}")
+# print(f"\nOutliers detected in Age column (using IQR):\n{outliers}")
+
+# print(df.describe)
 
 # # # Remove outliers
-# # df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
+# df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]
 
-# # print("\nDataFrame after removing outliers:")
-# # print(df_no_outliers)
+# print("\nDataFrame after removing outliers:")
+# print(df_no_outliers)
+# print(df_no_outliers.describe())
 
 # # #3.2. Capping Outliers (Setting Upper/Lower Bound on Outliers)
 # #     #Instead of removing outliers, you can cap them at the upper or lower bounds.
@@ -93,16 +96,18 @@
 # #     # You can also use the Z-score method to detect and handle outliers. 
 # #     # A Z-score greater than 3 indicates a potential outlier.
 
-# # from scipy import stats
-# # import numpy as np
+from scipy import stats
+import numpy as np
+import pandas as pd
 
 # # # Calculate Z-scores for the Age column
-# # z_scores = np.abs(stats.zscore(df['Age'].dropna()))  # dropna to ignore NaNs
-# # threshold = 3  # Common threshold for Z-scores
-# # outliers_z = df.iloc[(z_scores > threshold).values]
+df['Age']= int(df['Age'])
+z_scores = np.abs(stats.zscore(df['Income'].dropna()))  # dropna to ignore NaNs
+threshold = 3  # Common threshold for Z-scores
+outliers_z = df.iloc[(z_scores > threshold).values]
 
-# # print("\nOutliers detected in Age column (using Z-score):")
-# # print(outliers_z)
+print("\nOutliers detected in Age column (using Z-score):")
+print(outliers_z)
 
 # # # Remove outliers based on Z-score
 # # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]

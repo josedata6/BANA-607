@@ -27,31 +27,30 @@ print(df)
 # Fill missing values in 'MathScore', 'EnglishScore', 'ScienceScore' and 'Attendance'
 
 # df_filled_mean = df.fillna(df.mean(numeric_only=True))
-
 # print("\nDataFrame after filling missing values with mean:")
 # print(df_filled_mean)
 
 # using Median
 
-# df_filled_median = df.fillna(df.median(numeric_only=True))
+df_filled_median = df.fillna(df.median(numeric_only=True))
 # print("\nDataFrame after filling missing values with Median:")
 # print(df_filled_median)
 
 # using Mode
 
-# df_filled_mode = df.fillna(df.mode().iloc[0])
-# print("\nDataFrame after filling missing values with Median:")
-# print(df_filled_mode)
+df_filled_mode = df.fillna(df.mode().iloc[0])
+print("\nDataFrame after filling missing values with Mode:")
+print(df_filled_mode)
 
 # using FWD fill
-# df_ffill = df.fillna(method='ffill')
-# print("\nDataFrame after filling missing values with Median:")
-# print(df_ffill)
+df_ffill = df.fillna(method='ffill')
+print("\nDataFrame after filling missing values with FWD fill:")
+print(df_ffill)
 
 # using BWD fill
-# df_bfill = df.fillna(method='bfill')
-# print("\nDataFrame after filling missing values with Median:")
-# print(df_bfill)
+df_bfill = df.fillna(method='bfill')
+print("\nDataFrame after filling missing values with BWD fill:")
+print(df_bfill)
 
 #### 3. detect outliers
 
