@@ -9,20 +9,11 @@
         "documentation": {}
     },
     {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
         "label": "housing_df",
         "kind": 5,
         "importPath": "Visualization",
         "description": "Visualization",
-        "peekOfCode": "housing_df = pd.read_csv('BostonHousing.csv')\nhousing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\nimport matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\ndataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()",
+        "peekOfCode": "housing_df = pd.read_csv('BostonHousing.csv')\nhousing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()",
         "detail": "Visualization",
         "documentation": {}
     },
@@ -31,16 +22,7 @@
         "kind": 5,
         "importPath": "Visualization",
         "description": "Visualization",
-        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\nimport matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\ndataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
-        "detail": "Visualization",
-        "documentation": {}
-    },
-    {
-        "label": "dataForPlot",
-        "kind": 5,
-        "importPath": "Visualization",
-        "description": "Visualization",
-        "peekOfCode": "dataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])\nax.set_xlabel('CHAS')\nax.set_ylabel('Avg for MEDV')\nprint(dataForPlot)\nplt.show()\nprint(dataForPlot)\n##------------------------------------------------------##\n#Scatterplot Using matplotlib:",
+        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()\n# ax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
         "detail": "Visualization",
         "documentation": {}
     }
