@@ -163,7 +163,7 @@ housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})
 # import pandas as pd
 # import numpy as np
 
-# # Create a sample dataset with some outliers
+# # # Create a sample dataset with some outliers
 # data = {'Sample_Variable': [10, 12, 14, 15, 16, 18, 20, 25, 30, 35, 40, 100]  # 100 is an outlier
 # }
 # # Create a DataFrame
