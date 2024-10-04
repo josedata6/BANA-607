@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
         "label": "housing_df",
         "kind": 5,
         "importPath": "Visualization",
@@ -23,6 +32,33 @@
         "importPath": "Visualization",
         "description": "Visualization",
         "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()\n# ax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
+        "detail": "Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "Amtrak_df",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "Amtrak_df = pd.read_csv('Amtrak.csv')\nAmtrak_df['Date'] = pd.to_datetime(Amtrak_df.Month,  format='%d/%m/%Y')\nridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)\nimport matplotlib.pyplot as plt\nplt.plot(ridership_ts.index, ridership_ts)\nplt.xlabel('Year')  # set x-axis label\nplt.ylabel('Ridership (in 000s)')  # set y-axis label\nplt.show()\n# #2\n# import matplotlib.pyplot as plt",
+        "detail": "Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "Amtrak_df['Date']",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "Amtrak_df['Date'] = pd.to_datetime(Amtrak_df.Month,  format='%d/%m/%Y')\nridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)\nimport matplotlib.pyplot as plt\nplt.plot(ridership_ts.index, ridership_ts)\nplt.xlabel('Year')  # set x-axis label\nplt.ylabel('Ridership (in 000s)')  # set y-axis label\nplt.show()\n# #2\n# import matplotlib.pyplot as plt\n# import numpy as np",
+        "detail": "Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "ridership_ts",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "ridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)\nimport matplotlib.pyplot as plt\nplt.plot(ridership_ts.index, ridership_ts)\nplt.xlabel('Year')  # set x-axis label\nplt.ylabel('Ridership (in 000s)')  # set y-axis label\nplt.show()\n# #2\n# import matplotlib.pyplot as plt\n# import numpy as np\n# #fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(10, 7))",
         "detail": "Visualization",
         "documentation": {}
     }

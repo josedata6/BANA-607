@@ -218,15 +218,15 @@ housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})
 # #Lineplot Using matplotlib:
 # #1
 # # Load, convert Amtrak data for time series analysis
-# Amtrak_df = pd.read_csv('Amtrak.csv')
-# Amtrak_df['Date'] = pd.to_datetime(Amtrak_df.Month,  format='%d/%m/%Y')
-# ridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)
+Amtrak_df = pd.read_csv('Amtrak.csv')
+Amtrak_df['Date'] = pd.to_datetime(Amtrak_df.Month,  format='%d/%m/%Y')
+ridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)
 
-# import matplotlib.pyplot as plt
-# plt.plot(ridership_ts.index, ridership_ts)
-# plt.xlabel('Year')  # set x-axis label
-# plt.ylabel('Ridership (in 000s)')  # set y-axis label
-# plt.show()
+import matplotlib.pyplot as plt
+plt.plot(ridership_ts.index, ridership_ts)
+plt.xlabel('Year')  # set x-axis label
+plt.ylabel('Ridership (in 000s)')  # set y-axis label
+plt.show()
 
 # #2
 # import matplotlib.pyplot as plt
