@@ -1,0 +1,47 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "housing_df = pd.read_csv('BostonHousing.csv')\nhousing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\nimport matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\ndataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()",
+        "detail": "Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\nimport matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\ndataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C5', 'C1'])",
+        "detail": "Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "dataForPlot",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "dataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C5', 'C1'])\nax.set_xlabel('CHAS')\nax.set_ylabel('Avg.MEDV')\nplt.show()\n##------------------------------------------------------##\n#Scatterplot Using matplotlib:\n# Set the color of points and draw as open circles.\n# import matplotlib.pyplot as plt",
+        "detail": "Visualization",
+        "documentation": {}
+    }
+]

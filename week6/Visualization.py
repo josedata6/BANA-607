@@ -5,18 +5,20 @@ import pandas as pd
 housing_df = pd.read_csv('BostonHousing.csv')
 housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})
 
+# print(housing_df.describe())
+
 ##------------------------------------------------------##
 # #Bar chart Using matplotlib:
 # #Pip Install Matplotlib # If needed
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 # # compute mean MEDV per CHAS = (0, 1)
-# dataForPlot = housing_df.groupby('CHAS').mean().MEDV
-# fig, ax = plt.subplots()
-# ax.bar(dataForPlot.index, dataForPlot, color=['C5', 'C1'])
-# ax.set_xlabel('CHAS')
-# ax.set_ylabel('Avg.MEDV')
-# plt.show()
+dataForPlot = housing_df.groupby('CHAS').mean().MEDV
+fig, ax = plt.subplots()
+ax.bar(dataForPlot.index, dataForPlot, color=['C5', 'C1'])
+ax.set_xlabel('CHAS')
+ax.set_ylabel('Avg.MEDV')
+plt.show()
 
 ##------------------------------------------------------##
 #Scatterplot Using matplotlib:
