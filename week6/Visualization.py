@@ -27,7 +27,7 @@ housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})
 #Scatterplot Using matplotlib:
 # Set the color of points and draw as open circles.
 # import matplotlib.pyplot as plt
-# plt.scatter(housing_df.LSTAT, housing_df.MEDV, color='C2', facecolor='none')
+# plt.scatter(housing_df.LSTAT, housing_df.MEDV, color='C66', facecolor='none')
 # plt.xlabel('LSTAT')
 # plt.ylabel('MEDV')
 # plt.show()
