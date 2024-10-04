@@ -31,7 +31,7 @@
         "kind": 5,
         "importPath": "Visualization",
         "description": "Visualization",
-        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\nimport matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\ndataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C5', 'C1'])",
+        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\nimport matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\ndataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
         "detail": "Visualization",
         "documentation": {}
     },
@@ -40,7 +40,7 @@
         "kind": 5,
         "importPath": "Visualization",
         "description": "Visualization",
-        "peekOfCode": "dataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C5', 'C1'])\nax.set_xlabel('CHAS')\nax.set_ylabel('Avg.MEDV')\nplt.show()\n##------------------------------------------------------##\n#Scatterplot Using matplotlib:\n# Set the color of points and draw as open circles.\n# import matplotlib.pyplot as plt",
+        "peekOfCode": "dataForPlot = housing_df.groupby('CHAS').mean().MEDV\nfig, ax = plt.subplots()\nax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])\nax.set_xlabel('CHAS')\nax.set_ylabel('Avg for MEDV')\nprint(dataForPlot)\nplt.show()\nprint(dataForPlot)\n##------------------------------------------------------##\n#Scatterplot Using matplotlib:",
         "detail": "Visualization",
         "documentation": {}
     }
