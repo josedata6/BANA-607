@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # # Load the dataset into a DataFrame
-# healthData = pd.read_csv('healthData.csv')
+healthData = pd.read_csv('healthData.csv')
+
 
 # # Step 3: Perform Descriptive Statistics
 # # -------------------------------------
@@ -11,8 +12,8 @@ import matplotlib.pyplot as plt
 # # Including mean, median, mode, standard deviation, variance, min, max, range, percentiles, IQR, skewness, and kurtosis
 
 # # Descriptive statistics for 'age'
-# print("Descriptive statistics for 'age':")
-# print(healthData['age'].describe())
+print("Descriptive statistics for 'age':")
+print(healthData['age'].describe())
 # print("Mode of 'age':", healthData['age'].mode()[0])
 # print("Skewness of 'age':", healthData['age'].skew())
 # print("Kurtosis of 'age':", healthData['age'].kurtosis())
