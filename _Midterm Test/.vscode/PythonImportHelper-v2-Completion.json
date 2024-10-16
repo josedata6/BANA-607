@@ -22,7 +22,7 @@
         "kind": 5,
         "importPath": "Sample Code For Midterm Exam",
         "description": "Sample Code For Midterm Exam",
-        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n# # Step 3: Perform Descriptive Statistics\n# # -------------------------------------\n# # Descriptive statistics for numerical variables ('age' and 'salary')\n# # Including mean, median, mode, standard deviation, variance, min, max, range, percentiles, IQR, skewness, and kurtosis\n# # Descriptive statistics for 'age'\nprint(\"Descriptive statistics for 'age':\")\nprint(healthData['age'].describe())\n# print(\"Mode of 'age':\", healthData['age'].mode()[0])\n# print(\"Skewness of 'age':\", healthData['age'].skew())",
+        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n# # Step 3: Perform Descriptive Statistics\n# # -------------------------------------\n# # Descriptive statistics for numerical variables ('age' and 'salary')\n# # Including mean, median, mode, standard deviation, variance, min, max, range, percentiles, IQR, skewness, and kurtosis\n# # Descriptive statistics for 'age'\nprint(\"Descriptive statistics for 'age':\")\nprint(healthData['age'].describe())\nprint(\"Mode of 'age':\", healthData['age'].mode()[0])\n# print(\"Skewness of 'age':\", healthData['age'].skew())",
         "detail": "Sample Code For Midterm Exam",
         "documentation": {}
     },
@@ -31,7 +31,7 @@
         "kind": 5,
         "importPath": "solutions",
         "description": "solutions",
-        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n##Step 3: Perform Descriptive Statistics",
+        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n##Step 3: Perform Descriptive Statistics\n# # Descriptive statistics for 'age'\nprint(\"Descriptive statistics for 'age':\")\nprint(healthData['age'].describe())\nprint(\"Mode of 'age':\", healthData['age'].mode()[0])\nprint(\"Skewness of 'age':\", healthData['age'].skew())\nprint(\"Kurtosis of 'age':\", healthData['age'].kurtosis())\n# print(\"Percentiles for 'age':\", healthData['age'].quantile([0.01, 0.10, 0.25, 0.75, 0.90, 0.99]))\n# IQR_age = healthData['age'].quantile(0.75) - healthData['age'].quantile(0.25)",
         "detail": "solutions",
         "documentation": {}
     }
