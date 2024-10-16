@@ -14,7 +14,7 @@ healthData = pd.read_csv('healthData.csv')
 # # Descriptive statistics for 'age'
 print("Descriptive statistics for 'age':")
 print(healthData['age'].describe())
-# print("Mode of 'age':", healthData['age'].mode()[0])
+print("Mode of 'age':", healthData['age'].mode()[0])
 # print("Skewness of 'age':", healthData['age'].skew())
 # print("Kurtosis of 'age':", healthData['age'].kurtosis())
 # print("Percentiles for 'age':", healthData['age'].quantile([0.01, 0.10, 0.25, 0.75, 0.90, 0.99]))

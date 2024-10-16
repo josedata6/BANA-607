@@ -16,5 +16,23 @@
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
         "documentation": {}
+    },
+    {
+        "label": "healthData",
+        "kind": 5,
+        "importPath": "Sample Code For Midterm Exam",
+        "description": "Sample Code For Midterm Exam",
+        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n# # Step 3: Perform Descriptive Statistics\n# # -------------------------------------\n# # Descriptive statistics for numerical variables ('age' and 'salary')\n# # Including mean, median, mode, standard deviation, variance, min, max, range, percentiles, IQR, skewness, and kurtosis\n# # Descriptive statistics for 'age'\nprint(\"Descriptive statistics for 'age':\")\nprint(healthData['age'].describe())\n# print(\"Mode of 'age':\", healthData['age'].mode()[0])\n# print(\"Skewness of 'age':\", healthData['age'].skew())",
+        "detail": "Sample Code For Midterm Exam",
+        "documentation": {}
+    },
+    {
+        "label": "healthData",
+        "kind": 5,
+        "importPath": "solutions",
+        "description": "solutions",
+        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n##Step 3: Perform Descriptive Statistics",
+        "detail": "solutions",
+        "documentation": {}
     }
 ]
