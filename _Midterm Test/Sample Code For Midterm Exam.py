@@ -1,6 +1,6 @@
 # # Import necessary libraries
-# import pandas as pd
-# import matplotlib.pyplot as plt
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # # Load the dataset into a DataFrame
 # healthData = pd.read_csv('healthData.csv')
