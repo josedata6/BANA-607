@@ -43,11 +43,11 @@ print("Mode of 'age':", healthData['age'].mode()[0])
 # # Step 3: Visualizations
 # # ----------------------
 # # Bar chart for 'gender'
-# healthData['gender'].value_counts().plot(kind='bar')
-# plt.title('Gender Distribution')
-# plt.xlabel('Gender')
-# plt.ylabel('Count')
-# plt.show()
+healthData['gender'].value_counts().plot(kind='bar')
+plt.title('Gender Distribution')
+plt.xlabel('Gender')
+plt.ylabel('Count')
+plt.show()
 
 # # Histogram for 'age'
 # plt.hist(healthData['age'].dropna(), bins=20)
