@@ -9,11 +9,62 @@
         "documentation": {}
     },
     {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "healthData",
+        "kind": 5,
+        "importPath": "_Midterm Test.Sample Code For Midterm Exam",
+        "description": "_Midterm Test.Sample Code For Midterm Exam",
+        "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n# # Step 3: Perform Descriptive Statistics\n# # -------------------------------------\n# # Descriptive statistics for numerical variables ('age' and 'salary')\n# # Including mean, median, mode, standard deviation, variance, min, max, range, percentiles, IQR, skewness, and kurtosis\n# # Descriptive statistics for 'age'\nprint(\"Descriptive statistics for 'age':\")\nprint(healthData['age'].describe())\nprint(\"Mode of 'age':\", healthData['age'].mode()[0])\n# print(\"Skewness of 'age':\", healthData['age'].skew())",
+        "detail": "_Midterm Test.Sample Code For Midterm Exam",
+        "documentation": {}
+    },
+    {
         "label": "df",
         "kind": 5,
         "importPath": "week3.Week 3 Python",
         "description": "week3.Week 3 Python",
-        "peekOfCode": "df = pd.read_csv('Sample.csv') # here we are importing the csv file\n#print(df.head()) # print out the first 5 lines of sample file\n#data= df['Salary'] # read an specific column from the dataframe\n#print(data.head())\n# Calculate descriptive statistics\n#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()",
+        "peekOfCode": "df = pd.read_csv('Sample.csv') # here we are importing the csv file\n#print(df.head()) # print out the first 5 lines of sample file\ndata= df['Salary'] # read an specific column from the dataframe\nprint(data.head())\n# Calculate descriptive statistics\n#mean = data.mean()\n#median = data.median()\n#maximum = data.max()\n#minimum = data.min()\n#variance = data.var()",
         "detail": "week3.Week 3 Python",
         "documentation": {}
     },
@@ -96,6 +147,411 @@
         "description": "week3.Week 3 Python",
         "peekOfCode": "#summary = data.describe()\n#print(summary)\n# Percentiles (25th, 50th, 75th percentiles)\n# percentile_25 = data.quantile(0.25)\n# percentile_50 = data.quantile(0.50)  # Same as median\n# percentile_75 = data.quantile(0.75)\n# print(f'25th Percentile: {percentile_25}')\n# print(f'50th Percentile (Median): {percentile_50}')\n# print(f'75th Percentile: {percentile_75}')\n# # Mode using Pandas Library",
         "detail": "week3.Week 3 Python",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "df = pd.read_csv('Student_Grades.csv')\nprint(\"Original DataFrame:\")\nprint(df)\n# Remove Rows with Missing Values\n# Remove rows where any column has a missing value\n# df_dropped_rows = df.dropna()\n# print(\"\\nDataFrame after removing rows with missing values:\")\n# print(df_dropped_rows)\n# Remove Columns with Missing Values\n# #     # Remove columns that contain any missing values",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_filled_median",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "df_filled_median = df.fillna(df.median(numeric_only=True))\n# print(\"\\nDataFrame after filling missing values with Median:\")\n# print(df_filled_median)\n# using Mode\ndf_filled_mode = df.fillna(df.mode().iloc[0])\nprint(\"\\nDataFrame after filling missing values with Mode:\")\nprint(df_filled_mode)\n# using FWD fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with FWD fill:\")",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_filled_mode",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "df_filled_mode = df.fillna(df.mode().iloc[0])\nprint(\"\\nDataFrame after filling missing values with Mode:\")\nprint(df_filled_mode)\n# using FWD fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with FWD fill:\")\nprint(df_ffill)\n# using BWD fill\ndf_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with BWD fill:\")",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_ffill",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "df_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after filling missing values with FWD fill:\")\nprint(df_ffill)\n# using BWD fill\ndf_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with BWD fill:\")\nprint(df_bfill)\n#### 3. detect outliers\n# # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore\n# #     # Outliers in the MathScore column can be detected and removed using the IQR method.",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_bfill",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "df_bfill = df.fillna(method='bfill')\nprint(\"\\nDataFrame after filling missing values with BWD fill:\")\nprint(df_bfill)\n#### 3. detect outliers\n# # # Detect and Remove Outliers Using IQR (Interquartile Range) for MathScore\n# #     # Outliers in the MathScore column can be detected and removed using the IQR method.\n# # # Calculate Q1 (25th percentile) and Q3 (75th percentile)\nQ1 = df['MathScore'].quantile(0.25)\nQ3 = df['MathScore'].quantile(0.75)\nIQR = Q3 - Q1",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "Q1",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "Q1 = df['MathScore'].quantile(0.25)\nQ3 = df['MathScore'].quantile(0.75)\nIQR = Q3 - Q1\n# # # Define outlier bounds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "Q3",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "Q3 = df['MathScore'].quantile(0.75)\nIQR = Q3 - Q1\n# # # Define outlier bounds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "IQR",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "IQR = Q3 - Q1\n# # # Define outlier bounds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "lower_bound",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "lower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "upper_bound",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "upper_bound = Q3 + 1.5 * IQR\n# # # Detect outliers\noutliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "outliers",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "outliers = df[(df['MathScore'] < lower_bound) | (df['MathScore'] > upper_bound)]\nprint(f\"\\nOutliers detected in MathScore column (using IQR):\\n{outliers}\")\n# # # Remove outliers Age\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df_no_outliers",
+        "kind": 5,
+        "importPath": "week5.Assignment_1",
+        "description": "week5.Assignment_1",
+        "peekOfCode": "df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "week5.Assignment_1",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week5.Dealing with missing values and outliers",
+        "description": "week5.Dealing with missing values and outliers",
+        "peekOfCode": "df = pd.read_csv('Sales_Age_Income.csv')\n# # # Show the dataset\n# print(\"Original DataFrame:\")\n# print(df)\n# # #-----------------------------------#\n# # #Step 2: Dealing with Missing Values\n# # # 2.1. Remove Rows with Missing Values\n# #     # Remove rows where any column has a missing value\n# # df_dropped_rows = df.dropna()\n# # print(\"\\nDataFrame after removing rows with missing values:\")",
+        "detail": "week5.Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "z_scores",
+        "kind": 5,
+        "importPath": "week5.Dealing with missing values and outliers",
+        "description": "week5.Dealing with missing values and outliers",
+        "peekOfCode": "z_scores = np.abs(stats.zscore(df['Income'].dropna()))  # dropna to ignore NaNs\nthreshold = 3  # Common threshold for Z-scores\noutliers_z = df.iloc[(z_scores > threshold).values]\nprint(\"\\nOutliers detected in Age column (using Z-score):\")\nprint(outliers_z)\n# # # Remove outliers based on Z-score\n# # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]\n# # print(\"\\nDataFrame after removing outliers (based on Z-score):\")\n# # print(df_no_outliers_z)\n# # #Recap of Steps:",
+        "detail": "week5.Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "week5.Dealing with missing values and outliers",
+        "description": "week5.Dealing with missing values and outliers",
+        "peekOfCode": "threshold = 3  # Common threshold for Z-scores\noutliers_z = df.iloc[(z_scores > threshold).values]\nprint(\"\\nOutliers detected in Age column (using Z-score):\")\nprint(outliers_z)\n# # # Remove outliers based on Z-score\n# # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]\n# # print(\"\\nDataFrame after removing outliers (based on Z-score):\")\n# # print(df_no_outliers_z)\n# # #Recap of Steps:\n# #     # Removing missing values: Demonstrates how to remove rows or columns with missing data.",
+        "detail": "week5.Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "outliers_z",
+        "kind": 5,
+        "importPath": "week5.Dealing with missing values and outliers",
+        "description": "week5.Dealing with missing values and outliers",
+        "peekOfCode": "outliers_z = df.iloc[(z_scores > threshold).values]\nprint(\"\\nOutliers detected in Age column (using Z-score):\")\nprint(outliers_z)\n# # # Remove outliers based on Z-score\n# # df_no_outliers_z = df.iloc[(z_scores <= threshold).values]\n# # print(\"\\nDataFrame after removing outliers (based on Z-score):\")\n# # print(df_no_outliers_z)\n# # #Recap of Steps:\n# #     # Removing missing values: Demonstrates how to remove rows or columns with missing data.\n# #     # Imputing missing values: Shows how to fill missing values with methods like mean, forward fill, or backward fill.",
+        "detail": "week5.Dealing with missing values and outliers",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week5.Sample 1",
+        "description": "week5.Sample 1",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],\n    'Age': [25, np.nan, 35, 45, np.nan],\n    'Salary': [50000, 60000, np.nan, 80000, 90000]\n}\ndf = pd.DataFrame(data)\n# Show the dataset with missing values\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Removing rows with missing values",
+        "detail": "week5.Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week5.Sample 1",
+        "description": "week5.Sample 1",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Show the dataset with missing values\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Removing rows with missing values\ndf_dropped = df.dropna()\nprint(\"\\nDataFrame after dropping missing values:\")\nprint(df_dropped)\n# 2. Filling missing values with a specific value (e.g., mean, median, or 0)\ndf_filled_mean = df.fillna(df.mean(numeric_only=True))",
+        "detail": "week5.Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df_dropped",
+        "kind": 5,
+        "importPath": "week5.Sample 1",
+        "description": "week5.Sample 1",
+        "peekOfCode": "df_dropped = df.dropna()\nprint(\"\\nDataFrame after dropping missing values:\")\nprint(df_dropped)\n# 2. Filling missing values with a specific value (e.g., mean, median, or 0)\ndf_filled_mean = df.fillna(df.mean(numeric_only=True))\nprint(\"\\nDataFrame after filling missing values with mean:\")\nprint(df_filled_mean)\n# 3. Imputation with forward fill or backward fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after forward filling missing values:\")",
+        "detail": "week5.Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df_filled_mean",
+        "kind": 5,
+        "importPath": "week5.Sample 1",
+        "description": "week5.Sample 1",
+        "peekOfCode": "df_filled_mean = df.fillna(df.mean(numeric_only=True))\nprint(\"\\nDataFrame after filling missing values with mean:\")\nprint(df_filled_mean)\n# 3. Imputation with forward fill or backward fill\ndf_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after forward filling missing values:\")\nprint(df_ffill)",
+        "detail": "week5.Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "df_ffill",
+        "kind": 5,
+        "importPath": "week5.Sample 1",
+        "description": "week5.Sample 1",
+        "peekOfCode": "df_ffill = df.fillna(method='ffill')\nprint(\"\\nDataFrame after forward filling missing values:\")\nprint(df_ffill)",
+        "detail": "week5.Sample 1",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "data = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],\n    'Age': [25, 200, 35, 45, 23],  # 200 is an outlier\n    'Salary': [50000, 60000, 70000, 80000, 90000]\n}\ndf = pd.DataFrame(data)\n# Show the dataset\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Detecting outliers using IQR (Interquartile Range)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Show the dataset\nprint(\"Original DataFrame:\")\nprint(df)\n# 1. Detecting outliers using IQR (Interquartile Range)\nQ1 = df['Age'].quantile(0.25)\nQ3 = df['Age'].quantile(0.75)\nIQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "Q1",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "Q1 = df['Age'].quantile(0.25)\nQ3 = df['Age'].quantile(0.75)\nIQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "Q3",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "Q3 = df['Age'].quantile(0.75)\nIQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "IQR",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "IQR = Q3 - Q1\n# Define outlier thresholds\nlower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "lower_bound",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "lower_bound = Q1 - 1.5 * IQR\nupper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "upper_bound",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "upper_bound = Q3 + 1.5 * IQR\nprint(f\"\\nOutlier thresholds: Lower bound = {lower_bound}, Upper bound = {upper_bound}\")\n# Identify and filter outliers\noutliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "outliers",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "outliers = df[(df['Age'] < lower_bound) | (df['Age'] > upper_bound)]\nprint(\"\\nDetected Outliers:\")\nprint(outliers)\n# 2. Removing outliers\ndf_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)\n# 3. Capping outliers (e.g., setting a maximum/minimum limit)\ndf['Age_capped'] = np.where(df['Age'] > upper_bound, upper_bound, \n                            np.where(df['Age'] < lower_bound, lower_bound, df['Age']))",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df_no_outliers",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "df_no_outliers = df[(df['Age'] >= lower_bound) & (df['Age'] <= upper_bound)]\nprint(\"\\nDataFrame after removing outliers:\")\nprint(df_no_outliers)\n# 3. Capping outliers (e.g., setting a maximum/minimum limit)\ndf['Age_capped'] = np.where(df['Age'] > upper_bound, upper_bound, \n                            np.where(df['Age'] < lower_bound, lower_bound, df['Age']))\nprint(\"\\nDataFrame after capping outliers:\")\nprint(df)\n# 2. Z-Score\nfrom scipy import stats",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df['Age_capped']",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "df['Age_capped'] = np.where(df['Age'] > upper_bound, upper_bound, \n                            np.where(df['Age'] < lower_bound, lower_bound, df['Age']))\nprint(\"\\nDataFrame after capping outliers:\")\nprint(df)\n# 2. Z-Score\nfrom scipy import stats\n# Using Z-score for outlier detection\nz_scores = np.abs(stats.zscore(df['Age']))\nthreshold = 3  # Common threshold is 3 for Z-score\noutliers_z = df[z_scores > threshold]",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "z_scores",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "z_scores = np.abs(stats.zscore(df['Age']))\nthreshold = 3  # Common threshold is 3 for Z-score\noutliers_z = df[z_scores > threshold]\nprint(\"\\nOutliers detected using Z-score:\")\nprint(outliers_z)\n# Removing Z-score outliers\ndf_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "threshold = 3  # Common threshold is 3 for Z-score\noutliers_z = df[z_scores > threshold]\nprint(\"\\nOutliers detected using Z-score:\")\nprint(outliers_z)\n# Removing Z-score outliers\ndf_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "outliers_z",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "outliers_z = df[z_scores > threshold]\nprint(\"\\nOutliers detected using Z-score:\")\nprint(outliers_z)\n# Removing Z-score outliers\ndf_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "df_no_outliers_z",
+        "kind": 5,
+        "importPath": "week5.Sample 2",
+        "description": "week5.Sample 2",
+        "peekOfCode": "df_no_outliers_z = df[z_scores <= threshold]\nprint(\"\\nDataFrame after removing Z-score outliers:\")\nprint(df_no_outliers_z)",
+        "detail": "week5.Sample 2",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "week5.Z_Score_Sample",
+        "description": "week5.Z_Score_Sample",
+        "peekOfCode": "data = {'Age': [23, 25, 30, 21, 19, 29, 32, 34, 200, 22]}  # 200 is an outlier\ndf = pd.DataFrame(data)\nprint(df)\n# Calculate Z-scores\ndf['Z_score_Age'] = stats.zscore(df['Age'])\nprint(df)\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\nprint(threshold)\n# Detect outliers",
+        "detail": "week5.Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week5.Z_Score_Sample",
+        "description": "week5.Z_Score_Sample",
+        "peekOfCode": "df = pd.DataFrame(data)\nprint(df)\n# Calculate Z-scores\ndf['Z_score_Age'] = stats.zscore(df['Age'])\nprint(df)\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\nprint(threshold)\n# Detect outliers\noutliers = df[np.abs(df['Z_score_Age']) > threshold]",
+        "detail": "week5.Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "df['Z_score_Age']",
+        "kind": 5,
+        "importPath": "week5.Z_Score_Sample",
+        "description": "week5.Z_Score_Sample",
+        "peekOfCode": "df['Z_score_Age'] = stats.zscore(df['Age'])\nprint(df)\n# Set the threshold for outliers (typically Z > 3 or Z < -3)\nthreshold = 3\nprint(threshold)\n# Detect outliers\noutliers = df[np.abs(df['Z_score_Age']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")",
+        "detail": "week5.Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "threshold",
+        "kind": 5,
+        "importPath": "week5.Z_Score_Sample",
+        "description": "week5.Z_Score_Sample",
+        "peekOfCode": "threshold = 3\nprint(threshold)\n# Detect outliers\noutliers = df[np.abs(df['Z_score_Age']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "week5.Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "outliers",
+        "kind": 5,
+        "importPath": "week5.Z_Score_Sample",
+        "description": "week5.Z_Score_Sample",
+        "peekOfCode": "outliers = df[np.abs(df['Z_score_Age']) > threshold]\nprint(\"\\nZ-scores and detected outliers:\")\nprint(df)\nprint(\"\\nDetected Outliers:\")\nprint(outliers)",
+        "detail": "week5.Z_Score_Sample",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
+        "importPath": "week6.Visualization",
+        "description": "week6.Visualization",
+        "peekOfCode": "housing_df = pd.read_csv('BostonHousing.csv')\nhousing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()",
+        "detail": "week6.Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
+        "importPath": "week6.Visualization",
+        "description": "week6.Visualization",
+        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()\n# ax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
+        "detail": "week6.Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "Amtrak_df",
+        "kind": 5,
+        "importPath": "week6.Visualization",
+        "description": "week6.Visualization",
+        "peekOfCode": "Amtrak_df = pd.read_csv('Amtrak.csv')\nAmtrak_df['Date'] = pd.to_datetime(Amtrak_df.Month,  format='%d/%m/%Y')\nridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)\nimport matplotlib.pyplot as plt\nplt.plot(ridership_ts.index, ridership_ts)\nplt.xlabel('Year')  # set x-axis label\nplt.ylabel('Ridership (in 000s)')  # set y-axis label\nplt.show()\n# #2\n# import matplotlib.pyplot as plt",
+        "detail": "week6.Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "Amtrak_df['Date']",
+        "kind": 5,
+        "importPath": "week6.Visualization",
+        "description": "week6.Visualization",
+        "peekOfCode": "Amtrak_df['Date'] = pd.to_datetime(Amtrak_df.Month,  format='%d/%m/%Y')\nridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)\nimport matplotlib.pyplot as plt\nplt.plot(ridership_ts.index, ridership_ts)\nplt.xlabel('Year')  # set x-axis label\nplt.ylabel('Ridership (in 000s)')  # set y-axis label\nplt.show()\n# #2\n# import matplotlib.pyplot as plt\n# import numpy as np",
+        "detail": "week6.Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "ridership_ts",
+        "kind": 5,
+        "importPath": "week6.Visualization",
+        "description": "week6.Visualization",
+        "peekOfCode": "ridership_ts = pd.Series(Amtrak_df.Ridership.values, index=Amtrak_df.Date)\nimport matplotlib.pyplot as plt\nplt.plot(ridership_ts.index, ridership_ts)\nplt.xlabel('Year')  # set x-axis label\nplt.ylabel('Ridership (in 000s)')  # set y-axis label\nplt.show()\n# #2\n# import matplotlib.pyplot as plt\n# import numpy as np\n# #fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(10, 7))",
+        "detail": "week6.Visualization",
         "documentation": {}
     },
     {

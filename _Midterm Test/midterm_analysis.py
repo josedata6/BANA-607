@@ -16,7 +16,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # # Load the dataset into a DataFrame
-healthData = pd.read_csv('healthData.csv')
+# healthData = pd.read_csv('healthData.csv')
+# print(healthData)
 
 ##Step 3: Perform Descriptive Statistics
 
@@ -45,7 +46,7 @@ healthData = pd.read_csv('healthData.csv')
 # # Including mode, frequency distribution, and relative frequency
 
 # # Descriptive statistics for 'gender'
-print("\nFrequency distribution for 'gender':")
+# print("\nFrequency distribution for 'gender':")
 # print(healthData['gender'].value_counts())
 # print("Relative frequency distribution for 'gender':")
 # print(healthData['gender'].value_counts(normalize=True))
@@ -80,16 +81,69 @@ print("\nFrequency distribution for 'gender':")
 # plt.show()
 
 # # Boxplot for 'salary'
-plt.boxplot(healthData['salary'].dropna())
-plt.title('Boxplot of Salary')
-plt.ylabel('Salary')
-plt.show()
+# plt.boxplot(healthData['salary'].dropna())
+# plt.title('Boxplot of Salary')
+# plt.ylabel('Salary')
+# plt.show()
 
 # # Step 4: Handle Missing Values and Outliers
 # # ------------------------------------------
-# # Impute missing values in 'age' and 'salary' using the median of each column
+# Impute missing values in 'age' and 'salary' using the median of each column
 # healthData['age'].fillna(healthData['age'].median(), inplace=True)
 # healthData['salary'].fillna(healthData['salary'].median(), inplace=True)
+
+
+### Using Median
+# healthData['age'].fillna(healthData['age'].median(), inplace=True)
+# healthData['salary'].fillna(healthData['salary'].median(), inplace=True)
+# healthData['age'].fillna(healthData.median(numeric_only=True))
+# healthData['salary'].fillna(healthData.median(numeric_only=True))
+# print("\nDataFrame after filling missing age values with median:")
+# healthData_age_median = healthData['age'].fillna(healthData['age'].median(numeric_only=True))
+# print(healthData_age_median)
+# print("\nDataFrame after filling missing salary values with median:")
+# healthData_salary_median = healthData['salary'].fillna(healthData['salary'].median(numeric_only=True))
+# print(healthData_salary_median)
+
+#### using Mean
+# healthData['age'].fillna(healthData['age'].mean(), inplace=True)
+# healthData['salary'].fillna(healthData['salary'].mean(), inplace=True)
+# healthData['age'].fillna(healthData.mean(numeric_only=True))
+# healthData['salary'].fillna(healthData.mean(numeric_only=True))
+# print("\nDataFrame after filling missing age values with mean:")
+# healthData_age_mean = healthData['age'].fillna(healthData['age'].mean(numeric_only=True))
+# print(healthData_age_mean)
+# print("\nDataFrame after filling missing salary values with mean:")
+# healthData_salary_mean = healthData['salary'].fillna(healthData['salary'].mean(numeric_only=True))
+# print(healthData_salary_mean)
+
+#### using mode
+# healthData['age'].fillna(healthData['age'].mode(), inplace=True)
+# healthData['salary'].fillna(healthData['salary'].mode(), inplace=True)
+# healthData['age'] = healthData['age'].fillna(healthData['age'].mode()[0])
+# healthData['salary'].fillna(healthData.mode(numeric_only=True))
+# print("\nDataFrame after filling missing age values with mode:")
+# healthData_age_mode = healthData['age'].fillna(healthData['age'].mode(numeric_only=True))
+# print(healthData_age_mode)
+# print("\nDataFrame after filling missing salary values with mode:")
+# healthData_salary_mode = healthData['salary'].fillna(healthData['salary'].mode(numeric_only=True))
+# print(healthData_salary_mode)
+
+# using mode
+# Fill 'age' column with the first mode
+# healthData['age'] = healthData['age'].fillna(healthData['age'].mode()[0])
+
+# # Fill 'salary' column with the first mode
+# healthData['salary'] = healthData['salary'].fillna(healthData['salary'].mode()[0])
+
+# print("\nDataFrame after filling missing age values with mode:")
+# healthData_age_mode = healthData['age']
+# print(healthData_age_mode)
+
+# print("\nDataFrame after filling missing salary values with mode:")
+# healthData_salary_mode = healthData['salary']
+# print(healthData_salary_mode)
+
 
 # # Handle outliers in 'age' using the IQR method
 # Q1_age = healthData['age'].quantile(0.25)
@@ -100,7 +154,7 @@ plt.show()
 # # Remove outliers from 'age'
 # healthData = healthData[(healthData['age'] >= lower_bound_age) & (healthData['age'] <= upper_bound_age)]
 
-# # Handle outliers in 'salary' using the IQR method
+# # # Handle outliers in 'salary' using the IQR method
 # Q1_salary = healthData['salary'].quantile(0.25)
 # Q3_salary = healthData['salary'].quantile(0.75)
 # IQR_salary = Q3_salary - Q1_salary
@@ -111,13 +165,13 @@ plt.show()
 
 # # Step 3 (Re-run): Perform Descriptive Statistics After Cleaning
 # # -------------------------------------------------------------
-# # Descriptive statistics for 'age' after cleaning
+# Descriptive statistics for 'age' after cleaning
 # print("\nDescriptive statistics for 'age' after cleaning:")
 # print(healthData['age'].describe())
 # print("Skewness of 'age' after cleaning:", healthData['age'].skew())
 # print("Kurtosis of 'age' after cleaning:", healthData['age'].kurtosis())
 
-# # Descriptive statistics for 'salary' after cleaning
+# Descriptive statistics for 'salary' after cleaning
 # print("\nDescriptive statistics for 'salary' after cleaning:")
 # print(healthData['salary'].describe())
 # print("Skewness of 'salary' after cleaning:", healthData['salary'].skew())
