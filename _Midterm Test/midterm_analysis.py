@@ -53,11 +53,11 @@ print("\nFrequency distribution for 'gender':")
 # # Step 3: Visualizations
 # # ----------------------
 # # Bar chart for 'gender'
-healthData['gender'].value_counts().plot(kind='bar')
-plt.title('Gender Distribution')
-plt.xlabel('Gender')
-plt.ylabel('Count')
-plt.show()
+# healthData['gender'].value_counts().plot(kind='bar')
+# plt.title('Gender Distribution')
+# plt.xlabel('Gender')
+# plt.ylabel('Count')
+# plt.show()
 
 # # Histogram for 'age'
 # plt.hist(healthData['age'].dropna(), bins=20)
@@ -80,7 +80,79 @@ plt.show()
 # plt.show()
 
 # # Boxplot for 'salary'
+plt.boxplot(healthData['salary'].dropna())
+plt.title('Boxplot of Salary')
+plt.ylabel('Salary')
+plt.show()
+
+# # Step 4: Handle Missing Values and Outliers
+# # ------------------------------------------
+# # Impute missing values in 'age' and 'salary' using the median of each column
+# healthData['age'].fillna(healthData['age'].median(), inplace=True)
+# healthData['salary'].fillna(healthData['salary'].median(), inplace=True)
+
+# # Handle outliers in 'age' using the IQR method
+# Q1_age = healthData['age'].quantile(0.25)
+# Q3_age = healthData['age'].quantile(0.75)
+# IQR_age = Q3_age - Q1_age
+# lower_bound_age = Q1_age - 1.5 * IQR_age
+# upper_bound_age = Q3_age + 1.5 * IQR_age
+# # Remove outliers from 'age'
+# healthData = healthData[(healthData['age'] >= lower_bound_age) & (healthData['age'] <= upper_bound_age)]
+
+# # Handle outliers in 'salary' using the IQR method
+# Q1_salary = healthData['salary'].quantile(0.25)
+# Q3_salary = healthData['salary'].quantile(0.75)
+# IQR_salary = Q3_salary - Q1_salary
+# lower_bound_salary = Q1_salary - 1.5 * IQR_salary
+# upper_bound_salary = Q3_salary + 1.5 * IQR_salary
+# # Remove outliers from 'salary'
+# healthData = healthData[(healthData['salary'] >= lower_bound_salary) & (healthData['salary'] <= upper_bound_salary)]
+
+# # Step 3 (Re-run): Perform Descriptive Statistics After Cleaning
+# # -------------------------------------------------------------
+# # Descriptive statistics for 'age' after cleaning
+# print("\nDescriptive statistics for 'age' after cleaning:")
+# print(healthData['age'].describe())
+# print("Skewness of 'age' after cleaning:", healthData['age'].skew())
+# print("Kurtosis of 'age' after cleaning:", healthData['age'].kurtosis())
+
+# # Descriptive statistics for 'salary' after cleaning
+# print("\nDescriptive statistics for 'salary' after cleaning:")
+# print(healthData['salary'].describe())
+# print("Skewness of 'salary' after cleaning:", healthData['salary'].skew())
+# print("Kurtosis of 'salary' after cleaning:", healthData['salary'].kurtosis())
+
+# # Re-run Visualizations After Cleaning
+# # Bar chart for 'gender' after cleaning
+# healthData['gender'].value_counts().plot(kind='bar')
+# plt.title('Gender Distribution After Cleaning')
+# plt.xlabel('Gender')
+# plt.ylabel('Count')
+# plt.show()
+
+# # Histogram for 'age' after cleaning
+# plt.hist(healthData['age'].dropna(), bins=20)
+# plt.title('Age Distribution After Cleaning')
+# plt.xlabel('Age')
+# plt.ylabel('Frequency')
+# plt.show()
+
+# # Histogram for 'salary' after cleaning
+# plt.hist(healthData['salary'].dropna(), bins=20)
+# plt.title('Salary Distribution After Cleaning')
+# plt.xlabel('Salary')
+# plt.ylabel('Frequency')
+# plt.show()
+
+# # Boxplot for 'age' after cleaning
+# plt.boxplot(healthData['age'].dropna())
+# plt.title('Boxplot of Age After Cleaning')
+# plt.ylabel('Age')
+# plt.show()
+
+# # Boxplot for 'salary' after cleaning
 # plt.boxplot(healthData['salary'].dropna())
-# plt.title('Boxplot of Salary')
+# plt.title('Boxplot of Salary After Cleaning')
 # plt.ylabel('Salary')
 # plt.show()
