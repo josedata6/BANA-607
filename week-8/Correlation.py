@@ -17,16 +17,16 @@ df = pd.DataFrame(housing_df)
 
 # #Finding Correlation
 correlation_matrix = df.corr()
-print(correlation_matrix)
+# print(correlation_matrix)
 
 ## saving output into file
-correlation_matrix.to_csv('correlationMatrix.csv')
+# correlation_matrix.to_csv('correlationMatrix.csv')
 
 # # Visualize the finding
-# import seaborn as sn
-# import matplotlib.pyplot as plt
+import seaborn as sn
+import matplotlib.pyplot as plt
 
 
-# sn.heatmap(correlation_matrix, annot=True)
-# plt.show()
+sn.heatmap(correlation_matrix, annot=True)
+plt.show()
 

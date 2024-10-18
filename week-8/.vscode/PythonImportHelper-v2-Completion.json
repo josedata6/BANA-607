@@ -18,11 +18,29 @@
         "documentation": {}
     },
     {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
         "label": "housing_df",
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "housing_df = pd.read_csv('WestRoxbury.csv') # importing the csv file\n# #Renaming Columns\nhousing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)",
+        "peekOfCode": "housing_df = pd.read_csv('WestRoxbury.csv') # importing the csv file\n# #Renaming Columns\nhousing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)",
         "detail": "Correlation",
         "documentation": {}
     },
@@ -31,7 +49,7 @@
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "housing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n## saving output into file\ncorrelation_matrix.to_csv('correlationMatrix.csv')",
+        "peekOfCode": "housing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')",
         "detail": "Correlation",
         "documentation": {}
     },
@@ -40,7 +58,7 @@
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n## saving output into file\ncorrelation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\n# import seaborn as sn\n# import matplotlib.pyplot as plt",
+        "peekOfCode": "df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt",
         "detail": "Correlation",
         "documentation": {}
     },
@@ -49,7 +67,7 @@
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "correlation_matrix = df.corr()\nprint(correlation_matrix)\n## saving output into file\ncorrelation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\n# import seaborn as sn\n# import matplotlib.pyplot as plt\n# sn.heatmap(correlation_matrix, annot=True)\n# plt.show()",
+        "peekOfCode": "correlation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
         "detail": "Correlation",
         "documentation": {}
     }
