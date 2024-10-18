@@ -38,6 +38,24 @@
     {
         "label": "housing_df",
         "kind": 5,
+        "importPath": "2017golf-stats",
+        "description": "2017golf-stats",
+        "peekOfCode": "housing_df = pd.read_csv('2016-golf-stats.csv') # importing the csv file\n# #Renaming Columns\nhousing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\nprint(housing_df.describe()) # show summary statistics for each column\n# df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\n# correlation_matrix = df.corr()\n# print(correlation_matrix)",
+        "detail": "2017golf-stats",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df.columns",
+        "kind": 5,
+        "importPath": "2017golf-stats",
+        "description": "2017golf-stats",
+        "peekOfCode": "housing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\nprint(housing_df.describe()) # show summary statistics for each column\n# df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\n# correlation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')",
+        "detail": "2017golf-stats",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
         "peekOfCode": "housing_df = pd.read_csv('WestRoxbury.csv') # importing the csv file\n# #Renaming Columns\nhousing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)",
@@ -69,6 +87,15 @@
         "description": "Correlation",
         "peekOfCode": "correlation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
         "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "sumFunc",
+        "kind": 2,
+        "importPath": "week8_exter",
+        "description": "week8_exter",
+        "peekOfCode": "def sumFunc(a,b):\n    c=a*b\n    return c\nd=sumFunc(5,2)\nprint(d)",
+        "detail": "week8_exter",
         "documentation": {}
     }
 ]

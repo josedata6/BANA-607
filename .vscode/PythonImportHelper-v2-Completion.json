@@ -18,30 +18,6 @@
         "documentation": {}
     },
     {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
-        "label": "stats",
-        "importPath": "scipy",
-        "description": "scipy",
-        "isExtraImport": true,
-        "detail": "scipy",
-        "documentation": {}
-    },
-    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
@@ -51,12 +27,108 @@
         "documentation": {}
     },
     {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "stats",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
         "label": "healthData",
         "kind": 5,
         "importPath": "_Midterm Test.Sample Code For Midterm Exam",
         "description": "_Midterm Test.Sample Code For Midterm Exam",
         "peekOfCode": "healthData = pd.read_csv('healthData.csv')\n# # Step 3: Perform Descriptive Statistics\n# # -------------------------------------\n# # Descriptive statistics for numerical variables ('age' and 'salary')\n# # Including mean, median, mode, standard deviation, variance, min, max, range, percentiles, IQR, skewness, and kurtosis\n# # Descriptive statistics for 'age'\nprint(\"Descriptive statistics for 'age':\")\nprint(healthData['age'].describe())\nprint(\"Mode of 'age':\", healthData['age'].mode()[0])\n# print(\"Skewness of 'age':\", healthData['age'].skew())",
         "detail": "_Midterm Test.Sample Code For Midterm Exam",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
+        "importPath": "week-8.2017golf-stats",
+        "description": "week-8.2017golf-stats",
+        "peekOfCode": "housing_df = pd.read_csv('2016-golf-stats.csv') # importing the csv file\n# #Renaming Columns\nhousing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\nprint(housing_df.describe()) # show summary statistics for each column\n# df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\n# correlation_matrix = df.corr()\n# print(correlation_matrix)",
+        "detail": "week-8.2017golf-stats",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df.columns",
+        "kind": 5,
+        "importPath": "week-8.2017golf-stats",
+        "description": "week-8.2017golf-stats",
+        "peekOfCode": "housing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\nprint(housing_df.describe()) # show summary statistics for each column\n# df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\n# correlation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')",
+        "detail": "week-8.2017golf-stats",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df",
+        "kind": 5,
+        "importPath": "week-8.Correlation",
+        "description": "week-8.Correlation",
+        "peekOfCode": "housing_df = pd.read_csv('WestRoxbury.csv') # importing the csv file\n# #Renaming Columns\nhousing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)",
+        "detail": "week-8.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "housing_df.columns",
+        "kind": 5,
+        "importPath": "week-8.Correlation",
+        "description": "week-8.Correlation",
+        "peekOfCode": "housing_df.columns = [s.strip().replace(' ', '_') for s in housing_df.columns] # all columns\n# # Descriptive statistics\n# print(housing_df.describe()) # show summary statistics for each column\ndf = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')",
+        "detail": "week-8.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "week-8.Correlation",
+        "description": "week-8.Correlation",
+        "peekOfCode": "df = pd.DataFrame(housing_df)\n# print(df)\n# #Finding Correlation\ncorrelation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt",
+        "detail": "week-8.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "correlation_matrix",
+        "kind": 5,
+        "importPath": "week-8.Correlation",
+        "description": "week-8.Correlation",
+        "peekOfCode": "correlation_matrix = df.corr()\n# print(correlation_matrix)\n## saving output into file\n# correlation_matrix.to_csv('correlationMatrix.csv')\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "detail": "week-8.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "sumFunc",
+        "kind": 2,
+        "importPath": "week-8.week8_exter",
+        "description": "week-8.week8_exter",
+        "peekOfCode": "def sumFunc(a,b):\n    c=a*b\n    return c\nd=sumFunc(5,2)\nprint(d)",
+        "detail": "week-8.week8_exter",
         "documentation": {}
     },
     {
