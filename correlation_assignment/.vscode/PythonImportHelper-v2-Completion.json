@@ -1,0 +1,56 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "df = pd.read_csv('correlationGolf_formatted.csv') # importing the csv file\nprint(df.describe()) # show summary statistics for each column\n# saving output into file\n# df.to_csv('correlationGolf.csv')\n# #dropping player\ndf = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "df = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "correlation_matrix",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "correlation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "detail": "Correlation",
+        "documentation": {}
+    }
+]
