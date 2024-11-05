@@ -183,6 +183,51 @@
         "documentation": {}
     },
     {
+        "label": "df",
+        "kind": 5,
+        "importPath": "correlation_assignment.Correlation",
+        "description": "correlation_assignment.Correlation",
+        "peekOfCode": "df = pd.read_csv('correlationGolf_formatted.csv') # importing the csv file\nprint(df.describe()) # show summary statistics for each column\n# saving output into file\n# df.to_csv('correlationGolf.csv')\n# #dropping player\ndf = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding",
+        "detail": "correlation_assignment.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "correlation_assignment.Correlation",
+        "description": "correlation_assignment.Correlation",
+        "peekOfCode": "df = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "detail": "correlation_assignment.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "correlation_matrix",
+        "kind": 5,
+        "importPath": "correlation_assignment.Correlation",
+        "description": "correlation_assignment.Correlation",
+        "peekOfCode": "correlation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "detail": "correlation_assignment.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "correlation_assignment_2.Correlation",
+        "description": "correlation_assignment_2.Correlation",
+        "peekOfCode": "df = pd.read_csv('correlationGolf_formatted.csv') # importing the csv file\nprint(df.describe()) # show summary statistics for each column\n# # saving output into file\n# # df.to_csv('correlationGolf.csv')\n# # #dropping player\n# df = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding",
+        "detail": "correlation_assignment_2.Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "correlation_matrix",
+        "kind": 5,
+        "importPath": "correlation_assignment_2.Correlation",
+        "description": "correlation_assignment_2.Correlation",
+        "peekOfCode": "correlation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "detail": "correlation_assignment_2.Correlation",
+        "documentation": {}
+    },
+    {
         "label": "housing_df",
         "kind": 5,
         "importPath": "week-8.2017golf-stats",
