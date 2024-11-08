@@ -1,0 +1,851 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LassoCV",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "statsmodels.api",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "statsmodels.api",
+        "description": "statsmodels.api",
+        "detail": "statsmodels.api",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_california_housing",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "variance_inflation_factor",
+        "importPath": "statsmodels.stats.outliers_influence",
+        "description": "statsmodels.stats.outliers_influence",
+        "isExtraImport": true,
+        "detail": "statsmodels.stats.outliers_influence",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "data = pd.read_csv('advertising_data_large.csv') \nX = data[['TV']] \ny = data['Sales']\nfrom sklearn.linear_model import LinearRegression \n# Fit model for Simple Linear Regression\nmodel = LinearRegression() \nmodel.fit(X, y)\nprint(\"Coefficient (β1):\", model.coef_[0])\nprint(\"Intercept (β0):\", model.intercept_)\n#Statistical Signifcance",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "X = data[['TV']] \ny = data['Sales']\nfrom sklearn.linear_model import LinearRegression \n# Fit model for Simple Linear Regression\nmodel = LinearRegression() \nmodel.fit(X, y)\nprint(\"Coefficient (β1):\", model.coef_[0])\nprint(\"Intercept (β0):\", model.intercept_)\n#Statistical Signifcance\nimport statsmodels.api as sm",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "y = data['Sales']\nfrom sklearn.linear_model import LinearRegression \n# Fit model for Simple Linear Regression\nmodel = LinearRegression() \nmodel.fit(X, y)\nprint(\"Coefficient (β1):\", model.coef_[0])\nprint(\"Intercept (β0):\", model.intercept_)\n#Statistical Signifcance\nimport statsmodels.api as sm\nX_with_const = sm.add_constant(X)  # Adds intercept",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "model = LinearRegression() \nmodel.fit(X, y)\nprint(\"Coefficient (β1):\", model.coef_[0])\nprint(\"Intercept (β0):\", model.intercept_)\n#Statistical Signifcance\nimport statsmodels.api as sm\nX_with_const = sm.add_constant(X)  # Adds intercept\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n# Model for Multiple Linear Regression",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "X_with_const",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "X_with_const = sm.add_constant(X)  # Adds intercept\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n# Model for Multiple Linear Regression\nX = data[['TV', 'Radio', 'Newspaper']]\ny = data['Sales']\nX_with_const = sm.add_constant(X)\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n#Confidence Intervals",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "model_sm",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "model_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n# Model for Multiple Linear Regression\nX = data[['TV', 'Radio', 'Newspaper']]\ny = data['Sales']\nX_with_const = sm.add_constant(X)\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n#Confidence Intervals\n# Display confidence intervals",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "X = data[['TV', 'Radio', 'Newspaper']]\ny = data['Sales']\nX_with_const = sm.add_constant(X)\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n#Confidence Intervals\n# Display confidence intervals\nprint(\"Confidence Intervals:\\n\", model_sm.conf_int())\n# Predict Sales with significant predictors (e.g., TV and Radio if significant)\nsignificant_X = X[['TV', 'Radio']]",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "y = data['Sales']\nX_with_const = sm.add_constant(X)\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n#Confidence Intervals\n# Display confidence intervals\nprint(\"Confidence Intervals:\\n\", model_sm.conf_int())\n# Predict Sales with significant predictors (e.g., TV and Radio if significant)\nsignificant_X = X[['TV', 'Radio']]\nmodel_sig = LinearRegression()",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "X_with_const",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "X_with_const = sm.add_constant(X)\nmodel_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n#Confidence Intervals\n# Display confidence intervals\nprint(\"Confidence Intervals:\\n\", model_sm.conf_int())\n# Predict Sales with significant predictors (e.g., TV and Radio if significant)\nsignificant_X = X[['TV', 'Radio']]\nmodel_sig = LinearRegression()\nmodel_sig.fit(significant_X, y)",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "model_sm",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "model_sm = sm.OLS(y, X_with_const).fit()\nprint(model_sm.summary())\n#Confidence Intervals\n# Display confidence intervals\nprint(\"Confidence Intervals:\\n\", model_sm.conf_int())\n# Predict Sales with significant predictors (e.g., TV and Radio if significant)\nsignificant_X = X[['TV', 'Radio']]\nmodel_sig = LinearRegression()\nmodel_sig.fit(significant_X, y)\npredictions = model_sig.predict(significant_X)",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "significant_X",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "significant_X = X[['TV', 'Radio']]\nmodel_sig = LinearRegression()\nmodel_sig.fit(significant_X, y)\npredictions = model_sig.predict(significant_X)\nprint(\"Predictions:\", predictions)",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "model_sig",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "model_sig = LinearRegression()\nmodel_sig.fit(significant_X, y)\npredictions = model_sig.predict(significant_X)\nprint(\"Predictions:\", predictions)",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "predictions",
+        "kind": 5,
+        "importPath": "Regression for Hypothesis Testing",
+        "description": "Regression for Hypothesis Testing",
+        "peekOfCode": "predictions = model_sig.predict(significant_X)\nprint(\"Predictions:\", predictions)",
+        "detail": "Regression for Hypothesis Testing",
+        "documentation": {}
+    },
+    {
+        "label": "backward_elimination",
+        "kind": 2,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "def backward_elimination(X, y, threshold_out=0.05):\n    included = list(X.columns)\n    while True:\n        # Fit the model with all currently included features\n        X_with_const = sm.add_constant(X[included])\n        model = sm.OLS(y, X_with_const).fit()\n        # Get p-values of included features\n        pvalues = model.pvalues.iloc[1:]  # Exclude intercept p-value\n        worst_pval = pvalues.max()  # Find the highest p-value\n        if worst_pval > threshold_out:",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "forward_selection",
+        "kind": 2,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "def forward_selection(X, y, threshold_in=0.05):\n    included = []\n    while True:\n        excluded = list(set(X.columns) - set(included))\n        new_pval = pd.Series(index=excluded, dtype=float)\n        # Calculate p-value for each excluded variable\n        for new_column in excluded:\n            model = sm.OLS(y, sm.add_constant(X[included + [new_column]])).fit()\n            new_pval[new_column] = model.pvalues[new_column]\n        best_pval = new_pval.min()",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "stepwise_selection",
+        "kind": 2,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "def stepwise_selection(X, y, threshold_in=0.05, threshold_out=0.05):\n    included = []\n    while True:\n        # Forward step\n        excluded = list(set(X.columns) - set(included))\n        new_pval = pd.Series(index=excluded, dtype=float)\n        # Calculate p-value for each excluded variable\n        for new_column in excluded:\n            model = sm.OLS(y, sm.add_constant(X[included + [new_column]])).fit()\n            new_pval[new_column] = model.pvalues[new_column]",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "data = pd.read_csv('advertising.csv')\nX = data[['TV']]\ny = data['Sales']\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X = data[['TV']]\ny = data['Sales']\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line\nplt.scatter(X, y, color='blue')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y = data['Sales']\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line\nplt.scatter(X, y, color='blue')\nplt.plot(X, model.predict(X), color='red')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line\nplt.scatter(X, y, color='blue')\nplt.plot(X, model.predict(X), color='red')\nplt.xlabel('TV Advertising Budget')\nplt.ylabel('Sales Revenue')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "r_squared",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "r_squared = model.score(X, y)\nprint('R-squared:', r_squared)\n# Assumptions Check\nresiduals = y - model.predict(X)\nplt.hist(residuals, bins=20)\nplt.title('Residuals Distribution')\nplt.show()\n# Multiple Linear Regression\nfrom sklearn.datasets import fetch_california_housing\nimport pandas as pd",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "residuals",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "residuals = y - model.predict(X)\nplt.hist(residuals, bins=20)\nplt.title('Residuals Distribution')\nplt.show()\n# Multiple Linear Regression\nfrom sklearn.datasets import fetch_california_housing\nimport pandas as pd\nhousing = fetch_california_housing()\nX = pd.DataFrame(housing.data, columns=housing.feature_names)\ny = housing.target",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "housing",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "housing = fetch_california_housing()\nX = pd.DataFrame(housing.data, columns=housing.feature_names)\ny = housing.target\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X = pd.DataFrame(housing.data, columns=housing.feature_names)\ny = housing.target\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Check the coeefficients",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y = housing.target\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Check the coeefficients\n# coeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# Check the coeefficients\n# coeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})\n# print(coeffs)\n# Evaluating MLR\nfrom sklearn.metrics import mean_squared_error, r2_score\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\nprint('Mean Squared Error:', mse)\nprint('R-squared:', r2)\n#VIF\nfrom statsmodels.stats.outliers_influence import variance_inflation_factor\nvif_data = pd.DataFrame()\nvif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\nprint('Mean Squared Error:', mse)\nprint('R-squared:', r2)\n#VIF\nfrom statsmodels.stats.outliers_influence import variance_inflation_factor\nvif_data = pd.DataFrame()\nvif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "r2 = r2_score(y_test, y_pred)\nprint('Mean Squared Error:', mse)\nprint('R-squared:', r2)\n#VIF\nfrom statsmodels.stats.outliers_influence import variance_inflation_factor\nvif_data = pd.DataFrame()\nvif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n#Handling Categorical Variables",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "vif_data",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "vif_data = pd.DataFrame()\nvif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n#Handling Categorical Variables\nX = pd.get_dummies(X, drop_first=True)\n#Residual Analysis\nresiduals = y_test - y_pred\nplt.scatter(y_pred, residuals)\nplt.xlabel('Predicted')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "vif_data['Feature']",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "vif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n#Handling Categorical Variables\nX = pd.get_dummies(X, drop_first=True)\n#Residual Analysis\nresiduals = y_test - y_pred\nplt.scatter(y_pred, residuals)\nplt.xlabel('Predicted')\nplt.ylabel('Residuals')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "vif_data['VIF']",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "vif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n#Handling Categorical Variables\nX = pd.get_dummies(X, drop_first=True)\n#Residual Analysis\nresiduals = y_test - y_pred\nplt.scatter(y_pred, residuals)\nplt.xlabel('Predicted')\nplt.ylabel('Residuals')\nplt.title('Residuals vs. Predicted')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X = pd.get_dummies(X, drop_first=True)\n#Residual Analysis\nresiduals = y_test - y_pred\nplt.scatter(y_pred, residuals)\nplt.xlabel('Predicted')\nplt.ylabel('Residuals')\nplt.title('Residuals vs. Predicted')\nplt.show()\n#MSE , RMSE\nfrom sklearn.metrics import mean_squared_error",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "residuals",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "residuals = y_test - y_pred\nplt.scatter(y_pred, residuals)\nplt.xlabel('Predicted')\nplt.ylabel('Residuals')\nplt.title('Residuals vs. Predicted')\nplt.show()\n#MSE , RMSE\nfrom sklearn.metrics import mean_squared_error\n# Calculate Mean Squared Error\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# Calculate Root Mean Squared Error\nrmse = mse ** 0.5\nprint(\"Mean Squared Error (MSE):\", mse)\nprint(\"Root Mean Squared Error (RMSE):\", rmse)\n#MAE\nfrom sklearn.metrics import mean_absolute_error\n# Calculate Mean Absolute Error\nmae = mean_absolute_error(y_test, y_pred)\nprint(\"Mean Absolute Error (MAE):\", mae)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "rmse",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "rmse = mse ** 0.5\nprint(\"Mean Squared Error (MSE):\", mse)\nprint(\"Root Mean Squared Error (RMSE):\", rmse)\n#MAE\nfrom sklearn.metrics import mean_absolute_error\n# Calculate Mean Absolute Error\nmae = mean_absolute_error(y_test, y_pred)\nprint(\"Mean Absolute Error (MAE):\", mae)\n#AIC, BIC\nimport statsmodels.api as sm",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "mae",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "mae = mean_absolute_error(y_test, y_pred)\nprint(\"Mean Absolute Error (MAE):\", mae)\n#AIC, BIC\nimport statsmodels.api as sm\n# Add a constant to the model (for intercept)\nX_test_with_const = sm.add_constant(X_test)\n# Fit the model using statsmodels\nmodel_stats = sm.OLS(y_test, X_test_with_const).fit()\n# Calculate AIC and BIC\naic = model_stats.aic",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_test_with_const",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_test_with_const = sm.add_constant(X_test)\n# Fit the model using statsmodels\nmodel_stats = sm.OLS(y_test, X_test_with_const).fit()\n# Calculate AIC and BIC\naic = model_stats.aic\nbic = model_stats.bic\nprint(\"Akaike Information Criterion (AIC):\", aic)\nprint(\"Bayesian Information Criterion (BIC):\", bic)\n# Backward Elimination\nimport statsmodels.api as sm",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model_stats",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model_stats = sm.OLS(y_test, X_test_with_const).fit()\n# Calculate AIC and BIC\naic = model_stats.aic\nbic = model_stats.bic\nprint(\"Akaike Information Criterion (AIC):\", aic)\nprint(\"Bayesian Information Criterion (BIC):\", bic)\n# Backward Elimination\nimport statsmodels.api as sm\n# Backward Elimination Function\ndef backward_elimination(X, y, threshold_out=0.05):",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "aic",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "aic = model_stats.aic\nbic = model_stats.bic\nprint(\"Akaike Information Criterion (AIC):\", aic)\nprint(\"Bayesian Information Criterion (BIC):\", bic)\n# Backward Elimination\nimport statsmodels.api as sm\n# Backward Elimination Function\ndef backward_elimination(X, y, threshold_out=0.05):\n    included = list(X.columns)\n    while True:",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "bic",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "bic = model_stats.bic\nprint(\"Akaike Information Criterion (AIC):\", aic)\nprint(\"Bayesian Information Criterion (BIC):\", bic)\n# Backward Elimination\nimport statsmodels.api as sm\n# Backward Elimination Function\ndef backward_elimination(X, y, threshold_out=0.05):\n    included = list(X.columns)\n    while True:\n        # Fit the model with all currently included features",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "selected_features_backward",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "selected_features_backward = backward_elimination(X, y)\nprint(\"Selected features (Backward Elimination):\", selected_features_backward)\n# Forward Selection\nimport statsmodels.api as sm\nimport pandas as pd\n# Forward Selection Function\ndef forward_selection(X, y, threshold_in=0.05):\n    included = []\n    while True:\n        excluded = list(set(X.columns) - set(included))",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "selected_features",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "selected_features = forward_selection(X, y)\nprint(\"Selected features:\", selected_features)\n#Stepwise Selection\nimport statsmodels.api as sm\nimport pandas as pd\n# Stepwise Selection Function\ndef stepwise_selection(X, y, threshold_in=0.05, threshold_out=0.05):\n    included = []\n    while True:\n        # Forward step",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "selected_features_stepwise",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "selected_features_stepwise = stepwise_selection(X, y)\nprint(\"Selected features (Stepwise Selection):\", selected_features_stepwise)\n#Lasso\nfrom sklearn.linear_model import LassoCV\n# Fit Lasso model with cross-validation\nlasso = LassoCV(cv=5)\nlasso.fit(X_train, y_train)\n# Identify selected features\nselected_features = X.columns[lasso.coef_ != 0]\nprint(\"Selected features:\", selected_features)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "lasso",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "lasso = LassoCV(cv=5)\nlasso.fit(X_train, y_train)\n# Identify selected features\nselected_features = X.columns[lasso.coef_ != 0]\nprint(\"Selected features:\", selected_features)\n# PCA\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.decomposition import PCA\n# Standardize data\nscaler = StandardScaler()",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "selected_features",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "selected_features = X.columns[lasso.coef_ != 0]\nprint(\"Selected features:\", selected_features)\n# PCA\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.decomposition import PCA\n# Standardize data\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# Apply PCA\npca = PCA(n_components=2)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "scaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# Apply PCA\npca = PCA(n_components=2)\nX_pca = pca.fit_transform(X_scaled)\nprint(\"Explained variance ratio:\", pca.explained_variance_ratio_)\n#Interpreting PCA Results\nimport matplotlib.pyplot as plt\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\n# Apply PCA\npca = PCA(n_components=2)\nX_pca = pca.fit_transform(X_scaled)\nprint(\"Explained variance ratio:\", pca.explained_variance_ratio_)\n#Interpreting PCA Results\nimport matplotlib.pyplot as plt\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler\n# Standardize the data",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "pca = PCA(n_components=2)\nX_pca = pca.fit_transform(X_scaled)\nprint(\"Explained variance ratio:\", pca.explained_variance_ratio_)\n#Interpreting PCA Results\nimport matplotlib.pyplot as plt\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler\n# Standardize the data\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_pca = pca.fit_transform(X_scaled)\nprint(\"Explained variance ratio:\", pca.explained_variance_ratio_)\n#Interpreting PCA Results\nimport matplotlib.pyplot as plt\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler\n# Standardize the data\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# Apply PCA",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "scaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# Apply PCA\npca = PCA()\npca.fit(X_scaled)\n# Plot the explained variance ratio\nplt.plot(range(1, len(pca.explained_variance_ratio_) + 1), pca.explained_variance_ratio_, marker='o')\nplt.title('Scree Plot')\nplt.xlabel('Principal Component')\nplt.ylabel('Explained Variance Ratio')",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\n# Apply PCA\npca = PCA()\npca.fit(X_scaled)\n# Plot the explained variance ratio\nplt.plot(range(1, len(pca.explained_variance_ratio_) + 1), pca.explained_variance_ratio_, marker='o')\nplt.title('Scree Plot')\nplt.xlabel('Principal Component')\nplt.ylabel('Explained Variance Ratio')\nplt.show()",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "pca = PCA()\npca.fit(X_scaled)\n# Plot the explained variance ratio\nplt.plot(range(1, len(pca.explained_variance_ratio_) + 1), pca.explained_variance_ratio_, marker='o')\nplt.title('Scree Plot')\nplt.xlabel('Principal Component')\nplt.ylabel('Explained Variance Ratio')\nplt.show()\n# Cumulative explained variance\ncumulative_variance = pca.explained_variance_ratio_.cumsum()",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "cumulative_variance",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "cumulative_variance = pca.explained_variance_ratio_.cumsum()\nplt.plot(range(1, len(cumulative_variance) + 1), cumulative_variance, marker='o')\nplt.title('Cumulative Explained Variance')\nplt.xlabel('Number of Components')\nplt.ylabel('Cumulative Explained Variance')\nplt.show()\n#When to Use PCA\n# Choosing the number of components based on explained variance threshold (e.g., 95%)\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "pca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)\nprint(f\"Number of components selected to explain 95% variance: {pca.n_components_}\")\nprint(\"Reduced data shape:\", X_reduced.shape)\n#Combinig PCA with Regression\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the reduced dataset into training and test sets\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y, test_size=0.2, random_state=0)\n# Fit a regression model on the PCA-reduced data",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_reduced",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_reduced = pca.fit_transform(X_scaled)\nprint(f\"Number of components selected to explain 95% variance: {pca.n_components_}\")\nprint(\"Reduced data shape:\", X_reduced.shape)\n#Combinig PCA with Regression\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the reduced dataset into training and test sets\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y, test_size=0.2, random_state=0)\n# Fit a regression model on the PCA-reduced data\nmodel = LinearRegression()",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# Predict and evaluate\ny_pred = model.predict(X_test)\nfrom sklearn.metrics import mean_squared_error, r2_score\nprint(\"MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"R-squared:\", r2_score(y_test, y_pred))\n#Case Study on PCA and Regression\nimport pandas as pd\nfrom sklearn.decomposition import PCA",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y_pred = model.predict(X_test)\nfrom sklearn.metrics import mean_squared_error, r2_score\nprint(\"MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"R-squared:\", r2_score(y_test, y_pred))\n#Case Study on PCA and Regression\nimport pandas as pd\nfrom sklearn.decomposition import PCA\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import mean_squared_error, r2_score",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "wine_data",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "wine_data = pd.read_csv('winequality-red.csv', delimiter=';')\nX_wine = wine_data.drop(columns='quality')\ny_wine = wine_data['quality']\n# Standardize the data and apply PCA\nX_scaled = StandardScaler().fit_transform(X_wine)\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y_wine, test_size=0.2, random_state=0)\n# Train and evaluate the regression model",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_wine",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_wine = wine_data.drop(columns='quality')\ny_wine = wine_data['quality']\n# Standardize the data and apply PCA\nX_scaled = StandardScaler().fit_transform(X_wine)\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y_wine, test_size=0.2, random_state=0)\n# Train and evaluate the regression model\nmodel = LinearRegression()",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y_wine",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y_wine = wine_data['quality']\n# Standardize the data and apply PCA\nX_scaled = StandardScaler().fit_transform(X_wine)\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y_wine, test_size=0.2, random_state=0)\n# Train and evaluate the regression model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_scaled = StandardScaler().fit_transform(X_wine)\npca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y_wine, test_size=0.2, random_state=0)\n# Train and evaluate the regression model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\nprint(\"Wine Quality Prediction - MSE:\", mean_squared_error(y_test, y_pred))",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "pca = PCA(n_components=0.95)\nX_reduced = pca.fit_transform(X_scaled)\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y_wine, test_size=0.2, random_state=0)\n# Train and evaluate the regression model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\nprint(\"Wine Quality Prediction - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"Wine Quality Prediction - R-squared:\", r2_score(y_test, y_pred))",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "X_reduced",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "X_reduced = pca.fit_transform(X_scaled)\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X_reduced, y_wine, test_size=0.2, random_state=0)\n# Train and evaluate the regression model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\nprint(\"Wine Quality Prediction - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"Wine Quality Prediction - R-squared:\", r2_score(y_test, y_pred))\n#Model Evaluation Comparison",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\ny_pred = model.predict(X_test)\nprint(\"Wine Quality Prediction - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"Wine Quality Prediction - R-squared:\", r2_score(y_test, y_pred))\n#Model Evaluation Comparison\n# Full model without PCA\nX_train_full, X_test_full, y_train_full, y_test_full = train_test_split(X_wine, y_wine, test_size=0.2, random_state=0)\nmodel_full = LinearRegression()\nmodel_full.fit(X_train_full, y_train_full)",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y_pred = model.predict(X_test)\nprint(\"Wine Quality Prediction - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"Wine Quality Prediction - R-squared:\", r2_score(y_test, y_pred))\n#Model Evaluation Comparison\n# Full model without PCA\nX_train_full, X_test_full, y_train_full, y_test_full = train_test_split(X_wine, y_wine, test_size=0.2, random_state=0)\nmodel_full = LinearRegression()\nmodel_full.fit(X_train_full, y_train_full)\ny_pred_full = model_full.predict(X_test_full)\n# PCA-reduced model",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model_full",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model_full = LinearRegression()\nmodel_full.fit(X_train_full, y_train_full)\ny_pred_full = model_full.predict(X_test_full)\n# PCA-reduced model\nmodel_pca = LinearRegression()\nmodel_pca.fit(X_train, y_train)  # Using PCA-transformed data from Slide 57\ny_pred_pca = model_pca.predict(X_test)\n# Compare MSE and R-squared for both models\nprint(\"Full Model - MSE:\", mean_squared_error(y_test_full, y_pred_full))\nprint(\"Full Model - R-squared:\", r2_score(y_test_full, y_pred_full))",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_full",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y_pred_full = model_full.predict(X_test_full)\n# PCA-reduced model\nmodel_pca = LinearRegression()\nmodel_pca.fit(X_train, y_train)  # Using PCA-transformed data from Slide 57\ny_pred_pca = model_pca.predict(X_test)\n# Compare MSE and R-squared for both models\nprint(\"Full Model - MSE:\", mean_squared_error(y_test_full, y_pred_full))\nprint(\"Full Model - R-squared:\", r2_score(y_test_full, y_pred_full))\nprint(\"PCA Model - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"PCA Model - R-squared:\", r2_score(y_test, y_pred))",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "model_pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "model_pca = LinearRegression()\nmodel_pca.fit(X_train, y_train)  # Using PCA-transformed data from Slide 57\ny_pred_pca = model_pca.predict(X_test)\n# Compare MSE and R-squared for both models\nprint(\"Full Model - MSE:\", mean_squared_error(y_test_full, y_pred_full))\nprint(\"Full Model - R-squared:\", r2_score(y_test_full, y_pred_full))\nprint(\"PCA Model - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"PCA Model - R-squared:\", r2_score(y_test, y_pred))",
+        "detail": "Regression",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_pca",
+        "kind": 5,
+        "importPath": "Regression",
+        "description": "Regression",
+        "peekOfCode": "y_pred_pca = model_pca.predict(X_test)\n# Compare MSE and R-squared for both models\nprint(\"Full Model - MSE:\", mean_squared_error(y_test_full, y_pred_full))\nprint(\"Full Model - R-squared:\", r2_score(y_test_full, y_pred_full))\nprint(\"PCA Model - MSE:\", mean_squared_error(y_test, y_pred))\nprint(\"PCA Model - R-squared:\", r2_score(y_test, y_pred))",
+        "detail": "Regression",
+        "documentation": {}
+    }
+]
