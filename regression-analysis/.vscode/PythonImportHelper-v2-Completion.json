@@ -25,14 +25,6 @@
         "documentation": {}
     },
     {
-        "label": "LinearRegression",
-        "importPath": "sklearn.linear_model",
-        "description": "sklearn.linear_model",
-        "isExtraImport": true,
-        "detail": "sklearn.linear_model",
-        "documentation": {}
-    },
-    {
         "label": "LassoCV",
         "importPath": "sklearn.linear_model",
         "description": "sklearn.linear_model",
@@ -63,15 +55,6 @@
         "importPath": "statsmodels.api",
         "description": "statsmodels.api",
         "detail": "statsmodels.api",
-        "documentation": {}
-    },
-    {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -219,6 +202,15 @@
         "documentation": {}
     },
     {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
         "label": "data",
         "kind": 5,
         "importPath": "Regression for Hypothesis Testing",
@@ -359,60 +351,6 @@
         "importPath": "Regression",
         "description": "Regression",
         "peekOfCode": "def stepwise_selection(X, y, threshold_in=0.05, threshold_out=0.05):\n    included = []\n    while True:\n        # Forward step\n        excluded = list(set(X.columns) - set(included))\n        new_pval = pd.Series(index=excluded, dtype=float)\n        # Calculate p-value for each excluded variable\n        for new_column in excluded:\n            model = sm.OLS(y, sm.add_constant(X[included + [new_column]])).fit()\n            new_pval[new_column] = model.pvalues[new_column]",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "data = pd.read_csv('advertising.csv')\nX = data[['TV']]\ny = data['Sales']\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "X",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "X = data[['TV']]\ny = data['Sales']\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line\nplt.scatter(X, y, color='blue')",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "y = data['Sales']\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line\nplt.scatter(X, y, color='blue')\nplt.plot(X, model.predict(X), color='red')",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "model",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "model = LinearRegression()\nmodel.fit(X, y)\n#---\n#Visualizing the Simple Regression Results\nimport matplotlib.pyplot as plt\n# Scatter plot and regression line\nplt.scatter(X, y, color='blue')\nplt.plot(X, model.predict(X), color='red')\nplt.xlabel('TV Advertising Budget')\nplt.ylabel('Sales Revenue')",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "r_squared",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "r_squared = model.score(X, y)\nprint('R-squared:', r_squared)\n# Assumptions Check\nresiduals = y - model.predict(X)\nplt.hist(residuals, bins=20)\nplt.title('Residuals Distribution')\nplt.show()\n# Multiple Linear Regression\nfrom sklearn.datasets import fetch_california_housing\nimport pandas as pd",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "residuals",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "residuals = y - model.predict(X)\nplt.hist(residuals, bins=20)\nplt.title('Residuals Distribution')\nplt.show()\n# Multiple Linear Regression\nfrom sklearn.datasets import fetch_california_housing\nimport pandas as pd\nhousing = fetch_california_housing()\nX = pd.DataFrame(housing.data, columns=housing.feature_names)\ny = housing.target",
         "detail": "Regression",
         "documentation": {}
     },

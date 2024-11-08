@@ -1,46 +1,46 @@
-#Simple Regression
+# #Simple Regression
 
-import pandas as pd
-from sklearn.linear_model import LinearRegression
+# import pandas as pd
+# from sklearn.linear_model import LinearRegression
 
-# Load data
-data = pd.read_csv('advertising.csv')
-X = data[['TV']]
-y = data['Sales']
+# # Load data
+# data = pd.read_csv('advertising.csv')
+# X = data[['TV']]
+# y = data['Sales']
 
-# Fit the model
-model = LinearRegression()
-model.fit(X, y)
-#---
+# # Fit the model
+# model = LinearRegression()
+# model.fit(X, y)
+# #---
 
-#Visualizing the Simple Regression Results
+# #Visualizing the Simple Regression Results
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-# Scatter plot and regression line
-plt.scatter(X, y, color='blue')
-plt.plot(X, model.predict(X), color='red')
-plt.xlabel('TV Advertising Budget')
-plt.ylabel('Sales Revenue')
-plt.title('Simple Linear Regression')
-plt.show()
+# # Scatter plot and regression line
+# plt.scatter(X, y, color='blue')
+# plt.plot(X, model.predict(X), color='red')
+# plt.xlabel('TV Advertising Budget')
+# plt.ylabel('Sales Revenue')
+# plt.title('Simple Linear Regression')
+# plt.show()
 
-# Evaluating the model
+# # Evaluating the model
 
-r_squared = model.score(X, y)
-print('R-squared:', r_squared)
+# r_squared = model.score(X, y)
+# print('R-squared:', r_squared)
 
-# Assumptions Check
+# # Assumptions Check
 
-residuals = y - model.predict(X)
-plt.hist(residuals, bins=20)
-plt.title('Residuals Distribution')
-plt.show()
+# residuals = y - model.predict(X)
+# plt.hist(residuals, bins=20)
+# plt.title('Residuals Distribution')
+# plt.show()
 
 
 # Multiple Linear Regression
 
-from sklearn.datasets import fetch_california_housing
+from sklearn.datasets import fetch_california_housing #downloaning file from sklearn
 import pandas as pd
 
 housing = fetch_california_housing()
