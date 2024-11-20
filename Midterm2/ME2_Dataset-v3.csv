@@ -1,6 +1,6 @@
 Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gender,Education_Level,Marital_Status,Employment_Status,Loyalty_Tier,Region,Online_Shopping_Frequency,Product_Category,Avg_Discount_Avail,Store_Visits_Per_Month,Customer_Rating,Credit_Score,Days_Since_Last_Purchase,Dependents
 1.0,56.0,89240.24464,40.53227567,33.0,2.0,Female,Bachelor's,Single,Retired,Bronze,West,17.0,Electronics,27.71936668,9.0,1.583507969,604.9819056,76.0,0.0
-2.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+2.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 3.0,46.0,55001.62002,99.25586671,44.0,3.0,Female,High School,Married,Unemployed,Silver,East,24.0,Groceries,21.11651515,7.0,4.846977288,837.33408,54.0,0.0
 4.0,32.0,69046.9412,92.77309582,11.0,4.0,Male,Master's,Single,Employed,Silver,East,6.0,Fashion,22.03890725,1.0,6.63979315,653.1710308,54.0,1.0
 5.0,60.0,22609.25571,54.4557559,17.0,4.0,Male,Bachelor's,Married,Retired,Gold,South,15.0,Home,23.81588073,2.0,7.54834009,316.9326129,128.0,0.0
@@ -21,10 +21,10 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 20.0,41.0,36585.43936,,48.0,2.0,Female,PhD,,Retired,,North,19.0,Home,45.36473352,0.0,3.042106905,370.526471,150.0,3.0
 21.0,61.0,56890.86775,55.82642183,39.0,2.0,Male,Master's,Single,Unemployed,Silver,West,28.0,Groceries,22.76603458,12.0,9.363525865,445.8494813,132.0,1.0
 22.0,47.0,67200.69853,31.24690676,28.0,1.0,Male,Master's,Single,Employed,Silver,North,15.0,Groceries,47.89959192,6.0,7.456910058,759.3850513,326.0,0.0
-23.0,55.0,103969.2414,40.30117019,41.0,4.0,Male,High School,Married,Retired,Silver,West,11.0,Groceries,26.83093585,12.0,,479.9003283,184.0,3.0
+23.0,55.0,103969.2414,40.30117019,41.0,4.0,Male,High School,Married,Retired,Silver,West,11.0,Groceries,26.83093585,12.0,1.019268274,479.9003283,184.0,3.0
 24.0,19.0,94201.17961,45.27305151,35.0,5.0,Female,PhD,Single,Unemployed,Bronze,West,16.0,Electronics,48.82012254,4.0,2.813153462,568.4330859,133.0,2.0
 25.0,38.0,66292.57437,60.458839,47.0,3.0,Female,Bachelor's,Married,Unemployed,Platinum,West,4.0,Groceries,5.368924451,4.0,3.107749831,817.6271843,176.0,3.0
-26.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+26.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 27.0,29.0,98750.72652,92.01980535,18.0,4.0,Female,Bachelor's,Divorced,Employed,Bronze,North,24.0,Fashion,46.90042034,0.0,2.548898674,514.2943095,240.0,4.0
 28.0,39.0,50839.48293,50.19938481,14.0,4.0,Male,High School,Single,Employed,Gold,East,12.0,Electronics,48.24594211,7.0,3.748885234,633.5517765,76.0,4.0
 29.0,61.0,33231.72144,99.22364347,35.0,4.0,Male,High School,Married,Retired,Silver,South,7.0,Home,5.588444038,11.0,3.893162302,715.4364112,203.0,1.0
@@ -42,14 +42,14 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 41.0,20.0,34565.05728,9.011009022,16.0,2.0,Female,PhD,Divorced,Unemployed,Platinum,South,28.0,Fashion,11.67807634,3.0,8.056556018,436.8087965,4.0,1.0
 42.0,54.0,71721.22788,40.8950377,9.0,4.0,Male,PhD,Married,Retired,Silver,South,8.0,Groceries,22.94786354,2.0,6.602642816,537.7248915,155.0,1.0
 43.0,68.0,146031.1563,18.17892698,9.0,3.0,Male,Master's,Married,Unemployed,Platinum,South,8.0,Fashion,45.69806464,1.0,3.835508469,667.3635545,244.0,0.0
-44.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+44.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 45.0,43.0,126219.3692,35.26387293,11.0,2.0,Male,Bachelor's,Single,Employed,Platinum,,17.0,Groceries,49.42465047,3.0,1.821203572,542.7082915,80.0,1.0
 46.0,26.0,53527.36752,97.58540989,22.0,3.0,Male,PhD,Single,Employed,Silver,,28.0,Electronics,44.67535296,8.0,7.110508819,336.0953974,246.0,2.0
 47.0,43.0,42215.38636,64.45623566,33.0,2.0,Male,Bachelor's,Married,Retired,Gold,North,6.0,Groceries,22.75970396,9.0,7.52586417,520.7939521,342.0,3.0
 48.0,35.0,106923.6186,82.4255758,36.0,2.0,Female,PhD,Divorced,Retired,Platinum,North,26.0,Fashion,35.89584314,3.0,9.685284606,720.6663413,136.0,2.0
 49.0,21.0,140818.8786,14.1199426,45.0,3.0,Female,PhD,Married,Unemployed,Silver,South,3.0,Electronics,23.74665025,10.0,3.343576229,803.3469855,62.0,2.0
 50.0,42.0,92379.17609,86.33943374,23.0,3.0,Male,High School,Single,Retired,,South,12.0,Groceries,34.18371621,2.0,1.166107771,527.4234254,306.0,1.0
-51.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+51.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 52.0,67.0,56397.28218,49.21912996,45.0,4.0,Male,Bachelor's,Divorced,Unemployed,Gold,South,23.0,Electronics,32.27910141,7.0,7.36111454,686.4449085,112.0,4.0
 53.0,26.0,120034.0813,61.01904084,34.0,3.0,Female,,Single,Unemployed,Gold,East,1.0,Electronics,28.56913234,5.0,8.113667283,818.5246006,30.0,4.0
 54.0,43.0,44315.68731,76.71617029,9.0,4.0,Female,Master's,Single,Unemployed,Platinum,South,13.0,Groceries,6.101611962,3.0,2.743650397,446.8835171,6.0,1.0
@@ -91,7 +91,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 90.0,33.0,,7.166888015,35.0,4.0,Male,High School,Divorced,Retired,Bronze,North,21.0,Groceries,34.95719459,13.0,8.407787761,699.70416,16.0,3.0
 91.0,62.0,38170.40896,51.43279069,25.0,4.0,Female,Bachelor's,Single,Employed,Silver,North,10.0,Electronics,14.61831179,3.0,1.377754536,792.2008534,321.0,3.0
 92.0,35.0,123384.7505,99.67298853,3.0,2.0,Female,Bachelor's,Single,Unemployed,Silver,West,12.0,Electronics,34.57934713,11.0,5.239745656,670.8096562,,0.0
-93.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+93.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 94.0,41.0,41275.27257,61.90672438,38.0,3.0,Male,Bachelor's,Divorced,Employed,Gold,East,26.0,Home,11.88328418,2.0,3.79132499,812.9750463,262.0,1.0
 95.0,43.0,41354.55373,31.31910846,47.0,2.0,Male,Bachelor's,Married,Unemployed,Silver,,28.0,Home,41.28812687,9.0,5.062030526,445.4710803,15.0,0.0
 96.0,42.0,125894.7136,62.76568779,12.0,3.0,Male,High School,Divorced,Employed,Silver,West,16.0,,27.96111949,9.0,4.457747664,382.4418624,13.0,1.0
@@ -106,16 +106,16 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 105.0,26.0,80148.37214,82.92625166,20.0,4.0,Male,Master's,Divorced,Employed,Silver,East,6.0,Groceries,17.69700128,2.0,4.873797173,718.7423109,231.0,4.0
 106.0,41.0,59179.12364,73.62782368,28.0,3.0,,Bachelor's,Divorced,Employed,Gold,South,22.0,Home,15.49632611,13.0,4.685666323,444.3664501,312.0,0.0
 107.0,18.0,117189.2194,77.16118447,16.0,4.0,Male,High School,Single,Retired,Silver,,23.0,Fashion,38.0333089,2.0,4.372579203,434.9207739,194.0,0.0
-108.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+108.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 109.0,25.0,250938.2518,42.19924582,17.0,4.0,Male,PhD,Single,Employed,Silver,West,4.0,Fashion,32.78582366,14.0,8.460369021,304.5299329,320.0,4.0
-110.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
-111.0,28.0,69905.85878,2.900035405,28.0,4.0,Female,Master's,Single,Retired,Gold,North,29.0,Fashion,26.63255554,13.0,,409.8506855,276.0,4.0
+110.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
+111.0,28.0,69905.85878,2.900035405,28.0,4.0,Female,Master's,Single,Retired,Gold,North,29.0,Fashion,26.63255554,13.0,1.019268274,409.8506855,276.0,4.0
 112.0,68.0,90661.87194,26.72150767,12.0,5.0,Male,PhD,Single,Unemployed,Bronze,West,8.0,Fashion,,4.0,4.850825634,821.0063777,157.0,4.0
 113.0,34.0,137841.3744,76.26869249,27.0,4.0,Female,Master's,Married,Employed,Silver,South,5.0,Fashion,36.85463129,9.0,1.887916391,488.2690067,223.0,0.0
 114.0,25.0,101150.9395,14.57386087,42.0,5.0,Male,High School,Single,Unemployed,Platinum,South,24.0,Electronics,38.65656431,2.0,6.571837857,542.1934756,288.0,4.0
 115.0,52.0,35196.74529,53.99570301,47.0,5.0,Female,High School,,Unemployed,Bronze,South,18.0,,13.86200693,2.0,2.293224465,688.9163377,277.0,0.0
 116.0,52.0,142178.1761,22.30498533,30.0,4.0,Female,High School,Divorced,Retired,Gold,South,15.0,Home,39.97830091,7.0,5.701359376,623.2179783,181.0,1.0
-117.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+117.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 118.0,22.0,63537.72991,24.8789443,34.0,1.0,Female,Master's,Single,Employed,Bronze,North,1.0,Home,21.25698748,3.0,3.849367136,604.6070037,214.0,0.0
 119.0,59.0,38105.36945,97.61150174,37.0,3.0,Male,Bachelor's,Married,Retired,Platinum,East,9.0,Electronics,14.60133806,2.0,7.094716513,701.8887864,216.0,1.0
 120.0,56.0,123223.2746,80.35217408,6.0,3.0,Female,High School,Married,Unemployed,Bronze,,15.0,Electronics,22.32728056,10.0,5.356350462,323.2842202,208.0,2.0
@@ -134,7 +134,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 133.0,52.0,64470.62733,38.21294023,7.0,4.0,Female,High School,Divorced,Employed,Bronze,North,25.0,Fashion,45.84273738,13.0,3.121184029,378.2574202,217.0,2.0
 134.0,61.0,126763.4496,40.05315158,36.0,2.0,,Bachelor's,Single,Unemployed,Platinum,East,9.0,Electronics,43.08958293,5.0,9.174326992,689.6630392,94.0,0.0
 135.0,57.0,34382.1258,46.48523007,47.0,2.0,Male,High School,Divorced,Unemployed,Silver,West,0.0,,27.0700907,13.0,3.785334213,337.3594123,243.0,3.0
-136.0,39.0,130038.7979,78.71663784,9.0,3.0,Male,High School,Married,Retired,Platinum,East,28.0,Fashion,6.667339716,11.0,,359.4881937,106.0,0.0
+136.0,39.0,130038.7979,78.71663784,9.0,3.0,Male,High School,Married,Retired,Platinum,East,28.0,Fashion,6.667339716,11.0,1.019268274,359.4881937,106.0,0.0
 137.0,44.0,36573.5261,89.31638421,32.0,1.0,Male,High School,Divorced,Employed,Bronze,East,4.0,Electronics,29.08637306,0.0,3.531340183,579.8819383,247.0,1.0
 138.0,52.0,71647.34777,95.57813396,11.0,5.0,,Master's,Divorced,,Gold,North,12.0,Home,36.715802,13.0,9.580922423,555.6790116,13.0,2.0
 139.0,18.0,123648.3976,78.90343524,8.0,4.0,Female,Master's,Single,Retired,Platinum,East,0.0,Electronics,20.26240396,9.0,1.481901858,823.3691702,160.0,1.0
@@ -155,9 +155,9 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 154.0,43.0,143146.8341,52.32239417,28.0,3.0,Male,Master's,Divorced,Retired,Bronze,West,10.0,Electronics,48.4080285,4.0,5.422141812,760.3083815,157.0,0.0
 155.0,59.0,39935.68241,15.86673108,13.0,3.0,Male,Bachelor's,Married,Unemployed,Bronze,West,10.0,Home,27.91501422,2.0,8.852189709,315.1975081,245.0,1.0
 156.0,30.0,96209.87816,74.0059431,15.0,3.0,Male,Master's,Divorced,Employed,Gold,North,16.0,Home,33.24002107,3.0,7.408570793,758.6949192,109.0,0.0
-157.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+157.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 158.0,49.0,99489.05061,68.34255014,44.0,3.0,Male,Bachelor's,Single,Retired,Gold,East,5.0,Home,19.55694927,3.0,1.801028602,787.6102619,240.0,2.0
-159.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+159.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 160.0,66.0,133376.1082,9.394409589,4.0,3.0,Male,PhD,Married,Unemployed,Bronze,West,0.0,Fashion,27.51501451,3.0,2.497728559,390.5686444,121.0,4.0
 161.0,69.0,141175.3767,71.91601542,26.0,5.0,Female,High School,Married,Employed,,South,28.0,Groceries,26.7624053,11.0,8.077306474,611.1998961,,3.0
 162.0,49.0,93467.31387,8.136349264,40.0,4.0,Female,Bachelor's,Divorced,Retired,Bronze,North,9.0,Home,12.10238268,13.0,3.250510827,471.9609729,,1.0
@@ -169,16 +169,16 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 168.0,62.0,98872.95603,30.35702255,47.0,1.0,Male,,Divorced,Employed,Bronze,North,10.0,Fashion,38.87676617,7.0,2.278554485,510.6861218,218.0,1.0
 169.0,32.0,75136.98727,35.62061974,32.0,4.0,Female,Master's,Divorced,Employed,Gold,North,14.0,Fashion,17.68997087,13.0,7.343162525,779.3892655,273.0,1.0
 170.0,60.0,115737.7506,77.69069959,28.0,5.0,Male,Bachelor's,Single,Employed,Gold,South,0.0,Groceries,14.84574582,4.0,9.14570315,499.7207908,146.0,2.0
-171.0,46.0,141467.7119,66.4756905,22.0,1.0,Male,Master's,Divorced,Retired,Platinum,South,28.0,Electronics,28.48707338,9.0,,823.3819594,331.0,3.0
+171.0,46.0,141467.7119,66.4756905,22.0,1.0,Male,Master's,Divorced,Retired,Platinum,South,28.0,Electronics,28.48707338,9.0,1.019268274,823.3819594,331.0,3.0
 172.0,53.0,140323.9067,19.33436122,41.0,3.0,Male,PhD,Single,Employed,Silver,West,10.0,,11.99044861,11.0,5.392830342,820.4698946,343.0,1.0
 173.0,30.0,78609.11828,18.2368242,17.0,4.0,Male,PhD,Married,Retired,Gold,East,18.0,Groceries,34.9976024,7.0,9.346805528,379.6942626,151.0,2.0
-174.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
-175.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+174.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
+175.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 176.0,68.0,129056.7512,76.67289356,7.0,2.0,Male,High School,Divorced,,Platinum,South,15.0,Groceries,6.643417072,9.0,6.204961924,516.0185054,,1.0
 177.0,39.0,36206.14856,27.2395964,42.0,1.0,Female,,Married,Employed,Gold,South,3.0,Electronics,32.91298937,5.0,7.203067627,302.4056903,353.0,1.0
 178.0,45.0,139709.4447,,47.0,3.0,Female,Master's,Single,Unemployed,Silver,North,28.0,Fashion,18.24321983,11.0,1.961950376,450.6295008,83.0,1.0
 179.0,19.0,133086.5271,9.13499508,47.0,3.0,Male,Bachelor's,Married,Retired,Silver,North,19.0,Groceries,8.890058893,3.0,8.38999475,628.6959463,191.0,0.0
-180.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+180.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 181.0,62.0,96865.80665,30.24903297,45.0,1.0,Male,PhD,Divorced,Retired,Platinum,East,0.0,Groceries,19.13198014,10.0,1.651136589,373.3637394,351.0,4.0
 182.0,23.0,71870.3515,77.15309164,19.0,4.0,Male,High School,Single,Employed,Silver,East,4.0,Fashion,25.68197973,2.0,8.075644023,360.7977504,323.0,0.0
 183.0,45.0,27119.01305,,11.0,1.0,Male,PhD,Married,Unemployed,Platinum,East,4.0,Groceries,15.65658174,14.0,4.392549745,807.1509595,260.0,0.0
@@ -189,25 +189,25 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 188.0,47.0,71761.93017,77.68874428,47.0,5.0,Male,Bachelor's,,,Bronze,East,7.0,Electronics,11.15250244,2.0,9.618971273,717.150661,6.0,3.0
 189.0,28.0,89861.42838,,31.0,4.0,Male,Master's,Single,Unemployed,,West,3.0,Groceries,23.75126779,1.0,8.809349138,504.4916452,301.0,1.0
 190.0,45.0,,53.49991119,28.0,5.0,Female,PhD,Married,Employed,,South,6.0,Electronics,22.34394949,6.0,1.019268274,434.2520149,29.0,0.0
-191.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+191.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 192.0,56.0,65103.91625,96.88038898,43.0,3.0,Female,Master's,Divorced,Employed,Bronze,East,28.0,,42.88688035,4.0,8.366883219,530.8197607,356.0,2.0
-193.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+193.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 194.0,18.0,78788.33232,29.98938163,49.0,4.0,Male,Master's,Single,Employed,Platinum,East,28.0,Fashion,7.770050492,14.0,6.413936557,492.2168503,66.0,0.0
 195.0,44.0,49198.62698,98.01706261,47.0,1.0,Male,High School,,Retired,Gold,South,3.0,Home,34.49370636,2.0,6.456852526,806.9500813,22.0,4.0
 196.0,69.0,78817.1371,60.58627737,38.0,4.0,Male,Master's,Single,Retired,Gold,East,29.0,Home,5.371938408,13.0,4.285227736,813.1294017,188.0,3.0
 197.0,30.0,38311.41265,58.65984316,24.0,1.0,Male,PhD,Divorced,Unemployed,Platinum,South,28.0,Electronics,40.09822072,14.0,9.140265346,433.0191209,73.0,1.0
-198.0,58.0,42930.30825,75.05924476,47.0,3.0,Male,Bachelor's,Married,Retired,Gold,South,8.0,Groceries,34.99862326,7.0,,739.0216499,4.0,0.0
+198.0,58.0,42930.30825,75.05924476,47.0,3.0,Male,Bachelor's,Married,Retired,Gold,South,8.0,Groceries,34.99862326,7.0,1.019268274,739.0216499,4.0,0.0
 199.0,20.0,84787.81046,81.36520902,31.0,4.0,Male,PhD,Single,Employed,Bronze,South,20.0,Fashion,18.89535463,5.0,5.183057853,538.1909778,81.0,1.0
 200.0,56.0,74460.30844,65.99138213,41.0,1.0,Female,Master's,Married,Unemployed,Silver,North,12.0,Electronics,18.15988121,3.0,9.977623711,804.6386,24.0,1.0
 201.0,23.0,138929.9671,13.68147889,46.0,2.0,Female,Bachelor's,Married,Employed,Silver,North,13.0,Fashion,40.92228484,11.0,5.441503277,547.5683499,263.0,4.0
-202.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+202.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 203.0,44.0,95476.48554,92.88028039,49.0,3.0,Female,Master's,Divorced,Unemployed,Bronze,South,27.0,Fashion,20.85360595,14.0,5.617624806,556.832075,277.0,4.0
 204.0,26.0,102194.3574,23.23694557,5.0,2.0,Female,,Married,Employed,Bronze,North,13.0,Fashion,18.45264776,8.0,8.32615062,425.2904156,,2.0
 205.0,54.0,21702.27936,37.84453536,20.0,4.0,Male,High School,Married,Retired,Bronze,East,21.0,Groceries,30.1921155,4.0,7.991742942,,342.0,2.0
 206.0,50.0,,43.77561141,41.0,3.0,Male,High School,Married,Retired,Platinum,East,9.0,Electronics,5.376454699,14.0,8.097235886,533.9871568,223.0,1.0
 207.0,68.0,43144.67569,44.50109398,11.0,3.0,Female,PhD,Divorced,Unemployed,Bronze,,15.0,Fashion,8.720016709,9.0,7.372214056,715.5220614,71.0,2.0
 208.0,59.0,144939.1413,61.68101867,47.0,5.0,Male,Master's,Married,,Gold,East,4.0,Fashion,,5.0,3.287960462,632.7893168,,3.0
-209.0,61.0,39326.15461,94.36450794,38.0,4.0,Female,High School,Married,Employed,Platinum,East,22.0,Home,13.3435318,13.0,,678.7461094,319.0,3.0
+209.0,61.0,39326.15461,94.36450794,38.0,4.0,Female,High School,Married,Employed,Platinum,East,22.0,Home,13.3435318,13.0,1.019268274,678.7461094,319.0,3.0
 210.0,41.0,73901.13608,24.82857847,27.0,3.0,Male,,Single,Unemployed,Platinum,West,26.0,Home,,14.0,9.040991188,455.2794929,93.0,3.0
 211.0,32.0,31095.45685,13.02863625,34.0,4.0,Female,High School,Divorced,,Platinum,South,5.0,Fashion,49.65088617,14.0,2.74737427,564.7894403,18.0,2.0
 212.0,49.0,149593.6527,20.5495785,15.0,5.0,Female,High School,Married,Employed,Bronze,East,25.0,Electronics,34.36760308,3.0,2.174100729,324.4173957,127.0,3.0
@@ -217,7 +217,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 216.0,69.0,117494.8612,81.77874696,5.0,4.0,Male,PhD,Divorced,Unemployed,Platinum,East,12.0,Electronics,11.48755171,4.0,8.977387462,306.0300092,220.0,4.0
 217.0,66.0,47287.7271,86.27562964,6.0,3.0,Female,High School,Divorced,Retired,Silver,West,18.0,Groceries,46.4122566,1.0,5.875181416,393.3859518,342.0,3.0
 218.0,66.0,136747.0576,84.80491953,38.0,3.0,Female,High School,Divorced,Employed,Silver,North,17.0,Electronics,,3.0,6.81761563,658.8897828,,0.0
-219.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+219.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 220.0,29.0,44789.40369,25.971861,18.0,4.0,Male,High School,Married,Unemployed,Silver,South,18.0,Electronics,23.90325329,2.0,1.460857143,733.3255958,174.0,4.0
 221.0,56.0,24751.45682,75.74915095,14.0,2.0,Female,High School,Married,Retired,Gold,South,0.0,,32.35809662,9.0,7.709527768,439.636206,337.0,1.0
 222.0,19.0,81368.70286,46.59341023,10.0,2.0,Female,Bachelor's,Married,,,North,7.0,Groceries,9.71431414,11.0,5.5479883,719.9975536,181.0,2.0
@@ -305,14 +305,14 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 304.0,52.0,94947.14182,8.628769634,40.0,4.0,Female,Master's,Married,Unemployed,Gold,North,17.0,Groceries,48.39725385,11.0,5.385246043,472.9621497,73.0,4.0
 305.0,36.0,55627.17869,6.796541995,2.0,3.0,Male,High School,Single,Unemployed,Bronze,West,28.0,Electronics,10.15453848,8.0,4.198930127,755.8934116,198.0,0.0
 306.0,65.0,92043.14033,34.08959355,8.0,4.0,Female,Master's,Single,Retired,Silver,West,22.0,Fashion,19.14732685,3.0,3.263617357,631.8796682,191.0,3.0
-307.0,33.0,104684.6505,78.70480073,48.0,3.0,,Bachelor's,Married,Retired,Gold,East,18.0,Home,41.45564425,14.0,,514.0176553,188.0,4.0
+307.0,33.0,104684.6505,78.70480073,48.0,3.0,,Bachelor's,Married,Retired,Gold,East,18.0,Home,41.45564425,14.0,1.019268274,514.0176553,188.0,4.0
 308.0,20.0,127866.4345,71.06041254,27.0,5.0,Male,,Single,Unemployed,Silver,South,24.0,Fashion,16.97712737,2.0,7.925368486,606.7033163,11.0,2.0
 309.0,37.0,46834.76533,79.0728815,22.0,5.0,Male,PhD,Divorced,Retired,Gold,West,12.0,Home,14.68042687,3.0,3.203105671,617.2184661,238.0,2.0
 310.0,41.0,21429.45773,52.20963659,37.0,4.0,Male,PhD,Divorced,Retired,Bronze,North,14.0,Home,42.142009,0.0,1.44502693,391.044411,359.0,4.0
 311.0,50.0,37795.13191,44.5797008,27.0,2.0,Male,PhD,Single,Unemployed,Platinum,,22.0,Home,49.41870638,13.0,8.638774305,521.5028034,80.0,4.0
 312.0,41.0,137002.4234,15.59780014,29.0,2.0,Male,High School,Married,Retired,Bronze,North,29.0,Electronics,30.05962656,8.0,1.089637671,488.8868234,,0.0
 313.0,69.0,133605.7101,33.49108261,3.0,4.0,Female,Bachelor's,Divorced,Employed,Bronze,East,21.0,Electronics,17.51219368,13.0,9.434012445,520.4964974,289.0,2.0
-314.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+314.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 315.0,66.0,98067.19186,9.771442538,13.0,4.0,Female,Bachelor's,Divorced,Employed,Gold,South,21.0,Home,12.65586473,3.0,3.896619717,565.3961241,316.0,1.0
 316.0,25.0,106454.7677,22.84058332,45.0,3.0,Female,Bachelor's,Single,Unemployed,Platinum,North,0.0,Home,39.28492755,1.0,3.218301186,817.1738843,208.0,1.0
 317.0,53.0,42798.26622,60.22430411,10.0,4.0,Male,PhD,Married,,Silver,South,28.0,Fashion,39.8063308,13.0,1.081050978,461.5220273,34.0,0.0
@@ -325,24 +325,24 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 324.0,52.0,115944.3701,78.77951019,25.0,2.0,Male,High School,Divorced,Employed,Silver,North,18.0,Electronics,13.64151436,6.0,3.682375285,448.9035528,242.0,1.0
 325.0,42.0,30763.82683,12.7152829,29.0,5.0,Male,High School,Single,Retired,Silver,East,4.0,Electronics,33.72537878,9.0,1.315584541,849.6343176,41.0,1.0
 326.0,46.0,492048.8712,41.58058408,7.0,5.0,Male,Bachelor's,Married,Retired,Platinum,East,6.0,Groceries,34.45547861,12.0,1.335284926,,68.0,2.0
-327.0,35.0,51895.38426,84.14042628,49.0,2.0,Female,Bachelor's,Married,Retired,Platinum,South,13.0,Fashion,47.93422617,3.0,,786.4730941,106.0,1.0
+327.0,35.0,51895.38426,84.14042628,49.0,2.0,Female,Bachelor's,Married,Retired,Platinum,South,13.0,Fashion,47.93422617,3.0,1.019268274,786.4730941,106.0,1.0
 328.0,63.0,70608.42983,38.99946224,3.0,4.0,Male,PhD,Single,Retired,Bronze,West,2.0,Electronics,39.88224178,1.0,7.652122004,671.9285543,38.0,3.0
-329.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+329.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 330.0,19.0,66237.45314,59.18916673,20.0,2.0,Male,Bachelor's,Single,Retired,Platinum,West,12.0,,28.92203371,8.0,8.166701674,598.9439081,179.0,0.0
 331.0,52.0,113475.9677,19.26314906,30.0,5.0,Female,,Married,Unemployed,Silver,East,9.0,Fashion,13.40513632,3.0,4.885595415,762.294734,11.0,2.0
-332.0,33.0,58625.82303,36.86130872,35.0,1.0,Male,High School,Married,Retired,Platinum,South,1.0,Groceries,24.15035146,7.0,,785.8525639,338.0,1.0
+332.0,33.0,58625.82303,36.86130872,35.0,1.0,Male,High School,Married,Retired,Platinum,South,1.0,Groceries,24.15035146,7.0,1.019268274,785.8525639,338.0,1.0
 333.0,58.0,93632.60324,34.11661759,35.0,2.0,,Master's,Single,Retired,Platinum,North,5.0,Electronics,29.72703081,13.0,5.615943423,388.2166313,203.0,0.0
 334.0,53.0,81886.55229,,49.0,3.0,Female,PhD,Divorced,Employed,Bronze,South,7.0,Home,35.52886633,1.0,7.417283107,486.7652277,35.0,4.0
 335.0,50.0,106277.2515,,39.0,3.0,Male,Bachelor's,Divorced,Employed,Platinum,West,3.0,Electronics,32.34691003,7.0,3.461525792,484.3727491,125.0,4.0
-336.0,21.0,141787.8661,83.33800732,27.0,3.0,Female,PhD,Single,Unemployed,Platinum,West,24.0,Home,22.7290023,3.0,,323.1246378,62.0,1.0
+336.0,21.0,141787.8661,83.33800732,27.0,3.0,Female,PhD,Single,Unemployed,Platinum,West,24.0,Home,22.7290023,3.0,1.019268274,323.1246378,62.0,1.0
 337.0,50.0,115234.3726,28.03401019,26.0,4.0,Male,PhD,Single,Retired,Silver,South,11.0,Fashion,16.93908981,9.0,6.004516017,629.0307679,331.0,1.0
 338.0,31.0,47942.24922,52.28979786,14.0,3.0,Male,PhD,Divorced,Retired,,West,27.0,Fashion,12.57038794,4.0,3.942798609,,81.0,1.0
 339.0,38.0,24053.80756,30.57383179,17.0,4.0,Female,Master's,Married,,Silver,East,14.0,Groceries,,6.0,4.982421823,509.8659133,306.0,3.0
-340.0,65.0,54094.32576,94.12724527,18.0,1.0,Female,High School,Single,Unemployed,Platinum,South,7.0,Groceries,34.04294034,6.0,,707.0197697,298.0,1.0
-341.0,37.0,97360.13099,26.67037913,45.0,3.0,Female,Bachelor's,Divorced,Employed,Platinum,West,6.0,Home,,11.0,,645.2352275,33.0,4.0
+340.0,65.0,54094.32576,94.12724527,18.0,1.0,Female,High School,Single,Unemployed,Platinum,South,7.0,Groceries,34.04294034,6.0,1.019268274,707.0197697,298.0,1.0
+341.0,37.0,97360.13099,26.67037913,45.0,3.0,Female,Bachelor's,Divorced,Employed,Platinum,West,6.0,Home,,11.0,1.019268274,645.2352275,33.0,4.0
 342.0,25.0,26685.35575,43.53602446,29.0,2.0,Male,Master's,Divorced,,Gold,South,13.0,Groceries,21.76373538,8.0,6.582509354,506.6068045,239.0,1.0
 343.0,24.0,84527.61214,87.4002948,20.0,2.0,Female,Bachelor's,Married,,Platinum,South,22.0,Groceries,16.80835202,2.0,5.897800019,377.5828897,96.0,2.0
-344.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+344.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 345.0,34.0,63451.70581,19.42404037,18.0,2.0,Female,Bachelor's,Married,Employed,Silver,South,13.0,Groceries,39.81413278,3.0,7.353429559,770.0108429,145.0,2.0
 346.0,50.0,120218.5865,80.46168767,4.0,2.0,Female,Master's,Married,Unemployed,Bronze,,21.0,Fashion,25.50273683,9.0,5.807709026,677.2199708,124.0,4.0
 347.0,65.0,33857.77291,46.36050179,1.0,2.0,Female,High School,Married,Employed,Bronze,,12.0,Groceries,32.53568381,3.0,7.110127188,309.8331662,188.0,0.0
@@ -380,12 +380,12 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 379.0,63.0,111724.7724,53.70964755,5.0,4.0,Female,PhD,Married,Unemployed,Bronze,North,11.0,Home,39.67166539,8.0,6.250476091,673.5208572,15.0,4.0
 380.0,23.0,140282.2813,41.69846466,21.0,4.0,Male,Bachelor's,Married,Retired,Bronze,North,4.0,Home,32.7567598,5.0,7.749882859,633.8072541,296.0,0.0
 381.0,52.0,43474.79487,35.3869893,14.0,2.0,Male,Bachelor's,Single,Unemployed,Platinum,West,4.0,Electronics,31.93867305,2.0,5.589009534,,219.0,3.0
-382.0,58.0,93832.87997,90.08350122,4.0,2.0,Male,High School,Single,Retired,Gold,South,27.0,Home,18.16431928,14.0,,773.5117654,256.0,0.0
+382.0,58.0,93832.87997,90.08350122,4.0,2.0,Male,High School,Single,Retired,Gold,South,27.0,Home,18.16431928,14.0,1.019268274,773.5117654,256.0,0.0
 383.0,54.0,139013.4787,3.160516281,23.0,3.0,Male,Master's,Divorced,Unemployed,Bronze,South,27.0,Home,35.77520096,9.0,8.72462202,751.9056284,267.0,1.0
-384.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+384.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 385.0,46.0,110664.6347,,20.0,5.0,Male,High School,Divorced,Unemployed,Gold,North,17.0,Groceries,10.07861742,3.0,9.741677143,766.7232114,118.0,3.0
 386.0,66.0,58655.37096,56.45665016,15.0,2.0,Male,Master's,Single,Unemployed,Gold,East,11.0,Fashion,29.00846439,9.0,2.060740978,527.7377407,177.0,2.0
-387.0,63.0,140171.5054,93.74542374,45.0,5.0,Male,High School,Divorced,Retired,Platinum,,26.0,Fashion,9.556933144,4.0,,439.5332565,19.0,1.0
+387.0,63.0,140171.5054,93.74542374,45.0,5.0,Male,High School,Divorced,Retired,Platinum,,26.0,Fashion,9.556933144,4.0,1.019268274,439.5332565,19.0,1.0
 388.0,48.0,146237.5719,6.173530049,29.0,4.0,Male,Bachelor's,Single,Retired,Bronze,East,2.0,Fashion,44.26583087,14.0,1.819106262,778.3727124,35.0,3.0
 389.0,52.0,142754.6436,42.46053859,8.0,3.0,Female,PhD,Single,Retired,Gold,North,25.0,Electronics,27.84365252,11.0,3.079325242,537.6136398,334.0,1.0
 390.0,50.0,81647.84817,26.75562131,41.0,2.0,Female,PhD,Divorced,Unemployed,Bronze,South,24.0,Fashion,41.35845602,11.0,1.419219479,744.6005796,107.0,2.0
@@ -394,11 +394,11 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 393.0,49.0,61483.06152,26.39647618,48.0,4.0,Male,PhD,Single,Unemployed,Bronze,West,18.0,Fashion,6.867468697,0.0,4.906639736,572.5025561,95.0,0.0
 394.0,40.0,127759.0116,65.76328555,39.0,2.0,Female,Master's,Divorced,Employed,Silver,North,27.0,Fashion,17.66793293,8.0,9.356698675,355.1255412,314.0,3.0
 395.0,50.0,24810.99251,20.61166564,46.0,3.0,Male,Bachelor's,Married,Retired,Gold,West,17.0,Electronics,15.99051652,6.0,6.312691646,714.9067755,19.0,1.0
-396.0,20.0,97515.0842,56.9676952,28.0,4.0,Female,Master's,Divorced,Retired,Platinum,South,28.0,Groceries,30.21583883,2.0,,451.8413248,163.0,1.0
+396.0,20.0,97515.0842,56.9676952,28.0,4.0,Female,Master's,Divorced,Retired,Platinum,South,28.0,Groceries,30.21583883,2.0,1.019268274,451.8413248,163.0,1.0
 397.0,35.0,49901.14885,46.92931618,46.0,4.0,Male,Master's,Married,Retired,Silver,West,24.0,Home,,8.0,8.608772815,544.0051056,96.0,1.0
 398.0,42.0,35673.69515,97.22852763,47.0,5.0,Female,PhD,Divorced,Employed,Platinum,North,23.0,Home,28.42567449,1.0,3.671201845,347.8684608,142.0,2.0
 399.0,59.0,30003.91621,61.2442,4.0,2.0,Female,PhD,Single,Unemployed,Gold,North,4.0,Home,22.62972839,11.0,4.188391492,457.6625866,61.0,3.0
-400.0,48.0,110517.5409,35.60113084,15.0,2.0,Female,Bachelor's,Divorced,Retired,Bronze,North,26.0,Groceries,30.97050215,6.0,,729.8196338,241.0,0.0
+400.0,48.0,110517.5409,35.60113084,15.0,2.0,Female,Bachelor's,Divorced,Retired,Bronze,North,26.0,Groceries,30.97050215,6.0,1.019268274,729.8196338,241.0,0.0
 401.0,20.0,64183.74529,112.2954827,35.0,4.0,Male,PhD,Married,Unemployed,Gold,West,27.0,Electronics,36.60878877,8.0,9.108671464,383.3733515,237.0,2.0
 402.0,57.0,114219.6803,15.97343604,37.0,3.0,Female,PhD,Single,Unemployed,Platinum,West,1.0,Fashion,33.53413753,5.0,9.788344986,655.9377586,130.0,1.0
 403.0,63.0,28496.3243,23.30637607,1.0,1.0,Male,Bachelor's,Divorced,Retired,Gold,West,0.0,Electronics,49.30899662,9.0,9.116544848,804.584219,92.0,0.0
@@ -409,7 +409,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 408.0,39.0,101365.8789,12.36211832,47.0,4.0,Male,High School,Divorced,Unemployed,Platinum,South,17.0,Home,34.87092764,14.0,5.250528679,791.9963687,117.0,1.0
 409.0,40.0,135177.1073,86.15382964,36.0,1.0,Male,Bachelor's,Divorced,Unemployed,Bronze,West,16.0,Electronics,27.04226272,14.0,5.984524743,693.3080875,197.0,1.0
 410.0,19.0,,72.55861602,34.0,4.0,Female,Bachelor's,Single,Unemployed,Bronze,,1.0,Groceries,28.28446519,5.0,5.767974237,651.7546045,281.0,0.0
-411.0,44.0,50284.73172,7.699167828,29.0,4.0,Female,High School,Single,,Gold,South,6.0,Home,24.45601965,4.0,,665.0717049,0.0,3.0
+411.0,44.0,50284.73172,7.699167828,29.0,4.0,Female,High School,Single,,Gold,South,6.0,Home,24.45601965,4.0,1.019268274,665.0717049,0.0,3.0
 412.0,59.0,23172.1016,71.07567463,24.0,4.0,Female,PhD,Married,Employed,Silver,North,6.0,Groceries,49.62647575,13.0,1.6751988,527.8103049,210.0,2.0
 413.0,19.0,133112.8536,54.81028352,24.0,2.0,Male,PhD,Single,Employed,Bronze,South,9.0,Fashion,46.7402607,1.0,9.060861074,324.5061474,262.0,0.0
 414.0,43.0,22765.02341,9.090809229,42.0,2.0,Male,Bachelor's,Married,Retired,,South,21.0,Electronics,18.84758852,7.0,8.224082313,731.4428481,,3.0
@@ -428,8 +428,8 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 427.0,43.0,119875.5438,80.83395811,47.0,2.0,Female,Master's,Single,Retired,Silver,South,19.0,Home,38.16483403,13.0,2.875453111,760.0602554,131.0,1.0
 428.0,41.0,74309.68168,46.46474788,40.0,2.0,Female,Bachelor's,Divorced,Retired,Silver,South,17.0,Groceries,13.01091459,6.0,6.951735661,822.4752551,296.0,0.0
 429.0,30.0,74776.4103,6.143701178,7.0,2.0,Male,PhD,Divorced,Retired,Bronze,North,28.0,Home,42.11065577,3.0,9.201305367,743.1003089,122.0,0.0
-430.0,24.0,115885.6992,78.84154174,39.0,4.0,Female,Master's,Married,Unemployed,Gold,West,21.0,Electronics,17.42533846,4.0,,507.6499826,142.0,1.0
-431.0,53.0,51041.02895,20.93501443,38.0,1.0,Male,High School,Married,Retired,Bronze,West,5.0,Fashion,46.86649961,13.0,,733.7775361,181.0,3.0
+430.0,24.0,115885.6992,78.84154174,39.0,4.0,Female,Master's,Married,Unemployed,Gold,West,21.0,Electronics,17.42533846,4.0,1.019268274,507.6499826,142.0,1.0
+431.0,53.0,51041.02895,20.93501443,38.0,1.0,Male,High School,Married,Retired,Bronze,West,5.0,Fashion,46.86649961,13.0,1.019268274,733.7775361,181.0,3.0
 432.0,62.0,34361.63471,26.60346265,21.0,5.0,Male,Master's,Married,Retired,Silver,,20.0,Home,21.4087996,4.0,6.838722435,493.2929204,191.0,1.0
 433.0,37.0,66100.88049,17.30592899,20.0,3.0,Male,High School,Divorced,Unemployed,Gold,South,14.0,Electronics,43.59471787,7.0,8.840683417,391.9050483,206.0,3.0
 434.0,18.0,57341.06892,33.69129142,3.0,5.0,Female,PhD,Divorced,,Platinum,West,0.0,Home,16.98050725,6.0,7.73486921,318.3662627,230.0,0.0
@@ -446,7 +446,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 445.0,19.0,,3.689574701,13.0,2.0,Male,High School,Single,Retired,Silver,South,25.0,Electronics,40.7606259,5.0,2.555106867,376.8032816,252.0,3.0
 446.0,49.0,31623.4303,7.455254535,23.0,1.0,,High School,Divorced,Unemployed,Platinum,North,12.0,Home,38.64845417,1.0,4.218764946,603.478606,196.0,2.0
 447.0,40.0,74285.50085,46.9292063,30.0,1.0,Male,High School,Married,Unemployed,Silver,South,2.0,Home,24.85022738,11.0,3.616694793,450.7298141,129.0,1.0
-448.0,39.0,134285.38,91.01280038,37.0,5.0,,Master's,Divorced,Retired,Platinum,East,10.0,Electronics,38.01298232,3.0,,335.8560412,242.0,3.0
+448.0,39.0,134285.38,91.01280038,37.0,5.0,,Master's,Divorced,Retired,Platinum,East,10.0,Electronics,38.01298232,3.0,1.019268274,335.8560412,242.0,3.0
 449.0,68.0,142815.1629,54.331478,25.0,4.0,Female,Master's,,Retired,Platinum,East,1.0,Home,33.12620545,6.0,9.12498443,327.4573671,311.0,3.0
 450.0,42.0,80762.19646,50.2834383,47.0,2.0,Male,High School,Divorced,Retired,Bronze,,23.0,Home,43.43073502,8.0,9.660623875,363.5561844,211.0,1.0
 451.0,39.0,,11.4418963,27.0,2.0,Female,Bachelor's,Married,Retired,Bronze,South,14.0,Home,41.11069169,11.0,6.882426573,339.2518576,189.0,3.0
@@ -473,16 +473,16 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 472.0,64.0,118571.0018,90.70818222,32.0,2.0,Male,PhD,Married,Retired,Platinum,East,9.0,Groceries,27.18845194,14.0,9.023084858,493.8370641,157.0,1.0
 473.0,52.0,110482.6803,28.41354425,10.0,3.0,Male,,Single,Retired,Bronze,West,15.0,Fashion,16.95242559,6.0,8.629130782,521.6350401,248.0,3.0
 474.0,57.0,40006.46782,198.3686258,22.0,1.0,Female,Bachelor's,Married,Retired,Silver,West,22.0,Groceries,36.69588304,12.0,9.933308883,309.0954185,180.0,3.0
-475.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+475.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 476.0,33.0,49177.27434,20.99955117,4.0,5.0,Male,High School,Single,Retired,Silver,South,7.0,Fashion,15.75071131,13.0,9.43019134,497.5563713,138.0,4.0
 477.0,30.0,49096.28993,19.23825908,48.0,2.0,Male,Bachelor's,,Retired,Silver,,8.0,Fashion,6.88197307,7.0,8.442541226,619.2299912,77.0,1.0
 478.0,43.0,89806.67498,89.50498129,47.0,4.0,Male,Bachelor's,Single,Retired,Silver,East,10.0,Fashion,33.07500244,1.0,8.599836998,340.679753,335.0,4.0
 479.0,59.0,97082.19153,65.77496268,25.0,4.0,Female,High School,Married,Retired,Silver,East,10.0,Groceries,30.31304536,10.0,6.122274134,,49.0,4.0
 480.0,47.0,95411.20702,16.05832404,21.0,3.0,Male,High School,Married,Employed,Silver,North,22.0,Groceries,23.09590198,11.0,4.441281381,789.3315489,84.0,0.0
 481.0,36.0,31893.28886,44.59201842,37.0,3.0,Male,Master's,Divorced,Retired,Bronze,North,25.0,Home,33.97522738,1.0,9.411022653,634.7781403,182.0,1.0
-482.0,34.0,134069.9121,61.91450448,38.0,4.0,Female,Bachelor's,Married,Retired,Silver,East,28.0,Groceries,29.77759841,3.0,,822.6562276,182.0,3.0
+482.0,34.0,134069.9121,61.91450448,38.0,4.0,Female,Bachelor's,Married,Retired,Silver,East,28.0,Groceries,29.77759841,3.0,1.019268274,822.6562276,182.0,3.0
 483.0,36.0,54528.00554,9.262944414,49.0,1.0,Female,Master's,Single,Unemployed,Gold,South,9.0,Groceries,16.27617095,12.0,5.849374305,849.3125189,3.0,4.0
-484.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+484.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 485.0,43.0,135537.2504,80.55675001,25.0,4.0,Female,High School,Divorced,Unemployed,Silver,North,28.0,Groceries,24.26511064,12.0,6.083364826,464.3416852,110.0,4.0
 486.0,43.0,144234.6948,51.01547058,36.0,3.0,Male,PhD,Divorced,Retired,Gold,South,11.0,Fashion,44.61115975,8.0,5.234545711,772.0958303,333.0,4.0
 487.0,43.0,132076.5902,96.74553491,17.0,1.0,Female,Master's,Single,Unemployed,Platinum,South,24.0,Electronics,48.24068694,9.0,1.431708027,849.2362849,338.0,2.0
@@ -492,21 +492,21 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 491.0,18.0,,63.83245605,40.0,3.0,Male,Bachelor's,Divorced,Employed,Silver,East,9.0,Groceries,36.0167736,12.0,2.252690225,495.4368395,171.0,2.0
 492.0,18.0,73098.9177,17.42953463,15.0,3.0,,Bachelor's,Single,Unemployed,,East,17.0,Home,47.25991493,3.0,1.030490632,615.8487091,286.0,2.0
 493.0,64.0,68449.50721,88.31084807,32.0,5.0,Male,High School,,Retired,Silver,North,17.0,Electronics,16.24994309,8.0,3.207610843,758.1813177,118.0,1.0
-494.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+494.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 495.0,49.0,114044.6148,17.06110717,6.0,2.0,Female,High School,,Unemployed,Platinum,North,8.0,Groceries,36.03236086,13.0,1.892750771,311.6400977,174.0,0.0
 496.0,65.0,84463.84556,2.248144478,1.0,4.0,Female,PhD,Married,Unemployed,Gold,East,28.0,Home,35.56611506,2.0,9.179986963,485.1881179,29.0,4.0
 497.0,42.0,30536.00807,56.41581268,47.0,4.0,Male,Bachelor's,Married,Retired,Bronze,West,17.0,Fashion,16.35255318,11.0,2.935203124,379.4616331,54.0,0.0
 498.0,57.0,48623.81625,53.21256259,23.0,1.0,Female,High School,Divorced,Retired,Gold,West,7.0,Home,,4.0,2.841342529,428.1347166,360.0,1.0
-499.0,62.0,108823.6393,72.21600861,39.0,2.0,Male,Master's,Married,Employed,Bronze,West,10.0,Home,40.81609141,9.0,,798.0192126,195.0,4.0
+499.0,62.0,108823.6393,72.21600861,39.0,2.0,Male,Master's,Married,Employed,Bronze,West,10.0,Home,40.81609141,9.0,1.019268274,798.0192126,195.0,4.0
 500.0,18.0,29897.01173,89.13554725,17.0,1.0,Male,Bachelor's,Married,Retired,Gold,North,6.0,Home,26.3785541,8.0,1.125835417,320.2913089,40.0,1.0
 501.0,33.0,130656.8988,8.86125188,34.0,3.0,Male,PhD,Married,Unemployed,Bronze,South,8.0,Electronics,40.69841345,5.0,7.946249216,420.8903916,172.0,0.0
-502.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+502.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 503.0,22.0,82476.25505,,29.0,5.0,Female,Bachelor's,Divorced,Employed,Gold,West,28.0,Home,47.24420572,9.0,6.527464324,639.2862396,218.0,0.0
 504.0,39.0,97013.01201,85.95952826,9.0,4.0,Female,Bachelor's,Married,Retired,Bronze,East,16.0,Groceries,29.02677982,8.0,2.693799835,593.7559295,207.0,1.0
 505.0,46.0,,,13.0,4.0,Male,Bachelor's,Married,Unemployed,Gold,South,1.0,Fashion,31.81765779,3.0,3.567501972,420.0482156,157.0,3.0
 506.0,20.0,65215.19703,54.53858174,6.0,3.0,Female,PhD,Single,,Platinum,North,14.0,Groceries,6.411270596,3.0,5.283340276,390.332587,332.0,3.0
-507.0,29.0,108142.0998,71.31403706,6.0,4.0,Female,High School,Divorced,Employed,Silver,North,13.0,Electronics,12.66211117,13.0,,430.238919,227.0,1.0
-508.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+507.0,29.0,108142.0998,71.31403706,6.0,4.0,Female,High School,Divorced,Employed,Silver,North,13.0,Electronics,12.66211117,13.0,1.019268274,430.238919,227.0,1.0
+508.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 509.0,33.0,54713.67512,,3.0,4.0,Female,Master's,Single,Unemployed,Platinum,South,17.0,Home,23.89416673,7.0,7.584813135,449.1477821,172.0,2.0
 510.0,68.0,134221.8982,,17.0,4.0,Female,Master's,Divorced,Retired,Gold,East,15.0,Groceries,,6.0,4.95503401,821.1813759,244.0,3.0
 511.0,54.0,123665.3828,46.46725452,49.0,4.0,Male,High School,Married,Employed,Platinum,South,19.0,Groceries,7.833713393,0.0,3.680626135,555.1258718,359.0,4.0
@@ -520,7 +520,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 519.0,47.0,100419.4792,10.96311037,26.0,2.0,Male,PhD,Divorced,Retired,Silver,North,10.0,Home,34.52500177,13.0,2.737134869,810.404808,287.0,2.0
 520.0,63.0,,24.74753716,15.0,1.0,Male,High School,Married,Employed,,South,25.0,Groceries,14.47077865,5.0,8.944678686,443.6199294,261.0,1.0
 521.0,69.0,40618.66369,15.05522699,36.0,1.0,Female,PhD,Single,Retired,Bronze,North,16.0,Electronics,19.32147488,11.0,8.285258887,484.171323,349.0,0.0
-522.0,22.0,134513.1987,35.44619975,32.0,4.0,Female,Bachelor's,Single,,Platinum,West,23.0,Home,15.80313439,0.0,,555.3465312,281.0,0.0
+522.0,22.0,134513.1987,35.44619975,32.0,4.0,Female,Bachelor's,Single,,Platinum,West,23.0,Home,15.80313439,0.0,1.019268274,555.3465312,281.0,0.0
 523.0,29.0,,45.58474691,32.0,2.0,Male,High School,Single,Unemployed,Gold,South,27.0,Home,30.06162961,11.0,5.301015949,,292.0,4.0
 524.0,33.0,23802.14679,75.13380736,4.0,5.0,Female,PhD,Divorced,Employed,Gold,North,2.0,Groceries,9.870199104,10.0,7.546575645,795.7627712,268.0,1.0
 525.0,43.0,127356.1776,65.4636109,18.0,3.0,Male,PhD,Married,Employed,Bronze,North,12.0,Electronics,46.99896712,14.0,4.336395913,349.4330541,348.0,0.0
@@ -531,7 +531,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 530.0,53.0,126335.7131,97.93138886,40.0,1.0,Male,PhD,Single,Employed,Bronze,West,10.0,Electronics,29.07068389,7.0,1.86621842,381.611958,19.0,1.0
 531.0,50.0,128177.4431,63.78007169,14.0,5.0,Male,High School,Married,Retired,Platinum,,17.0,Electronics,20.68291174,0.0,6.302905511,649.8221953,246.0,4.0
 532.0,47.0,85970.80539,13.50020941,33.0,4.0,Female,Bachelor's,Single,Retired,Bronze,East,14.0,Fashion,10.94300648,12.0,6.638174697,822.2224875,327.0,1.0
-533.0,54.0,20830.16332,67.94157865,14.0,4.0,Male,PhD,Married,Unemployed,Gold,South,4.0,Fashion,16.96528589,8.0,,848.2035737,200.0,3.0
+533.0,54.0,20830.16332,67.94157865,14.0,4.0,Male,PhD,Married,Unemployed,Gold,South,4.0,Fashion,16.96528589,8.0,1.019268274,848.2035737,200.0,3.0
 534.0,40.0,57314.95731,33.18529753,34.0,1.0,Female,Bachelor's,Divorced,Retired,Bronze,South,15.0,Groceries,24.72979302,9.0,6.959672971,506.3826229,114.0,1.0
 535.0,27.0,100200.4994,68.94639247,4.0,3.0,,Bachelor's,Divorced,Retired,Bronze,West,29.0,Electronics,6.363195192,10.0,2.045626975,629.4569504,188.0,2.0
 536.0,22.0,147554.2031,7.894473668,24.0,2.0,Female,High School,Single,Employed,Gold,West,15.0,Home,39.67891372,2.0,5.995166718,770.9472094,25.0,1.0
@@ -539,7 +539,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 538.0,51.0,53774.46554,85.71798863,19.0,2.0,Male,High School,Married,Unemployed,Platinum,South,8.0,Groceries,32.06118233,1.0,9.46158457,679.2604261,169.0,0.0
 539.0,69.0,102420.7414,23.49077615,6.0,5.0,Female,PhD,Married,,Silver,South,26.0,Electronics,29.57224693,14.0,7.858644881,524.8640139,10.0,2.0
 540.0,48.0,90198.09936,83.8670714,33.0,3.0,Female,Bachelor's,Divorced,Retired,Silver,North,22.0,,31.56409275,0.0,9.752630339,413.3803882,26.0,1.0
-541.0,27.0,121379.9014,,49.0,2.0,Male,Bachelor's,Married,Unemployed,Platinum,North,2.0,Fashion,47.05933787,3.0,,521.5144903,349.0,4.0
+541.0,27.0,121379.9014,,49.0,2.0,Male,Bachelor's,Married,Unemployed,Platinum,North,2.0,Fashion,47.05933787,3.0,1.019268274,521.5144903,349.0,4.0
 542.0,36.0,33907.48305,64.6453091,40.0,2.0,Female,,Single,Retired,Gold,North,19.0,Groceries,5.385614486,14.0,3.566198577,341.7781578,82.0,2.0
 543.0,49.0,118933.6273,69.72090678,19.0,3.0,Male,PhD,Single,Unemployed,Bronze,East,12.0,Home,7.150986935,3.0,2.75880328,682.4739317,,1.0
 544.0,18.0,90364.65523,51.75282056,1.0,4.0,Male,PhD,Single,Unemployed,Platinum,West,21.0,Fashion,13.61720345,11.0,1.100391286,439.0084678,37.0,0.0
@@ -547,7 +547,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 546.0,62.0,64443.38159,,27.0,2.0,Female,Master's,Single,Unemployed,Silver,South,28.0,Electronics,13.15375068,0.0,7.108983852,366.594714,320.0,4.0
 547.0,21.0,102240.8461,4.285746102,16.0,2.0,Male,High School,Divorced,Retired,Platinum,West,6.0,Home,35.23747486,6.0,3.079800299,775.5625126,155.0,4.0
 548.0,33.0,141163.6537,,6.0,4.0,Female,High School,Divorced,Retired,Silver,North,28.0,Groceries,25.67674855,1.0,5.581031009,571.3943536,307.0,1.0
-549.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+549.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 550.0,33.0,,93.89217703,13.0,1.0,Female,Bachelor's,Married,Retired,Silver,East,8.0,Groceries,15.20986617,11.0,7.243821283,613.1879757,185.0,4.0
 551.0,19.0,109425.1439,87.24924374,48.0,3.0,Female,Bachelor's,Single,Employed,Platinum,North,11.0,Groceries,18.98735455,14.0,4.551661629,525.771213,181.0,0.0
 552.0,66.0,28818.81768,76.84041288,35.0,3.0,Male,,Divorced,Unemployed,Bronze,East,14.0,Groceries,49.29083226,6.0,4.35222045,405.8914535,142.0,1.0
@@ -561,7 +561,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 560.0,52.0,133299.7848,145.2584988,31.0,4.0,Male,Bachelor's,Married,Employed,Silver,South,22.0,Home,29.19976211,13.0,4.277820004,547.1432242,94.0,1.0
 561.0,50.0,146553.566,46.57546885,4.0,2.0,Female,Bachelor's,Single,Employed,Silver,South,22.0,Groceries,11.88691687,0.0,2.889386485,689.7185188,156.0,2.0
 562.0,50.0,145954.1212,86.59179734,44.0,2.0,Female,High School,Divorced,Retired,Gold,South,12.0,Home,27.7513624,11.0,7.985366777,642.8874864,40.0,4.0
-563.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+563.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 564.0,60.0,36911.21122,38.65965435,2.0,4.0,Female,Bachelor's,Married,Unemployed,Silver,,0.0,Groceries,44.45791393,7.0,3.022750344,692.7298819,300.0,1.0
 565.0,54.0,118574.2155,97.70323252,22.0,1.0,Male,,Married,Employed,Silver,North,18.0,Home,10.67249441,7.0,2.756571535,460.9370001,268.0,0.0
 566.0,29.0,23196.29914,11.96133874,37.0,4.0,Female,PhD,Single,Employed,Platinum,South,28.0,Electronics,44.3844412,3.0,2.488608141,477.2833215,154.0,3.0
@@ -573,7 +573,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 572.0,60.0,77967.35183,85.975826,19.0,2.0,Female,PhD,Married,Unemployed,Gold,East,27.0,Groceries,21.89198093,4.0,8.894394103,303.0767857,136.0,4.0
 573.0,61.0,55571.46662,29.92960482,18.0,4.0,Female,Bachelor's,Married,Employed,Bronze,West,14.0,Fashion,,3.0,8.809726511,323.5307975,254.0,3.0
 574.0,46.0,149626.185,91.166246,16.0,5.0,Female,High School,Single,Employed,Bronze,East,15.0,Groceries,29.96901126,5.0,5.059684646,434.2348981,223.0,0.0
-575.0,30.0,75403.56929,75.64222846,8.0,5.0,Female,High School,Married,Unemployed,Gold,North,10.0,Fashion,40.82836768,1.0,,362.8602072,179.0,0.0
+575.0,30.0,75403.56929,75.64222846,8.0,5.0,Female,High School,Married,Unemployed,Gold,North,10.0,Fashion,40.82836768,1.0,1.019268274,362.8602072,179.0,0.0
 576.0,29.0,78680.31316,80.68577091,33.0,3.0,Male,Bachelor's,Single,Unemployed,Bronze,West,23.0,Home,5.169546255,11.0,4.837994251,593.3359632,181.0,3.0
 577.0,48.0,41271.09675,2.782649004,49.0,4.0,Male,,Divorced,Retired,Silver,South,5.0,Home,33.41198464,1.0,6.455741837,771.8973725,258.0,4.0
 578.0,63.0,123325.2413,96.31822535,12.0,3.0,Female,PhD,Married,Employed,Platinum,South,10.0,Groceries,31.84322003,1.0,6.019882832,705.2126215,242.0,1.0
@@ -590,12 +590,12 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 589.0,27.0,74564.5512,2.227999591,5.0,4.0,Male,Bachelor's,Married,Retired,Platinum,South,12.0,Electronics,27.56513389,7.0,3.041834647,436.7804952,,3.0
 590.0,43.0,103008.3732,47.40802858,33.0,1.0,Male,Master's,Single,Unemployed,Silver,East,10.0,Home,28.43729287,3.0,8.157583403,537.4442868,81.0,4.0
 591.0,51.0,71687.27174,,48.0,2.0,Male,Bachelor's,Divorced,Employed,Silver,North,28.0,Electronics,25.17651209,10.0,6.677017598,648.7277796,56.0,4.0
-592.0,68.0,55647.97631,60.23739095,41.0,5.0,Female,Bachelor's,Single,Employed,,North,19.0,Home,16.52397918,9.0,,441.3422658,6.0,1.0
+592.0,68.0,55647.97631,60.23739095,41.0,5.0,Female,Bachelor's,Single,Employed,,North,19.0,Home,16.52397918,9.0,1.019268274,441.3422658,6.0,1.0
 593.0,58.0,147917.0942,30.42654296,19.0,2.0,Female,High School,Single,Employed,Gold,South,5.0,Home,10.41531981,9.0,4.181939688,328.7017818,111.0,4.0
-594.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+594.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 595.0,21.0,136232.8965,74.57612667,5.0,4.0,Male,Bachelor's,Divorced,Retired,Gold,East,6.0,Home,39.08581355,6.0,6.376143709,312.1877445,79.0,1.0
 596.0,67.0,49894.09877,,2.0,1.0,Male,PhD,Single,Unemployed,Platinum,West,11.0,Fashion,15.058752,4.0,5.252159025,304.5923556,315.0,3.0
-597.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+597.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 598.0,28.0,24047.43077,85.37412356,47.0,3.0,Female,Bachelor's,Single,Retired,Platinum,South,19.0,Groceries,40.8882833,3.0,4.903272398,431.718793,114.0,0.0
 599.0,46.0,104716.6873,67.11266364,39.0,2.0,Male,High School,Married,Employed,Gold,South,22.0,Home,11.93277438,2.0,2.820458636,421.6718328,2.0,1.0
 600.0,53.0,67908.42468,59.72893544,4.0,2.0,Male,Master's,Single,,,South,18.0,Home,,12.0,2.925404045,842.7381268,3.0,0.0
@@ -616,8 +616,8 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 615.0,56.0,123549.8478,10.2918712,10.0,3.0,Male,Bachelor's,Single,Employed,Bronze,East,22.0,Home,37.26388731,1.0,4.099944596,652.8636626,93.0,0.0
 616.0,49.0,82597.9057,91.05305512,41.0,2.0,,Bachelor's,Divorced,Retired,Platinum,North,12.0,Fashion,44.45078961,12.0,8.079872645,750.0166008,7.0,2.0
 617.0,41.0,35250.06457,67.25082603,8.0,4.0,,Master's,Married,Employed,Gold,West,27.0,Electronics,14.73354231,13.0,4.050425979,303.1086577,85.0,4.0
-618.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
-619.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+618.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
+619.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 620.0,54.0,75939.76634,57.60546285,10.0,2.0,Male,Bachelor's,Single,Retired,Bronze,East,5.0,,21.06217841,10.0,2.560358411,558.6369421,245.0,1.0
 621.0,29.0,46068.21447,52.22718882,17.0,5.0,Female,PhD,,Retired,Gold,North,0.0,Home,49.52839818,9.0,4.067888856,779.6163542,20.0,2.0
 622.0,66.0,,43.61231362,2.0,3.0,Male,Master's,Divorced,Retired,Silver,West,22.0,Fashion,16.81575671,10.0,4.6763865,423.7722195,264.0,4.0
@@ -627,11 +627,11 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 626.0,52.0,123682.6831,60.59041967,41.0,2.0,Female,Bachelor's,Divorced,Unemployed,Platinum,,28.0,Groceries,19.88577477,6.0,4.160953177,397.4245001,291.0,3.0
 627.0,58.0,60347.05466,89.35980571,5.0,4.0,Male,Bachelor's,Divorced,Unemployed,Gold,North,5.0,Groceries,13.03982624,8.0,8.535159996,499.9952618,35.0,4.0
 628.0,47.0,,44.89462142,18.0,2.0,Female,Bachelor's,Single,Unemployed,Platinum,North,14.0,Home,39.43995939,4.0,1.601173695,505.4053192,245.0,3.0
-629.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+629.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 630.0,66.0,29418.09541,63.49944776,20.0,4.0,Male,PhD,Single,Employed,Silver,West,23.0,Groceries,30.49538015,3.0,9.87685158,847.1471661,149.0,0.0
 631.0,37.0,71024.16233,59.57801907,41.0,3.0,,PhD,Married,Unemployed,Gold,South,22.0,Groceries,48.07911259,1.0,1.797113564,,0.0,1.0
 632.0,43.0,82392.04851,70.56074354,47.0,2.0,Male,High School,Divorced,Employed,Silver,,15.0,Groceries,19.31734717,2.0,3.6214527,699.2828286,,0.0
-633.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+633.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 634.0,39.0,57916.13523,51.72401398,49.0,3.0,,PhD,Married,Retired,Platinum,East,21.0,Electronics,35.4860046,4.0,7.987522318,316.6056084,229.0,0.0
 635.0,30.0,110347.6452,11.31825548,12.0,4.0,Female,High School,Divorced,,Platinum,North,8.0,Home,39.12838884,5.0,6.363341309,357.9336418,210.0,1.0
 636.0,36.0,131815.9116,39.06662144,7.0,4.0,Male,Bachelor's,Single,Employed,Gold,West,8.0,Home,15.12076867,14.0,6.799291304,831.0171114,71.0,3.0
@@ -642,22 +642,22 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 641.0,36.0,51465.85206,74.6157977,47.0,2.0,Female,Bachelor's,Divorced,Employed,Platinum,East,11.0,Home,,7.0,6.196075527,583.5508467,298.0,1.0
 642.0,29.0,148266.1371,51.12033989,16.0,2.0,Male,Bachelor's,Divorced,Unemployed,Gold,North,12.0,Electronics,49.85026738,3.0,9.007618013,613.3375476,235.0,3.0
 643.0,26.0,38524.42058,63.77629911,2.0,1.0,Male,Bachelor's,Divorced,Retired,Bronze,West,29.0,Home,45.19699863,6.0,7.302757185,421.8763867,292.0,0.0
-644.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+644.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 645.0,45.0,100360.2455,26.1847665,10.0,3.0,Female,High School,Single,Retired,Bronze,North,13.0,Electronics,42.13945782,5.0,4.86770843,,222.0,0.0
-646.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+646.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 647.0,48.0,92754.32885,47.77684215,22.0,5.0,,High School,Single,Employed,Platinum,East,22.0,Electronics,47.06595364,0.0,1.496958641,661.1974886,220.0,2.0
 648.0,69.0,21270.21016,5.519225805,26.0,4.0,Female,PhD,Single,Unemployed,Bronze,South,18.0,Groceries,42.84157297,2.0,9.59173762,539.9931569,215.0,0.0
 649.0,36.0,62439.97007,14.86238566,43.0,2.0,Male,High School,Divorced,Employed,Bronze,,28.0,Home,33.96556562,5.0,2.157195347,734.4516009,230.0,3.0
-650.0,64.0,87302.51364,28.40461647,39.0,3.0,Female,PhD,Married,Employed,Platinum,South,28.0,Electronics,32.41866735,2.0,,749.8530443,168.0,4.0
+650.0,64.0,87302.51364,28.40461647,39.0,3.0,Female,PhD,Married,Employed,Platinum,South,28.0,Electronics,32.41866735,2.0,1.019268274,749.8530443,168.0,4.0
 651.0,33.0,31422.64489,97.1817364,27.0,3.0,Female,Bachelor's,Single,Retired,Platinum,West,3.0,Fashion,26.03107797,14.0,5.556079325,459.7648831,,1.0
 652.0,22.0,65581.50106,33.8033537,29.0,4.0,,Master's,Divorced,Unemployed,Silver,East,18.0,Groceries,33.1918538,13.0,1.230690249,486.8429991,41.0,3.0
 653.0,52.0,121582.0207,48.72206475,47.0,4.0,Female,Bachelor's,Divorced,Retired,Silver,South,6.0,Fashion,40.78474639,14.0,9.322727283,814.7753346,257.0,4.0
 654.0,29.0,30215.20463,20.41367356,38.0,4.0,Female,High School,Married,Employed,Silver,North,25.0,Groceries,48.60669318,13.0,8.666531279,390.6075711,195.0,0.0
 655.0,42.0,71600.02591,61.46722704,20.0,2.0,Male,Bachelor's,Single,Employed,Bronze,East,14.0,,26.02793112,6.0,5.718321351,323.1827293,95.0,0.0
-656.0,69.0,37253.04803,28.78763834,27.0,4.0,Female,Master's,Single,Retired,Gold,West,14.0,Fashion,30.81439413,8.0,,549.7304274,316.0,4.0
+656.0,69.0,37253.04803,28.78763834,27.0,4.0,Female,Master's,Single,Retired,Gold,West,14.0,Fashion,30.81439413,8.0,1.019268274,549.7304274,316.0,4.0
 657.0,38.0,93780.31027,21.49226527,41.0,1.0,Male,Bachelor's,Single,Employed,Platinum,North,23.0,Electronics,25.01624728,2.0,2.094606016,,13.0,4.0
 658.0,53.0,109630.446,52.14069022,20.0,2.0,Male,Master's,Divorced,Employed,Silver,,28.0,Groceries,35.08198794,13.0,4.270532315,724.4174585,112.0,1.0
-659.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+659.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 660.0,33.0,46019.53175,1.758739232,19.0,1.0,Male,Bachelor's,Married,Employed,Platinum,East,5.0,Groceries,5.802520559,9.0,5.560220809,593.2603654,276.0,4.0
 661.0,56.0,41772.73569,22.6878121,20.0,2.0,Male,PhD,Single,Unemployed,Gold,West,15.0,Groceries,29.35227016,14.0,9.697683665,355.0355694,319.0,2.0
 662.0,62.0,33593.81924,4.635414888,35.0,4.0,Male,High School,Divorced,Retired,Bronze,,1.0,,8.981910306,12.0,6.174581439,623.7789359,159.0,2.0
@@ -676,11 +676,11 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 675.0,29.0,30414.93003,51.23378193,32.0,5.0,Male,Bachelor's,Married,Unemployed,Bronze,West,3.0,Groceries,37.07473071,6.0,1.482655513,835.4396035,307.0,2.0
 676.0,26.0,136326.1653,87.54802994,48.0,4.0,Male,,Married,Employed,Silver,North,28.0,Electronics,29.97525526,6.0,5.508723717,458.3657615,33.0,1.0
 677.0,43.0,91187.0089,49.86111145,47.0,2.0,Female,Master's,Single,Retired,Bronze,South,28.0,Fashion,45.68860434,3.0,4.374680942,789.1175981,166.0,4.0
-678.0,61.0,126248.7101,70.52361784,41.0,2.0,Female,High School,Married,Employed,Platinum,South,4.0,Fashion,32.09759462,1.0,,784.4117174,124.0,1.0
-679.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+678.0,61.0,126248.7101,70.52361784,41.0,2.0,Female,High School,Married,Employed,Platinum,South,4.0,Fashion,32.09759462,1.0,1.019268274,784.4117174,124.0,1.0
+679.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 680.0,55.0,103665.1004,14.01742287,2.0,2.0,Female,Bachelor's,Married,Unemployed,Gold,North,28.0,Electronics,40.35887257,13.0,3.525311944,609.9087606,149.0,3.0
 681.0,24.0,88432.34592,28.19842103,29.0,3.0,Male,PhD,Single,Unemployed,Platinum,South,29.0,Fashion,47.63902328,10.0,6.011185459,366.0015123,188.0,1.0
-682.0,63.0,115106.6378,40.06303148,4.0,1.0,Male,Master's,Divorced,Unemployed,Bronze,West,29.0,Electronics,21.01306601,10.0,,592.584454,42.0,1.0
+682.0,63.0,115106.6378,40.06303148,4.0,1.0,Male,Master's,Divorced,Unemployed,Bronze,West,29.0,Electronics,21.01306601,10.0,1.019268274,592.584454,42.0,1.0
 683.0,30.0,30611.89766,42.76098968,1.0,1.0,Female,Bachelor's,Divorced,Employed,Bronze,East,28.0,Groceries,16.24442946,2.0,2.209879746,496.2379406,28.0,0.0
 684.0,57.0,27845.77092,41.69108645,19.0,3.0,Female,Bachelor's,Divorced,Retired,Platinum,East,25.0,Groceries,32.72978283,14.0,8.326602154,735.7193682,361.0,1.0
 685.0,59.0,52123.42042,90.85348925,26.0,3.0,Female,Master's,Single,Employed,Silver,North,18.0,Electronics,27.44927695,13.0,6.454986399,716.9710636,119.0,0.0
@@ -690,10 +690,10 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 689.0,19.0,146862.4833,82.55524804,22.0,2.0,Male,PhD,,Unemployed,Gold,North,29.0,Home,48.98160773,2.0,5.558510809,816.1541292,161.0,1.0
 690.0,22.0,63796.45293,95.55099064,48.0,1.0,Female,PhD,Divorced,Unemployed,Gold,,18.0,Electronics,42.96141255,11.0,1.772296945,734.115247,127.0,4.0
 691.0,46.0,43675.32904,82.29862997,21.0,3.0,,Bachelor's,Divorced,Retired,Platinum,East,20.0,Home,13.02125648,3.0,9.72573871,371.6069529,254.0,2.0
-692.0,54.0,122660.8059,1.154945414,22.0,2.0,Female,High School,Single,Retired,Platinum,East,29.0,Groceries,45.70723639,8.0,,344.7035077,293.0,1.0
+692.0,54.0,122660.8059,1.154945414,22.0,2.0,Female,High School,Single,Retired,Platinum,East,29.0,Groceries,45.70723639,8.0,1.019268274,344.7035077,293.0,1.0
 693.0,55.0,105632.0108,64.00373565,36.0,2.0,Female,High School,Divorced,Unemployed,Silver,North,2.0,Home,20.33000694,10.0,7.78153511,311.4648819,356.0,0.0
 694.0,36.0,84765.44314,6.062402763,34.0,2.0,Male,Bachelor's,Married,Employed,Bronze,South,26.0,Electronics,21.9700393,5.0,5.725921583,645.8098742,253.0,4.0
-695.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+695.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 696.0,65.0,113496.2312,6.892945334,25.0,1.0,Female,Bachelor's,Single,Retired,Gold,South,10.0,Home,28.85520043,0.0,1.592579481,842.8025428,11.0,1.0
 697.0,62.0,49699.11637,60.77574984,45.0,1.0,Male,Master's,Married,Unemployed,Platinum,East,6.0,Electronics,11.19933182,3.0,6.599502318,518.9237458,,1.0
 698.0,18.0,149523.4091,68.97240144,28.0,2.0,Female,High School,Married,Employed,Platinum,South,28.0,Groceries,21.60752717,13.0,6.266982965,482.5484567,197.0,4.0
@@ -723,23 +723,23 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 722.0,37.0,74823.72049,7.577940591,27.0,4.0,Female,Bachelor's,Married,Retired,Platinum,North,28.0,Groceries,,10.0,1.595518496,336.8654435,251.0,1.0
 723.0,45.0,55987.61364,53.86277978,35.0,2.0,Male,Master's,Married,Unemployed,Silver,North,8.0,Electronics,13.48792336,3.0,2.943443836,792.6455461,248.0,3.0
 724.0,25.0,97005.54272,15.07157526,21.0,4.0,Male,Bachelor's,Married,Unemployed,Gold,South,28.0,Electronics,10.10631369,8.0,2.150684361,680.5002224,8.0,3.0
-725.0,58.0,138607.2349,2.158954462,25.0,2.0,Male,PhD,Divorced,Unemployed,Silver,North,21.0,Groceries,29.60057749,12.0,,366.8899863,33.0,0.0
+725.0,58.0,138607.2349,2.158954462,25.0,2.0,Male,PhD,Divorced,Unemployed,Silver,North,21.0,Groceries,29.60057749,12.0,1.019268274,366.8899863,33.0,0.0
 726.0,56.0,47386.08457,42.78139175,28.0,5.0,Male,,Single,Employed,Silver,West,20.0,Home,36.91837116,6.0,5.629449219,335.7752768,227.0,1.0
 727.0,43.0,100985.6559,30.20903006,47.0,2.0,Female,Master's,Single,Unemployed,Bronze,East,28.0,Groceries,7.25161264,11.0,6.298835172,836.1798934,72.0,3.0
 728.0,20.0,102102.8286,49.11404889,15.0,2.0,Female,PhD,Single,Employed,Bronze,East,10.0,Groceries,8.122789172,10.0,8.108812966,674.6449027,,2.0
 729.0,30.0,115304.6929,,4.0,2.0,Male,,,Unemployed,Silver,South,1.0,Groceries,41.12056232,14.0,6.906159039,529.6008391,211.0,4.0
 730.0,45.0,37103.79907,5.330168159,47.0,1.0,Female,PhD,Single,Employed,Gold,East,17.0,Fashion,41.40647148,5.0,6.478824926,685.9520724,71.0,3.0
-731.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+731.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 732.0,42.0,138174.2277,56.30559725,27.0,4.0,Male,Master's,Single,Unemployed,Gold,North,1.0,Fashion,32.68526913,12.0,5.264275915,728.9792113,,1.0
 733.0,50.0,43358.80415,34.97356796,26.0,5.0,Male,Master's,Married,,Platinum,North,1.0,Fashion,24.94310338,0.0,4.730687465,562.8325181,274.0,0.0
 734.0,43.0,50880.63224,73.18817527,19.0,4.0,Male,PhD,Single,Retired,Silver,North,2.0,Electronics,33.47132186,10.0,8.579494271,536.435517,248.0,4.0
 735.0,43.0,146281.3622,165.5768732,28.0,2.0,Female,PhD,Married,Retired,Silver,South,15.0,Groceries,43.82956778,1.0,3.070004073,306.0654463,15.0,4.0
-736.0,61.0,43527.00385,84.71483194,17.0,3.0,Male,High School,Single,,Platinum,East,18.0,Groceries,8.593539106,12.0,,809.6064133,74.0,0.0
+736.0,61.0,43527.00385,84.71483194,17.0,3.0,Male,High School,Single,,Platinum,East,18.0,Groceries,8.593539106,12.0,1.019268274,809.6064133,74.0,0.0
 737.0,62.0,131070.0621,69.55678984,43.0,1.0,,Bachelor's,Single,,Silver,West,3.0,Fashion,,0.0,6.861879075,631.8193331,105.0,3.0
 738.0,49.0,83996.12134,43.56317666,41.0,1.0,Female,High School,Single,Employed,Silver,East,22.0,Electronics,27.1863097,9.0,2.822159653,411.7346655,135.0,3.0
 739.0,62.0,52140.03967,67.62369562,47.0,4.0,Male,PhD,Married,Unemployed,Platinum,North,24.0,Electronics,30.38571247,11.0,9.011036227,805.7818807,73.0,1.0
 740.0,64.0,133197.4872,28.26273625,20.0,4.0,Female,Master's,Married,Retired,Bronze,West,17.0,Electronics,34.4269112,2.0,8.731416967,803.212546,,1.0
-741.0,38.0,77889.68315,31.32503638,45.0,1.0,Male,PhD,Single,Employed,Silver,South,19.0,Home,46.51804171,10.0,,,17.0,2.0
+741.0,38.0,77889.68315,31.32503638,45.0,1.0,Male,PhD,Single,Employed,Silver,South,19.0,Home,46.51804171,10.0,1.019268274,,17.0,2.0
 742.0,33.0,86926.25601,,40.0,1.0,Male,Bachelor's,Divorced,Retired,Platinum,North,24.0,Fashion,7.55239791,4.0,1.957495649,780.7311097,42.0,2.0
 743.0,38.0,66700.33802,45.19553212,39.0,5.0,Male,High School,,Employed,Gold,North,29.0,,6.326435846,0.0,5.45654433,848.7814133,49.0,1.0
 744.0,28.0,97083.61069,80.03965371,49.0,1.0,,High School,Married,Unemployed,Bronze,West,17.0,Electronics,13.02178017,3.0,6.483003965,434.5774035,2.0,2.0
@@ -796,16 +796,16 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 795.0,35.0,79116.18123,60.69134477,38.0,4.0,Female,Bachelor's,Married,Unemployed,Gold,South,7.0,Fashion,20.94107014,14.0,2.751573289,713.4894195,57.0,1.0
 796.0,68.0,87027.48372,82.84402861,40.0,2.0,Female,Bachelor's,Married,Retired,Gold,North,6.0,Groceries,34.77439402,12.0,4.51645698,352.2426547,,3.0
 797.0,22.0,83550.05543,98.41730316,36.0,4.0,Female,Master's,Married,Unemployed,Bronze,North,5.0,Home,49.97733577,12.0,9.519074587,,41.0,2.0
-798.0,43.0,106692.3535,29.55213834,43.0,4.0,Male,Bachelor's,Divorced,Unemployed,Bronze,North,10.0,Electronics,16.83813712,5.0,,,349.0,3.0
+798.0,43.0,106692.3535,29.55213834,43.0,4.0,Male,Bachelor's,Divorced,Unemployed,Bronze,North,10.0,Electronics,16.83813712,5.0,1.019268274,,349.0,3.0
 799.0,42.0,38154.66312,96.15241306,37.0,1.0,Male,Bachelor's,Married,Retired,Gold,North,11.0,Fashion,30.92363956,3.0,7.015246319,642.4265881,199.0,2.0
 800.0,19.0,23896.56668,39.5587076,15.0,4.0,Male,PhD,Single,Employed,Gold,South,17.0,Home,36.33970067,12.0,7.661344543,,173.0,3.0
 801.0,27.0,60030.89241,39.16567857,28.0,1.0,Female,High School,Divorced,Unemployed,Bronze,South,18.0,Electronics,12.4082261,3.0,5.033158295,773.3324697,334.0,4.0
 802.0,47.0,111608.4992,34.69832332,18.0,5.0,Female,High School,Single,Retired,Platinum,South,9.0,Home,11.69026537,3.0,9.437733881,546.1482295,94.0,0.0
 803.0,67.0,46240.94878,,34.0,2.0,Male,Master's,Divorced,Unemployed,Bronze,South,24.0,Fashion,25.53385602,2.0,7.629910617,804.3619415,216.0,3.0
 804.0,62.0,107546.2163,16.26035927,22.0,3.0,Female,PhD,,Employed,Gold,North,28.0,Home,22.36156348,14.0,5.121321219,557.3284525,110.0,0.0
-805.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+805.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 806.0,50.0,32207.09305,,13.0,2.0,Male,PhD,Divorced,Unemployed,Gold,East,20.0,Home,8.127894715,2.0,7.233520991,378.0058558,179.0,1.0
-807.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+807.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 808.0,35.0,77687.52851,83.53134623,22.0,3.0,Female,PhD,Married,Retired,,West,2.0,Electronics,5.642464176,4.0,8.908278254,592.6866167,118.0,4.0
 809.0,49.0,,44.60369368,7.0,4.0,Female,Master's,,Retired,,South,17.0,Fashion,32.0592571,9.0,4.211997961,,324.0,0.0
 810.0,64.0,43029.47263,30.93099169,43.0,4.0,Female,Bachelor's,Married,Unemployed,Silver,North,23.0,Fashion,30.31846681,5.0,3.698971661,515.45027,227.0,1.0
@@ -813,7 +813,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 812.0,28.0,128954.9877,20.26775983,4.0,4.0,Male,High School,Divorced,Retired,Bronze,West,5.0,Groceries,11.79121922,13.0,1.340046713,451.6272433,307.0,4.0
 813.0,38.0,142799.8485,6.707110638,28.0,4.0,,Master's,Divorced,Retired,Gold,West,9.0,Home,40.67048695,3.0,1.387125679,396.3733608,141.0,1.0
 814.0,43.0,108822.2437,,15.0,4.0,Male,Bachelor's,Married,,Bronze,,26.0,Groceries,44.94031063,5.0,8.830496738,726.0968924,,1.0
-815.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+815.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 816.0,39.0,100320.1412,96.6753212,3.0,4.0,Male,High School,Single,Unemployed,Bronze,North,6.0,Fashion,24.70837838,6.0,6.944791739,355.2422298,225.0,1.0
 817.0,44.0,132957.648,56.2131738,14.0,4.0,Male,High School,Married,Retired,Gold,East,16.0,Home,20.97477685,6.0,6.53178537,385.5746784,359.0,1.0
 818.0,66.0,94179.26706,35.38042686,38.0,4.0,Female,,Single,Retired,Silver,West,0.0,Home,8.264615584,3.0,8.642972302,828.0069615,256.0,2.0
@@ -848,7 +848,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 847.0,68.0,90783.58273,94.46016729,24.0,1.0,Male,Bachelor's,Divorced,Employed,Silver,West,4.0,Home,38.88417278,11.0,1.378051907,617.3071762,157.0,1.0
 848.0,62.0,20748.62586,15.73080097,25.0,4.0,Female,High School,Divorced,Retired,Platinum,North,24.0,Groceries,9.786567487,11.0,9.161855486,770.2043272,150.0,3.0
 849.0,30.0,62196.15789,46.8048849,45.0,5.0,Female,Bachelor's,Married,Retired,Bronze,North,21.0,Electronics,8.705711478,8.0,5.360255281,835.833389,212.0,2.0
-850.0,21.0,67639.99953,98.11775044,46.0,4.0,Male,PhD,,Unemployed,,South,27.0,Electronics,5.121554758,10.0,,541.7208819,217.0,0.0
+850.0,21.0,67639.99953,98.11775044,46.0,4.0,Male,PhD,,Unemployed,,South,27.0,Electronics,5.121554758,10.0,1.019268274,541.7208819,217.0,0.0
 851.0,18.0,71502.44991,48.85733616,32.0,2.0,Male,High School,Married,Employed,Platinum,East,28.0,Electronics,24.46705967,13.0,6.098199454,333.2458076,245.0,1.0
 852.0,66.0,110410.7369,86.49120473,32.0,2.0,Female,High School,Single,Retired,Gold,West,22.0,Home,27.64687554,3.0,2.344460921,,302.0,3.0
 853.0,43.0,70512.55317,59.28442069,5.0,4.0,Female,Master's,Married,Employed,Platinum,East,3.0,Home,33.69488208,0.0,5.222494437,610.8452909,275.0,2.0
@@ -856,7 +856,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 855.0,51.0,50880.73701,29.292572,46.0,3.0,,Bachelor's,Single,Retired,Silver,East,3.0,Groceries,36.96911224,9.0,1.139342132,470.0978833,195.0,1.0
 856.0,45.0,,21.11908602,42.0,3.0,Male,Master's,Divorced,Retired,Platinum,North,29.0,,12.61993358,14.0,3.456254443,576.3191903,20.0,2.0
 857.0,48.0,49545.05154,76.41802095,49.0,2.0,Male,PhD,Married,Retired,Platinum,East,14.0,,42.43955239,0.0,1.022091278,486.2737825,256.0,2.0
-858.0,25.0,29515.47009,39.26751018,42.0,5.0,Male,Bachelor's,Married,Employed,Silver,South,26.0,Fashion,30.7331748,0.0,,716.3565273,16.0,2.0
+858.0,25.0,29515.47009,39.26751018,42.0,5.0,Male,Bachelor's,Married,Employed,Silver,South,26.0,Fashion,30.7331748,0.0,1.019268274,716.3565273,16.0,2.0
 859.0,43.0,98448.31714,51.61627076,39.0,4.0,Male,PhD,Divorced,Unemployed,Bronze,East,20.0,Home,31.27504205,0.0,7.554839594,599.1415331,50.0,2.0
 860.0,43.0,106867.6638,49.74022252,16.0,2.0,Female,PhD,Divorced,Employed,Bronze,North,4.0,Electronics,14.43989362,3.0,8.188946462,782.2662758,269.0,3.0
 861.0,51.0,100533.745,58.15062389,33.0,2.0,,PhD,Single,Retired,Platinum,West,23.0,Electronics,8.334893719,0.0,9.50670785,,314.0,2.0
@@ -864,7 +864,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 863.0,67.0,69372.15142,98.09319501,21.0,1.0,Male,Bachelor's,,Retired,Platinum,West,1.0,Groceries,32.70253784,3.0,3.2916418,768.1005352,305.0,2.0
 864.0,29.0,132233.3744,41.35083665,9.0,2.0,,Bachelor's,Single,Retired,Silver,North,26.0,Electronics,9.27709064,6.0,9.317331542,606.4704747,123.0,2.0
 865.0,18.0,87480.63207,82.92437329,6.0,3.0,Male,High School,Divorced,Employed,Silver,East,6.0,Home,47.77405135,1.0,7.977841785,413.762571,289.0,1.0
-866.0,61.0,82293.64409,76.68825167,45.0,2.0,Female,,Single,Retired,Silver,West,16.0,Home,49.11864621,7.0,,642.9292955,261.0,3.0
+866.0,61.0,82293.64409,76.68825167,45.0,2.0,Female,,Single,Retired,Silver,West,16.0,Home,49.11864621,7.0,1.019268274,642.9292955,261.0,3.0
 867.0,22.0,23333.46855,57.77936619,35.0,1.0,Male,PhD,Divorced,Unemployed,Platinum,West,15.0,Electronics,29.54555129,12.0,7.260761941,496.7442207,364.0,3.0
 868.0,43.0,64362.21759,95.64866722,39.0,4.0,Male,Bachelor's,Single,Retired,Platinum,West,16.0,Fashion,47.75311199,6.0,9.318847195,764.4230868,48.0,4.0
 869.0,47.0,69425.43044,20.84697704,22.0,5.0,Female,High School,Divorced,Retired,Bronze,South,19.0,Fashion,13.07503569,8.0,7.411546256,549.3148563,5.0,1.0
@@ -874,14 +874,14 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 873.0,40.0,99027.66206,84.84991657,23.0,4.0,Male,PhD,Divorced,Retired,Platinum,North,10.0,Fashion,7.773884755,5.0,4.477740056,840.7827901,352.0,1.0
 874.0,32.0,119434.824,89.41593031,17.0,3.0,Female,Master's,Divorced,Employed,Bronze,North,1.0,Groceries,48.13455231,14.0,4.656907287,744.6531592,128.0,0.0
 875.0,54.0,125688.146,7.183301768,12.0,4.0,Female,Bachelor's,Divorced,Employed,Bronze,South,0.0,Fashion,11.38699448,3.0,2.50154411,387.9674413,170.0,3.0
-876.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+876.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 877.0,31.0,144218.0805,45.38358648,16.0,4.0,Female,Bachelor's,Divorced,Employed,Platinum,South,1.0,Fashion,42.01330109,8.0,2.20043113,481.3986949,198.0,0.0
 878.0,19.0,22370.23575,51.53281641,3.0,3.0,Female,Master's,Married,Retired,Bronze,West,28.0,Groceries,14.84331454,2.0,6.891593462,657.7010583,313.0,1.0
 879.0,28.0,45451.13814,63.0326586,30.0,3.0,Female,Bachelor's,Divorced,Retired,Silver,,22.0,Electronics,15.93358063,2.0,8.220599347,716.3471177,344.0,2.0
 880.0,68.0,20983.17375,92.71187807,22.0,2.0,Male,High School,Married,Unemployed,Silver,North,8.0,Fashion,33.90390301,3.0,9.893831435,712.2396348,96.0,2.0
 881.0,56.0,104171.7128,2.892493349,9.0,1.0,Male,Bachelor's,Married,Employed,Silver,South,21.0,Home,17.42387398,0.0,4.117271528,,16.0,3.0
 882.0,55.0,136743.9714,48.20750336,29.0,4.0,Female,Bachelor's,Single,Employed,Gold,North,25.0,Electronics,14.78514353,13.0,6.394413,745.9512958,172.0,2.0
-883.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+883.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 884.0,55.0,,72.54798881,37.0,3.0,Female,Bachelor's,Single,Employed,Gold,North,28.0,,27.07913747,12.0,2.503376032,368.1343109,,0.0
 885.0,67.0,27834.76074,69.56071072,23.0,1.0,Male,PhD,,Unemployed,Platinum,West,14.0,Home,48.47449427,2.0,7.458810277,610.4430129,183.0,0.0
 886.0,51.0,141476.6835,14.30907781,13.0,1.0,Female,High School,Divorced,Retired,Platinum,North,9.0,Fashion,42.45070737,13.0,7.794808598,823.7657615,214.0,3.0
@@ -890,7 +890,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 889.0,32.0,83163.32869,80.63928356,47.0,2.0,Male,PhD,Single,Unemployed,Bronze,,28.0,Groceries,25.90305127,10.0,8.317945424,655.7431132,28.0,3.0
 890.0,44.0,53380.9538,,47.0,3.0,Male,Master's,Divorced,Retired,Bronze,West,24.0,Electronics,49.05183412,8.0,1.300627059,811.8091149,101.0,4.0
 891.0,68.0,57033.47726,21.85979142,23.0,2.0,Male,Master's,Divorced,Employed,Bronze,East,22.0,Home,12.75757108,13.0,1.819759734,535.5885369,122.0,2.0
-892.0,51.0,59947.69544,95.78735388,45.0,3.0,Female,Bachelor's,Divorced,Retired,,East,26.0,Home,21.08673966,1.0,,482.2667764,53.0,1.0
+892.0,51.0,59947.69544,95.78735388,45.0,3.0,Female,Bachelor's,Divorced,Retired,,East,26.0,Home,21.08673966,1.0,1.019268274,482.2667764,53.0,1.0
 893.0,69.0,124393.3667,1.877465226,47.0,4.0,Female,High School,Married,Retired,Platinum,East,16.0,Groceries,37.82417423,6.0,4.012691786,837.4828608,282.0,1.0
 894.0,55.0,90090.96597,99.78426471,40.0,3.0,Female,PhD,Single,Unemployed,Bronze,South,27.0,Electronics,48.37746804,0.0,5.583600916,774.8937234,101.0,4.0
 895.0,50.0,60470.00089,68.00530859,21.0,4.0,Male,PhD,Married,,Bronze,South,8.0,Electronics,12.00538457,1.0,5.791129552,477.6739715,116.0,0.0
@@ -915,7 +915,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 914.0,19.0,102309.6788,7.53497457,9.0,3.0,Female,Master's,Single,Retired,Gold,South,29.0,Groceries,36.67739371,13.0,5.053510688,636.6824019,109.0,4.0
 915.0,30.0,143682.4345,35.53323286,42.0,3.0,Female,High School,Divorced,Unemployed,Silver,East,28.0,Electronics,20.2075507,7.0,6.820054778,602.0881993,211.0,3.0
 916.0,60.0,98209.53662,11.98881178,28.0,2.0,Female,Master's,Single,Unemployed,Gold,North,5.0,Groceries,18.94910614,3.0,9.575234634,450.1658376,299.0,0.0
-917.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+917.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 918.0,43.0,134946.8402,94.82111457,14.0,2.0,Male,PhD,Single,Retired,Platinum,East,10.0,Electronics,16.1810836,11.0,1.360118175,375.3828259,171.0,0.0
 919.0,28.0,49650.37035,8.159331051,39.0,4.0,Female,PhD,Single,Employed,Silver,North,23.0,Electronics,33.91393259,6.0,3.990789197,766.9889812,,4.0
 920.0,68.0,47565.82919,95.55640552,47.0,4.0,Female,PhD,Married,Employed,Bronze,East,28.0,Electronics,17.38074908,1.0,5.234902165,639.0636472,213.0,3.0
@@ -940,7 +940,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 939.0,68.0,48176.17401,23.37687078,34.0,5.0,Female,PhD,Married,Employed,Gold,South,6.0,Groceries,37.08575761,12.0,4.902603282,751.0326512,,4.0
 940.0,36.0,32442.89222,64.40712818,13.0,5.0,Male,Master's,Married,Employed,Bronze,West,9.0,Electronics,12.09666296,5.0,6.125606824,847.5847913,73.0,4.0
 941.0,38.0,23073.01619,97.9191304,1.0,4.0,Male,PhD,Married,Unemployed,Silver,West,18.0,,,7.0,8.889447505,,48.0,2.0
-942.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+942.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 943.0,35.0,98922.22469,36.42359433,29.0,2.0,Female,Bachelor's,Divorced,Unemployed,Bronze,South,25.0,Fashion,47.88096411,4.0,5.759246963,741.1344076,,4.0
 944.0,45.0,91070.66365,65.13392715,48.0,5.0,Female,Master's,Divorced,Employed,Platinum,West,3.0,Home,23.24317824,11.0,7.784231354,733.9229931,195.0,2.0
 945.0,59.0,50153.1225,13.16914717,47.0,3.0,Male,Bachelor's,Married,Unemployed,Platinum,East,1.0,Electronics,20.17489595,12.0,4.953729451,,178.0,3.0
@@ -964,43 +964,43 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 963.0,64.0,,29.1431352,1.0,3.0,Male,,Single,Employed,Platinum,North,27.0,Fashion,45.92573591,7.0,9.099849492,,62.0,4.0
 964.0,39.0,136244.8137,,49.0,1.0,Female,Bachelor's,Married,Retired,Bronze,,18.0,Electronics,28.39991558,7.0,7.193569931,356.4215082,357.0,1.0
 965.0,64.0,44942.75221,63.32621199,17.0,2.0,Female,PhD,Divorced,Employed,Platinum,West,15.0,Electronics,40.45734143,11.0,9.873768859,768.7300887,270.0,1.0
-966.0,47.0,62038.30308,6.378871447,43.0,1.0,Male,,Married,,Gold,,21.0,Electronics,15.25294346,4.0,,630.7521948,198.0,2.0
+966.0,47.0,62038.30308,6.378871447,43.0,1.0,Male,,Married,,Gold,,21.0,Electronics,15.25294346,4.0,1.019268274,630.7521948,198.0,2.0
 967.0,43.0,49465.33229,,25.0,3.0,Female,PhD,Married,Retired,Gold,South,24.0,Home,,11.0,9.477769889,828.4705672,346.0,0.0
 968.0,65.0,,32.44109273,3.0,1.0,Male,PhD,Divorced,Unemployed,Silver,North,28.0,Groceries,21.12302586,5.0,2.945697165,668.6020071,336.0,4.0
 969.0,34.0,29025.09956,1.013334607,15.0,1.0,Female,Master's,Married,,Gold,East,17.0,Home,42.25228732,2.0,7.943363873,396.346175,145.0,3.0
 970.0,43.0,87477.77282,51.60178478,29.0,5.0,Female,High School,Divorced,Unemployed,Silver,North,22.0,Electronics,6.017199771,0.0,1.181957681,560.5808493,60.0,1.0
 971.0,53.0,28789.63327,5.638338944,43.0,4.0,Female,PhD,Divorced,Unemployed,,North,28.0,Groceries,,8.0,7.036840195,656.6736787,119.0,1.0
-972.0,18.0,124046.346,28.34078622,32.0,3.0,Female,Master's,Married,Unemployed,Gold,West,20.0,,11.86584009,8.0,,315.5455856,60.0,1.0
+972.0,18.0,124046.346,28.34078622,32.0,3.0,Female,Master's,Married,Unemployed,Gold,West,20.0,,11.86584009,8.0,1.019268274,315.5455856,60.0,1.0
 973.0,25.0,50382.57065,70.99067226,26.0,5.0,Male,High School,Divorced,Employed,Platinum,South,10.0,Fashion,43.66350674,2.0,4.120840647,308.2006453,308.0,2.0
 974.0,66.0,90201.5489,,16.0,1.0,Female,PhD,Married,Retired,Bronze,North,6.0,Home,26.03947324,3.0,8.761639171,371.1716503,25.0,3.0
 975.0,52.0,134410.2814,84.09451074,25.0,3.0,Female,High School,Divorced,Employed,Platinum,,8.0,Home,23.18990198,12.0,8.688409234,438.4154393,114.0,1.0
 976.0,69.0,104614.058,1.378172343,28.0,3.0,Male,PhD,Single,Employed,Platinum,,3.0,,25.22672429,6.0,1.200715344,536.2520179,39.0,1.0
 977.0,32.0,89284.51225,25.43556305,47.0,3.0,Female,Master's,Divorced,Employed,Platinum,East,24.0,Home,48.73660478,1.0,6.485546102,568.0922606,343.0,0.0
-978.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+978.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 979.0,39.0,63290.2487,32.31074482,29.0,3.0,Male,Bachelor's,Married,Employed,Bronze,South,12.0,Electronics,36.78659473,2.0,4.740949014,670.3653685,135.0,4.0
-980.0,31.0,107033.3042,11.08734642,22.0,3.0,Female,High School,Divorced,Retired,Gold,North,26.0,Home,18.07155317,5.0,,627.8759339,276.0,4.0
+980.0,31.0,107033.3042,11.08734642,22.0,3.0,Female,High School,Divorced,Retired,Gold,North,26.0,Home,18.07155317,5.0,1.019268274,627.8759339,276.0,4.0
 981.0,43.0,149238.117,36.66315796,16.0,4.0,Female,Master's,Single,Employed,Platinum,South,25.0,Fashion,12.43278498,10.0,3.788557944,461.9552544,298.0,0.0
 982.0,45.0,106039.0947,27.76893535,41.0,2.0,Male,Bachelor's,Single,,Silver,North,24.0,Groceries,46.46451331,7.0,9.487439296,307.5129359,20.0,2.0
 983.0,40.0,92511.84426,84.42847831,44.0,2.0,Male,PhD,,Retired,,East,28.0,Home,24.03839853,14.0,2.616704437,342.7063534,30.0,0.0
 984.0,31.0,114984.5663,32.02144384,41.0,2.0,Male,Bachelor's,Divorced,Retired,Bronze,South,3.0,Groceries,17.54401098,0.0,6.96450181,515.4321265,246.0,1.0
 985.0,41.0,80476.7296,79.10431471,7.0,2.0,Female,High School,Single,Retired,Silver,North,18.0,Fashion,26.19143719,3.0,7.048945603,384.6858931,26.0,3.0
 986.0,19.0,,89.29534234,14.0,3.0,Male,High School,Married,,Bronze,West,1.0,Groceries,46.30313403,14.0,3.269756453,507.2507834,72.0,1.0
-987.0,62.0,93098.58606,43.94792454,29.0,1.0,Male,Master's,Single,Employed,Silver,East,8.0,Fashion,22.4180291,0.0,,645.5004325,96.0,1.0
+987.0,62.0,93098.58606,43.94792454,29.0,1.0,Male,Master's,Single,Employed,Silver,East,8.0,Fashion,22.4180291,0.0,1.019268274,645.5004325,96.0,1.0
 988.0,43.0,144491.287,91.08437124,19.0,4.0,Male,High School,Single,Unemployed,Gold,South,11.0,Fashion,30.31884488,1.0,8.513186433,600.9805853,160.0,3.0
 989.0,31.0,42789.38251,38.35448734,19.0,2.0,Female,Bachelor's,Divorced,Retired,Silver,North,1.0,Electronics,41.13348355,7.0,7.856247295,427.1467357,345.0,4.0
 990.0,68.0,109700.6358,96.44376323,2.0,2.0,Male,Bachelor's,Divorced,Retired,Gold,South,5.0,,24.2209639,5.0,3.961862923,489.1023702,299.0,1.0
 991.0,24.0,46121.37953,9.839662928,41.0,4.0,Female,Bachelor's,Single,,Bronze,North,4.0,Fashion,15.50938109,8.0,5.805608922,637.7171591,298.0,2.0
-992.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+992.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 993.0,64.0,32567.93845,49.88759001,15.0,3.0,Male,Master's,Single,Retired,Platinum,West,4.0,Electronics,48.04568859,2.0,2.878712942,714.2673913,211.0,1.0
 994.0,40.0,,39.37723174,3.0,4.0,Female,PhD,Single,Employed,Platinum,East,19.0,Fashion,42.95656261,3.0,5.37238503,604.3700148,75.0,2.0
 995.0,63.0,118301.2328,63.638476,11.0,2.0,Male,PhD,Married,Employed,Bronze,South,21.0,Groceries,35.97682457,8.0,1.773763618,499.2611491,142.0,0.0
 996.0,60.0,65184.29815,70.68185207,46.0,1.0,Female,Master's,Single,Employed,Silver,South,28.0,Groceries,18.26895326,12.0,8.589991194,500.7782026,33.0,1.0
 997.0,64.0,,1.431963695,30.0,2.0,Female,High School,Single,Employed,Platinum,North,26.0,Home,46.10358222,5.0,7.462055891,783.6795206,335.0,1.0
 998.0,62.0,,17.52835579,40.0,1.0,Male,PhD,Divorced,Retired,Gold,East,3.0,Groceries,17.40005016,13.0,9.492703036,321.5839668,3.0,1.0
-999.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,,,,1.0
+999.0,43.0,,,47.0,4.0,,,,,,,28.0,,,3.0,1.019268274,,,1.0
 1000.0,43.0,50503.47064,66.97215594,48.0,2.0,Male,PhD,Divorced,Employed,Silver,East,8.0,Fashion,46.32161756,2.0,9.46361235,665.406476,97.0,4.0
-,69.0,51521.16547,16.08918532,47.0,1.0,Female,Bachelor's,Divorced,Unemployed,Silver,East,28.0,,44.91979306,2.0,,630.1202361,217.0,3.0
-,43.0,148246.9823,52.05226334,48.0,4.0,Female,,Single,Employed,Bronze,East,26.0,Groceries,45.44669187,6.0,,424.9319989,,1.0
+,69.0,51521.16547,16.08918532,47.0,1.0,Female,Bachelor's,Divorced,Unemployed,Silver,East,28.0,,44.91979306,2.0,1.019268274,630.1202361,217.0,3.0
+,43.0,148246.9823,52.05226334,48.0,4.0,Female,,Single,Employed,Bronze,East,26.0,Groceries,45.44669187,6.0,1.019268274,424.9319989,,1.0
 ,24.0,132515.9264,69.8001578,38.0,4.0,Male,High School,Single,Retired,Silver,North,17.0,Home,49.95046792,5.0,5.876921559,536.1803328,359.0,1.0
 ,31.0,94309.64963,92.35296186,45.0,4.0,Female,PhD,Single,Retired,Gold,East,16.0,Electronics,18.92446119,8.0,5.91047618,532.9722048,115.0,4.0
 ,64.0,46211.55161,81.58305668,47.0,2.0,Female,Master's,Divorced,Unemployed,Gold,West,7.0,Fashion,24.11055556,12.0,4.581577506,412.4566961,73.0,2.0
@@ -1015,7 +1015,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 ,42.0,65024.97927,5.15317112,11.0,5.0,Male,Bachelor's,Divorced,Employed,,South,19.0,Electronics,29.04111998,10.0,4.422170498,700.9573817,125.0,3.0
 ,50.0,115875.1623,80.07270497,1.0,4.0,Female,High School,Single,Unemployed,Silver,West,14.0,Home,31.25399068,8.0,4.296277054,839.7574074,78.0,3.0
 ,25.0,67111.20689,,26.0,5.0,Male,High School,Married,Unemployed,Silver,East,22.0,Home,40.25015114,11.0,2.605584267,,1.0,1.0
-,69.0,46668.15326,91.97372683,22.0,5.0,Male,PhD,Divorced,Employed,Platinum,West,27.0,Electronics,49.75516133,1.0,,636.643625,51.0,1.0
+,69.0,46668.15326,91.97372683,22.0,5.0,Male,PhD,Divorced,Employed,Platinum,West,27.0,Electronics,49.75516133,1.0,1.019268274,636.643625,51.0,1.0
 ,28.0,97663.70328,43.96791725,44.0,2.0,Male,Master's,Married,Retired,Bronze,East,28.0,Electronics,22.93546827,7.0,6.648578866,718.6108237,47.0,3.0
 ,35.0,57530.18578,57.61535485,47.0,3.0,Female,PhD,Divorced,Employed,Gold,South,12.0,Fashion,41.16358162,10.0,3.862087343,487.5040251,68.0,3.0
 ,20.0,97589.57036,84.35142311,27.0,3.0,Male,Bachelor's,Married,,Silver,North,18.0,,39.18745979,9.0,7.658167347,690.128119,48.0,4.0
@@ -1026,7 +1026,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 ,56.0,84369.04851,73.41815254,41.0,2.0,Female,High School,Married,Unemployed,Silver,North,7.0,Electronics,21.1947169,2.0,8.875310781,470.2631437,329.0,0.0
 ,43.0,93545.15532,32.12066121,20.0,2.0,Female,Master's,Single,Unemployed,Bronze,South,28.0,Fashion,33.48202462,3.0,3.226162346,576.3912947,84.0,4.0
 ,41.0,33326.26464,65.66311626,40.0,4.0,Male,,Single,Retired,Platinum,East,5.0,Home,49.63004953,6.0,8.990363035,614.6807828,285.0,4.0
-,68.0,117454.7381,55.1181738,23.0,3.0,Male,Master's,Married,Unemployed,,,11.0,Electronics,23.59415213,12.0,,654.4178893,330.0,2.0
+,68.0,117454.7381,55.1181738,23.0,3.0,Male,Master's,Married,Unemployed,,,11.0,Electronics,23.59415213,12.0,1.019268274,654.4178893,330.0,2.0
 ,24.0,73213.42082,30.69199204,22.0,2.0,Female,PhD,Single,Employed,Bronze,North,0.0,Home,9.434177023,12.0,5.342063233,305.628621,47.0,4.0
 ,62.0,47703.61152,90.38660452,30.0,3.0,Male,Bachelor's,Single,Unemployed,Platinum,East,21.0,Electronics,7.505276673,8.0,7.284819915,360.6952811,32.0,1.0
 ,40.0,,83.09939313,26.0,2.0,Male,High School,Divorced,Unemployed,Platinum,North,23.0,Fashion,41.32363867,4.0,8.374003771,845.598355,344.0,3.0
@@ -1037,7 +1037,7 @@ Customer_ID,Age,Income,Spending_Score,Purchase_Frequency,Satisfaction_Score,Gend
 ,31.0,111320.4462,36.82345623,38.0,3.0,Male,Master's,Married,Retired,Platinum,West,9.0,Groceries,41.71192355,6.0,5.446385802,807.172229,280.0,3.0
 ,40.0,124076.2709,1.545074117,47.0,2.0,Male,,Married,Retired,Gold,East,2.0,Groceries,33.34642268,0.0,3.298854529,805.7418459,76.0,0.0
 ,34.0,78801.37699,,36.0,4.0,Male,Master's,Married,Retired,Platinum,East,22.0,Fashion,27.18581938,4.0,8.142320775,716.7116891,223.0,4.0
-,25.0,92197.26162,26.50311481,30.0,2.0,Female,PhD,Single,Employed,Platinum,North,25.0,,45.78761671,3.0,,646.3199585,129.0,2.0
+,25.0,92197.26162,26.50311481,30.0,2.0,Female,PhD,Single,Employed,Platinum,North,25.0,,45.78761671,3.0,1.019268274,646.3199585,129.0,2.0
 ,66.0,113057.2454,13.17732622,9.0,1.0,Male,Master's,Single,Unemployed,Gold,North,8.0,Home,16.03871227,8.0,4.706038247,715.9824826,,0.0
 ,22.0,146088.566,55.81743705,11.0,3.0,Female,High School,Divorced,Employed,Gold,West,24.0,Electronics,37.13969466,6.0,6.124016816,451.2721424,352.0,3.0
 ,18.0,107438.2754,76.42827945,4.0,1.0,Male,High School,Single,Employed,Bronze,South,13.0,,48.74749807,12.0,6.329711624,302.0598021,162.0,4.0

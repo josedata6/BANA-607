@@ -48,7 +48,7 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v3.csv\")\n# Step 2: Columns to fill missing values with the mean\ncolumns_to_fill = [\n    \"Income\", \n    \"Spending_Score\", \n    \"Avg_Discount_Avail\", \n    \"Credit_Score\", \n    \"Days_Since_Last_Purchase\", \n    \"Dependents\"\n]",
+        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v4.csv\")\n# Step 2: Columns to fill missing values with the mode\ncolumns_to_fill = [\n    \"Gender\", \n    \"Education_Level\", \n    \"Marital_Status\", \n    \"Employment_Status\", \n    \"Loyalty_Tier\", \n    \"Region\", \n    \"Product_Category\"",
         "detail": "midterm2",
         "documentation": {}
     },
@@ -57,7 +57,7 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "columns_to_fill = [\n    \"Income\", \n    \"Spending_Score\", \n    \"Avg_Discount_Avail\", \n    \"Credit_Score\", \n    \"Days_Since_Last_Purchase\", \n    \"Dependents\"\n]\n# Step 3: Fill missing values in the specified columns with their mean\nfor column in columns_to_fill:",
+        "peekOfCode": "columns_to_fill = [\n    \"Gender\", \n    \"Education_Level\", \n    \"Marital_Status\", \n    \"Employment_Status\", \n    \"Loyalty_Tier\", \n    \"Region\", \n    \"Product_Category\"\n]\n# Step 3: Fill missing values in the specified columns with their mode",
         "detail": "midterm2",
         "documentation": {}
     }

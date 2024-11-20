@@ -53,7 +53,7 @@ import matplotlib.pyplot as plt
 #     "Satisfaction_Score", 
 #     "Online_Shopping_Frequency", 
 #     "Store_Visits_Per_Month", 
-#     "Customer_rating", 
+#     "Customer_Rating", 
 #     "Dependents"
 # ]
 
@@ -69,30 +69,59 @@ import matplotlib.pyplot as plt
 # # Step 5: Print the updated DataFrame (optional)
 # print(df)
 
-# adding mean to missing numbercal values of attributes Income, Spending_Score, Avg_Discount_Avail,
-# Credit_Score, Days_Since_Last_Purchase
+# # adding mean to missing numbercal values of attributes Income, Spending_Score, Avg_Discount_Avail,
+# # Credit_Score, Days_Since_Last_Purchase
+
+# # Step 1: Load the CSV file into a DataFrame
+# df = pd.read_csv("ME2_Dataset-v3.csv")
+
+# # Step 2: Columns to fill missing values with the mean
+# columns_to_fill = [
+#     "Income", 
+#     "Spending_Score", 
+#     "Avg_Discount_Avail", 
+#     "Credit_Score", 
+#     "Days_Since_Last_Purchase", 
+#     "Dependents"
+# ]
+
+# # Step 3: Fill missing values in the specified columns with their mean
+# for column in columns_to_fill:
+#     if column in df.columns:  # Check if the column exists in the DataFrame
+#         mean_value = df[column].mean()  # Calculate the mean of the column
+#         df[column].fillna(mean_value, inplace=True)  # Fill missing values with the mean
+
+# # Step 4: Save the updated DataFrame back to a CSV file (optional)
+# df.to_csv("ME2_Dataset-v4.csv", index=False)
+
+# # Step 5: Print the updated DataFrame (optional)
+# print(df)
+
+###### adding mode to missing categotical values for attributes Gender, Education_Level, 
+###### Marital_Status, Employment_Status, Loyalty_Tier, Region, Product_Category
 
 # Step 1: Load the CSV file into a DataFrame
-df = pd.read_csv("ME2_Dataset-v3.csv")
+df = pd.read_csv("ME2_Dataset-v4.csv")
 
-# Step 2: Columns to fill missing values with the mean
+# Step 2: Columns to fill missing values with the mode
 columns_to_fill = [
-    "Income", 
-    "Spending_Score", 
-    "Avg_Discount_Avail", 
-    "Credit_Score", 
-    "Days_Since_Last_Purchase", 
-    "Dependents"
+    "Gender", 
+    "Education_Level", 
+    "Marital_Status", 
+    "Employment_Status", 
+    "Loyalty_Tier", 
+    "Region", 
+    "Product_Category"
 ]
 
-# Step 3: Fill missing values in the specified columns with their mean
+# Step 3: Fill missing values in the specified columns with their mode
 for column in columns_to_fill:
     if column in df.columns:  # Check if the column exists in the DataFrame
-        mean_value = df[column].mean()  # Calculate the mean of the column
-        df[column].fillna(mean_value, inplace=True)  # Fill missing values with the mean
+        mode_value = df[column].mode()[0]  # Get the mode (most frequent value)
+        df[column].fillna(mode_value, inplace=True)  # Fill missing values with the mode
 
 # Step 4: Save the updated DataFrame back to a CSV file (optional)
-df.to_csv("ME2_Dataset-v4.csv", index=False)
+df.to_csv("ME2_Dataset-v5.csv", index=False)
 
 # Step 5: Print the updated DataFrame (optional)
 print(df)
