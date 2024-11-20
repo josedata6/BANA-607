@@ -9,6 +9,24 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
         "label": "matplotlib.pyplot",
         "kind": 6,
         "isExtraImport": true,
@@ -22,7 +40,7 @@
         "kind": 5,
         "importPath": "Visualization",
         "description": "Visualization",
-        "peekOfCode": "housing_df = pd.read_csv('BostonHousing.csv')\nhousing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()",
+        "peekOfCode": "housing_df = pd.read_csv('BostonHousing.csv')\nhousing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\nprint(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()",
         "detail": "Visualization",
         "documentation": {}
     },
@@ -31,7 +49,16 @@
         "kind": 5,
         "importPath": "Visualization",
         "description": "Visualization",
-        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\n# print(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()\n# ax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
+        "peekOfCode": "housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})\nprint(housing_df.describe())\n##------------------------------------------------------##\n# #Bar chart Using matplotlib:\n# #Pip Install Matplotlib # If needed\n# import matplotlib.pyplot as plt\n# # compute mean MEDV per CHAS = (0, 1)\n# dataForPlot = housing_df.groupby('CHAS').mean().MEDV\n# fig, ax = plt.subplots()\n# ax.bar(dataForPlot.index, dataForPlot, color=['C13', 'C9'])",
+        "detail": "Visualization",
+        "documentation": {}
+    },
+    {
+        "label": "corr",
+        "kind": 5,
+        "importPath": "Visualization",
+        "description": "Visualization",
+        "peekOfCode": "corr = housing_df.corr()\nprint(corr)\nimport numpy as np\nnp.random.seed(0)\nimport seaborn as sns\nsns.set_theme()\nimport matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nsns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns)\nplt.show()",
         "detail": "Visualization",
         "documentation": {}
     },

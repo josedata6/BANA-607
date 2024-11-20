@@ -34,19 +34,30 @@
         "documentation": {}
     },
     {
-        "label": "fetch_california_housing",
-        "importPath": "sklearn.datasets",
-        "description": "sklearn.datasets",
+        "label": "matplotlib",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sklearn.datasets",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
         "documentation": {}
     },
     {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
+        "label": "numpy",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sklearn.model_selection",
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -167,47 +178,29 @@
         "documentation": {}
     },
     {
-        "label": "housing",
+        "label": "vif_data",
         "kind": 5,
         "importPath": "Regression",
         "description": "Regression",
-        "peekOfCode": "housing = fetch_california_housing()\nX = pd.DataFrame(housing.data, columns=housing.feature_names)\ny = housing.target\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) #spliting 20%\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)",
+        "peekOfCode": "vif_data = pd.DataFrame()\nvif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n# #Handling Categorical Variables\n# X = pd.get_dummies(X, drop_first=True)\n# #Residual Analysis\n# residuals = y_test - y_pred\n# plt.scatter(y_pred, residuals)\n# plt.xlabel('Predicted')",
         "detail": "Regression",
         "documentation": {}
     },
     {
-        "label": "X",
+        "label": "vif_data['Feature']",
         "kind": 5,
         "importPath": "Regression",
         "description": "Regression",
-        "peekOfCode": "X = pd.DataFrame(housing.data, columns=housing.feature_names)\ny = housing.target\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) #spliting 20%\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Check the coeefficients",
+        "peekOfCode": "vif_data['Feature'] = X.columns\nvif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n# #Handling Categorical Variables\n# X = pd.get_dummies(X, drop_first=True)\n# #Residual Analysis\n# residuals = y_test - y_pred\n# plt.scatter(y_pred, residuals)\n# plt.xlabel('Predicted')\n# plt.ylabel('Residuals')",
         "detail": "Regression",
         "documentation": {}
     },
     {
-        "label": "y",
+        "label": "vif_data['VIF']",
         "kind": 5,
         "importPath": "Regression",
         "description": "Regression",
-        "peekOfCode": "y = housing.target\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n# Split the dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) #spliting 20%\n# Fit the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Check the coeefficients\ncoeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "model",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# Check the coeefficients\ncoeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})\nprint(coeffs)\n# # Evaluating MLR\n# from sklearn.metrics import mean_squared_error, r2_score\n# y_pred = model.predict(X_test)\n# mse = mean_squared_error(y_test, y_pred)\n# r2 = r2_score(y_test, y_pred)",
-        "detail": "Regression",
-        "documentation": {}
-    },
-    {
-        "label": "coeffs",
-        "kind": 5,
-        "importPath": "Regression",
-        "description": "Regression",
-        "peekOfCode": "coeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})\nprint(coeffs)\n# # Evaluating MLR\n# from sklearn.metrics import mean_squared_error, r2_score\n# y_pred = model.predict(X_test)\n# mse = mean_squared_error(y_test, y_pred)\n# r2 = r2_score(y_test, y_pred)\n# print('Mean Squared Error:', mse)\n# print('R-squared:', r2)\n# #VIF",
+        "peekOfCode": "vif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]\nprint(vif_data)\n# #Handling Categorical Variables\n# X = pd.get_dummies(X, drop_first=True)\n# #Residual Analysis\n# residuals = y_test - y_pred\n# plt.scatter(y_pred, residuals)\n# plt.xlabel('Predicted')\n# plt.ylabel('Residuals')\n# plt.title('Residuals vs. Predicted')",
         "detail": "Regression",
         "documentation": {}
     }

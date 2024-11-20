@@ -1,11 +1,12 @@
 import pandas as pd
 
-##------------------------------------------------------##
-# Boston housing data
+#------------------------------------------------------##
+
+######Boston housing data
 housing_df = pd.read_csv('BostonHousing.csv')
 housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})
 
-# print(housing_df.describe())
+print(housing_df.describe())
 
 ##------------------------------------------------------##
 # #Bar chart Using matplotlib:
@@ -182,35 +183,35 @@ housing_df = housing_df.rename(columns={'CAT. MEDV': 'CAT_MEDV'})
 # plt.show()
 
 # ##------------------------------------------------------##
-# #Heatmap
-# # simple heatmap of correlations (without values)
-# corr = housing_df.corr()
-# print(corr)
+#Heatmap
+# simple heatmap of correlations (without values)
+corr = housing_df.corr()
+print(corr)
 
-# import numpy as np
-# np.random.seed(0)
+import numpy as np
+np.random.seed(0)
 
-# import seaborn as sns
-# sns.set_theme()
+import seaborn as sns
+sns.set_theme()
 
-# import matplotlib.pyplot as plt
-# fig, ax = plt.subplots()
-# sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns)
-# plt.show()
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns)
+plt.show()
 
-# # Change to divergent scale and fix the range
-# import matplotlib.pyplot as plt
-# fig, ax = plt.subplots()
-# sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns, vmin=-1, vmax=1, cmap="RdBu")
-# plt.show()
+# Change to divergent scale and fix the range
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns, vmin=-1, vmax=1, cmap="RdBu")
+plt.show()
 
-# # Include information about values (example demonstrates how to control the size of the plot)
-# import matplotlib.pyplot as plt
+# Include information about values (example demonstrates how to control the size of the plot)
+import matplotlib.pyplot as plt
 
-# fig, ax = plt.subplots()
-# fig.set_size_inches(11, 7)
-# sns.heatmap(corr, annot=True, fmt=".1f", cmap="RdBu", center=0, ax=ax)
-# plt.show()
+fig, ax = plt.subplots()
+fig.set_size_inches(11, 7)
+sns.heatmap(corr, annot=True, fmt=".1f", cmap="RdBu", center=0, ax=ax)
+plt.show()
 
 
 

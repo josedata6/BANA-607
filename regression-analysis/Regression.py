@@ -1,7 +1,12 @@
-# #Simple Regression
 
-# import pandas as pd
-# from sklearn.linear_model import LinearRegression
+import matplotlib
+matplotlib.use('Agg')
+
+# #Simple Regression
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.linear_model import LinearRegression
 
 # # Load data
 # data = pd.read_csv('advertising.csv')
@@ -15,7 +20,7 @@
 
 # #Visualizing the Simple Regression Results
 
-# import matplotlib.pyplot as plt
+# import matplotlib.pyplot
 
 # # Scatter plot and regression line
 # plt.scatter(X, y, color='blue')
@@ -39,27 +44,30 @@
 
 
 # Multiple Linear Regression
+#downloaning file from sklearn
+# from sklearn.datasets import fetch_california_housing 
+# import pandas as pd
 
-from sklearn.datasets import fetch_california_housing #downloaning file from sklearn
-import pandas as pd
+# housing = pd.read_csv('CAH.csv')
+# housing.describe()
 
-housing = fetch_california_housing()
-X = pd.DataFrame(housing.data, columns=housing.feature_names)
-y = housing.target
+# # housing = fetch_california_housing()
+# # X = pd.DataFrame(housing.data, columns=housing.feature_names)
+# # y = housing.target
 
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
+# from sklearn.linear_model import LinearRegression
+# from sklearn.model_selection import train_test_split
 
-# Split the dataset
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) #spliting 20%
+# # Split the dataset
+# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) #spliting 20%
 
-# Fit the model
-model = LinearRegression()
-model.fit(X_train, y_train)
+# # Fit the model
+# model = LinearRegression()
+# model.fit(X_train, y_train)
 
-# Check the coeefficients
-coeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})
-print(coeffs)
+# # Check the coeefficients
+# coeffs = pd.DataFrame({'Feature': X.columns, 'Coefficient': model.coef_})
+# print(coeffs)
 
 # # Evaluating MLR
 
@@ -71,14 +79,21 @@ print(coeffs)
 # print('Mean Squared Error:', mse)
 # print('R-squared:', r2)
 
-# #VIF
+# # #VIF
 
 # from statsmodels.stats.outliers_influence import variance_inflation_factor
 
-# vif_data = pd.DataFrame()
-# vif_data['Feature'] = X.columns
-# vif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]
-# print(vif_data)
+
+
+
+vif_data=pd.read_csv('CAH.csv')
+
+vif_data = pd.DataFrame()
+vif_data['Feature'] = X.columns
+vif_data['VIF'] = [variance_inflation_factor(X.values, i) for i in range(len(X.columns))]
+print(vif_data)
+
+
 
 # #Handling Categorical Variables
 
