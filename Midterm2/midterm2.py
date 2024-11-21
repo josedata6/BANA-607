@@ -433,3 +433,19 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # Print regression results
 # print(model.summary())
 
+#######################
+####### 6. Purchase_Frequency and Customer_Rating
+###### H₀: Purchase frequency has no impact on customer ratings.
+##### H₁: Purchase frequency significantly impacts customer ratings.
+##### Test: T-test
+####### 
+from scipy.stats import ttest_ind
+
+# Create groups
+high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']
+low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']
+
+# Perform t-test
+t_stat, p_value = ttest_ind(high_freq, low_freq)
+
+print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")

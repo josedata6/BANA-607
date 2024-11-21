@@ -44,6 +44,14 @@
         "documentation": {}
     },
     {
+        "label": "ttest_ind",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
         "label": "#df",
         "kind": 5,
         "importPath": "midterm2",
@@ -58,6 +66,24 @@
         "importPath": "midterm2",
         "description": "midterm2",
         "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n### 1. Income and Spending Score\n### H₀: There is no correlation between income and spending score.\n### H₁: There is a significant correlation between income and spending score.\n# Prepare data\n# X = df['Income']  # Independent variable\n# y = df['Spending_Score']  # Dependent variable\n# # Add constant for the regression model\n# X = sm.add_constant(X)\n# # Perform regression",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "high_freq",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']\nlow_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']\n# Perform t-test\nt_stat, p_value = ttest_ind(high_freq, low_freq)\nprint(f\"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}\")",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "low_freq",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']\n# Perform t-test\nt_stat, p_value = ttest_ind(high_freq, low_freq)\nprint(f\"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}\")",
         "detail": "midterm2",
         "documentation": {}
     }
