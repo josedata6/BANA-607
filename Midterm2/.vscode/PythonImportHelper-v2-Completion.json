@@ -35,11 +35,20 @@
         "documentation": {}
     },
     {
+        "label": "statsmodels.api",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "statsmodels.api",
+        "description": "statsmodels.api",
+        "detail": "statsmodels.api",
+        "documentation": {}
+    },
+    {
         "label": "#df",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "#df = pd.read_csv('ME2_Dataset.csv')\n#print(df)\n##### Detect Missing Values #####\n# # adding missing values from the Customer_ID column with recurring number\n# # Step 1: Load the CSV file into a DataFrame\n# df = pd.read_csv(\"ME2_Dataset.csv\")\n# # Step 2: Convert the 'customer_ID' column to numerical values (if not already numeric)\n# df['Customer_ID'] = pd.to_numeric(df['Customer_ID'], errors='coerce')\n# # Step 3: Identify the range of numbers that should be in the column\n# min_id, max_id = int(df['Customer_ID'].min()), int(df['Customer_ID'].max())  # Convert to integers",
+        "peekOfCode": "#df = pd.read_csv('ME2_Dataset.csv')\n#print(df)\n#################################\n##### Detect Missing Values #####\n#################################\n# # adding missing values from the Customer_ID column with recurring number\n# # # Step 1: Load the CSV file into a DataFrame\n# df = pd.read_csv(\"ME2_Dataset.csv\")\n# # Step 2: Convert the 'customer_ID' column to numerical values (if not already numeric)\n# df['Customer_ID'] = pd.to_numeric(df['Customer_ID'], errors='coerce')",
         "detail": "midterm2",
         "documentation": {}
     },
@@ -48,16 +57,7 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v4.csv\")\n# Step 2: Columns to fill missing values with the mode\ncolumns_to_fill = [\n    \"Gender\", \n    \"Education_Level\", \n    \"Marital_Status\", \n    \"Employment_Status\", \n    \"Loyalty_Tier\", \n    \"Region\", \n    \"Product_Category\"",
-        "detail": "midterm2",
-        "documentation": {}
-    },
-    {
-        "label": "columns_to_fill",
-        "kind": 5,
-        "importPath": "midterm2",
-        "description": "midterm2",
-        "peekOfCode": "columns_to_fill = [\n    \"Gender\", \n    \"Education_Level\", \n    \"Marital_Status\", \n    \"Employment_Status\", \n    \"Loyalty_Tier\", \n    \"Region\", \n    \"Product_Category\"\n]\n# Step 3: Fill missing values in the specified columns with their mode",
+        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n### 1. Income and Spending Score\n### H₀: There is no correlation between income and spending score.\n### H₁: There is a significant correlation between income and spending score.\n# Prepare data\n# X = df['Income']  # Independent variable\n# y = df['Spending_Score']  # Dependent variable\n# # Add constant for the regression model\n# X = sm.add_constant(X)\n# # Perform regression",
         "detail": "midterm2",
         "documentation": {}
     }
