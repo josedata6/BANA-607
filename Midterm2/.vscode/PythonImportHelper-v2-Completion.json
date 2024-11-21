@@ -44,14 +44,6 @@
         "documentation": {}
     },
     {
-        "label": "ttest_ind",
-        "importPath": "scipy.stats",
-        "description": "scipy.stats",
-        "isExtraImport": true,
-        "detail": "scipy.stats",
-        "documentation": {}
-    },
-    {
         "label": "#df",
         "kind": 5,
         "importPath": "midterm2",
@@ -70,20 +62,38 @@
         "documentation": {}
     },
     {
-        "label": "high_freq",
+        "label": "X",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']\nlow_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']\n# Perform t-test\nt_stat, p_value = ttest_ind(high_freq, low_freq)\nprint(f\"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}\")",
+        "peekOfCode": "X = df['Customer_Rating']  # Independent variable\ny = df['Satisfaction_Score']  # Dependent variable\n# Add constant\nX = sm.add_constant(X)\n# Perform regression\nmodel = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "low_freq",
+        "label": "y",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']\n# Perform t-test\nt_stat, p_value = ttest_ind(high_freq, low_freq)\nprint(f\"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}\")",
+        "peekOfCode": "y = df['Satisfaction_Score']  # Dependent variable\n# Add constant\nX = sm.add_constant(X)\n# Perform regression\nmodel = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "X = sm.add_constant(X)\n# Perform regression\nmodel = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "model = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
         "detail": "midterm2",
         "documentation": {}
     }

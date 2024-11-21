@@ -434,18 +434,88 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # print(model.summary())
 
 #######################
-####### 6. Purchase_Frequency and Customer_Rating
-###### H₀: Purchase frequency has no impact on customer ratings.
-##### H₁: Purchase frequency significantly impacts customer ratings.
-##### Test: T-test
-####### 
-from scipy.stats import ttest_ind
+# ####### 6. Purchase_Frequency and Customer_Rating
+# ###### H₀: Purchase frequency has no impact on customer ratings.
+# ##### H₁: Purchase frequency significantly impacts customer ratings.
+# ##### Test: T-test
+# ####### 
+# from scipy.stats import ttest_ind
 
-# Create groups
-high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']
-low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']
+# # Create groups
+# high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']
+# low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']
 
-# Perform t-test
-t_stat, p_value = ttest_ind(high_freq, low_freq)
+# # Perform t-test
+# t_stat, p_value = ttest_ind(high_freq, low_freq)
 
-print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")
+# print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")
+
+##############
+####### 7. Satisfaction_Score and Spending_Score
+# ###### H₀: Satisfaction score has no relationship with spending score.
+# ######m H₁: Satisfaction score is significantly related to spending score.
+# ######## Test: Simple Linear Regression
+# # Prepare data
+# X = df['Satisfaction_Score']  # Independent variable
+# y = df['Spending_Score']  # Dependent variable
+
+# # Add constant
+# X = sm.add_constant(X)
+
+# # Perform regression
+# model = sm.OLS(y, X).fit()
+
+# # Print regression results
+# print(model.summary())
+
+#################
+# ########## 8. Credit_Score and Income
+# ######### H₀: Credit score has no correlation with income.
+# ######### H₁: Credit score is significantly correlated with income.
+# ############ Test: F-test or Simple Linear Regression
+# # Prepare data
+# X = df['Income']  # Independent variable
+# y = df['Credit_Score']  # Dependent variable
+
+# # Add constant
+# X = sm.add_constant(X)
+
+# # Perform regression
+# model = sm.OLS(y, X).fit()
+
+# # F-test is included in regression results
+# print(model.summary())
+
+###############
+# ####### 9. Store_Visits_Per_Month and Online_Shopping_Frequency
+# ##### H₀: The number of store visits per month is not related to online shopping frequency.
+# ##### H₁: The number of store visits per month is significantly related to online shopping frequency.
+# #### Test: Chi-square Test
+# from scipy.stats import chi2_contingency
+
+# # Create contingency table
+# contingency_table = pd.crosstab(df['Store_Visits_Per_Month'], df['Online_Shopping_Frequency'])
+
+# # Perform Chi-square test
+# chi2, p, dof, expected = chi2_contingency(contingency_table)
+
+# print(f"Chi-square test results: chi2={chi2:.2f}, p-value={p:.4f}, degrees of freedom={dof}")
+
+###############
+############## 10. Customer_Rating and Satisfaction_Score
+############## H₀: Customer ratings have no relationship with satisfaction scores.
+############## H₁: Customer ratings are significantly related to satisfaction scores.
+############## Test: Simple Linear Regression
+#############
+# Prepare data
+X = df['Customer_Rating']  # Independent variable
+y = df['Satisfaction_Score']  # Dependent variable
+
+# Add constant
+X = sm.add_constant(X)
+
+# Perform regression
+model = sm.OLS(y, X).fit()
+
+# Print regression results
+print(model.summary())
