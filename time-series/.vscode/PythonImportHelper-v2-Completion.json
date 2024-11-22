@@ -1,0 +1,56 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "data = {\n    'Date': pd.date_range(start='2022-01-01', periods=100, freq='D'),\n    'Value': [i + np.random.normal(0, 2) for i in range(100)]\n}\ndf = pd.DataFrame(data)\n#-------------------------------------------------------------------------------------------------------------#\n# Slide 8 - Trend \n# # # Calculate rolling mean for trend\n# df['Trend'] = df['Value'].rolling(window=10).mean()\n# # Plot original data and trend",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "df = pd.DataFrame(data)\n#-------------------------------------------------------------------------------------------------------------#\n# Slide 8 - Trend \n# # # Calculate rolling mean for trend\n# df['Trend'] = df['Value'].rolling(window=10).mean()\n# # Plot original data and trend\n# plt.figure(figsize=(10, 5))\n# plt.plot(df['Date'], df['Value'], label='Original Data', alpha=0.7)\n# plt.plot(df['Date'], df['Trend'], label='Trend (Rolling Mean)', color='red')\n# plt.title(\"Trend Component\")",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "df['Noise']",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "df['Noise'] = np.random.normal(0, 2, size=len(df))\n# Plot noise\nplt.figure(figsize=(10, 5))\nplt.plot(df['Date'], df['Noise'], label='Noise')\nplt.title(\"Irregular Component (Noise)\")\nplt.xlabel(\"Date\")\nplt.ylabel(\"Value\")\nplt.legend()\nplt.show()\n#-------------------------------------------------------------------------------------------------------------#",
+        "detail": "Time Series",
+        "documentation": {}
+    }
+]

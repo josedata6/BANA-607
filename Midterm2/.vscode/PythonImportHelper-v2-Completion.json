@@ -52,11 +52,27 @@
         "documentation": {}
     },
     {
-        "label": "forward_selection",
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "backward_selection",
         "kind": 2,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "def forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []\n    best_r2 = -1\n    while remaining_features:\n        best_feature = None\n        for feature in remaining_features:\n            # Fit model with current feature + already selected features\n            features_to_test = initial_features + [feature]",
+        "peekOfCode": "def backward_selection(X, y):\n    features = list(X.columns)\n    while len(features) > 0:\n        X_train_sm = sm.add_constant(X[features])\n        model = sm.OLS(y, X_train_sm).fit()\n        p_values = model.pvalues.iloc[1:]  # Exclude constant term\n        worst_pval = p_values.max()\n        if worst_pval > 0.05:  # Threshold for significance\n            worst_feature = p_values.idxmax()\n            features.remove(worst_feature)",
         "detail": "midterm2",
         "documentation": {}
     },
@@ -79,20 +95,11 @@
         "documentation": {}
     },
     {
-        "label": "df",
-        "kind": 5,
-        "importPath": "midterm2",
-        "description": "midterm2",
-        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n# Define dependent and independent variables\nX = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', \n        'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Forward Selection Function\ndef forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []",
-        "detail": "midterm2",
-        "documentation": {}
-    },
-    {
         "label": "X",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', \n        'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Forward Selection Function\ndef forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []\n    best_r2 = -1\n    while remaining_features:",
+        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\n# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)\n#     selected_features = []\n#     current_score, best_new_score = float('inf'), float('inf')",
         "detail": "midterm2",
         "documentation": {}
     },
@@ -101,16 +108,16 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "y = df['Satisfaction_Score']\n# Forward Selection Function\ndef forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []\n    best_r2 = -1\n    while remaining_features:\n        best_feature = None\n        for feature in remaining_features:",
+        "peekOfCode": "y = df['Satisfaction_Score']\n# Split data into training and testing sets\n# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)\n#     selected_features = []\n#     current_score, best_new_score = float('inf'), float('inf')\n#     while remaining_features:",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "selected_features",
+        "label": "selected_features_backward",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "selected_features = forward_selection(X, y)\nprint(f\"Selected Features (Forward Selection): {selected_features}\")",
+        "peekOfCode": "selected_features_backward = backward_selection(X_train, y_train)\nprint(\"Selected features using backward selection:\", selected_features_backward)",
         "detail": "midterm2",
         "documentation": {}
     }

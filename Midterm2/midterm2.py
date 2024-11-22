@@ -633,50 +633,124 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 
 ################################################################################
 ################### 6. Feature Selection ########################################
+# ############ foward selextion
+# import pandas as pd
+# import statsmodels.api as sm
+# from sklearn.model_selection import train_test_split
+
+# # Load dataset
+# df = pd.read_csv("ME2_Dataset-v5.csv")
+
+# # Define dependent and independent variables
+# X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 
+#         'Store_Visits_Per_Month', 'Customer_Rating']]
+# y = df['Satisfaction_Score']
+
+# # Forward Selection Function
+# def forward_selection(X, y):
+#     initial_features = []  # Start with no features
+#     remaining_features = list(X.columns)  # All features available
+#     selected_features = []
+#     best_r2 = -1
+
+#     while remaining_features:
+#         best_feature = None
+#         for feature in remaining_features:
+#             # Fit model with current feature + already selected features
+#             features_to_test = initial_features + [feature]
+#             X_train = sm.add_constant(X[features_to_test])  # Add constant for statsmodels
+#             model = sm.OLS(y, X_train).fit()
+#             r2 = model.rsquared
+
+#             if r2 > best_r2:
+#                 best_r2 = r2
+#                 best_feature = feature
+
+#         if best_feature:
+#             initial_features.append(best_feature)
+#             remaining_features.remove(best_feature)
+#             selected_features.append(best_feature)
+#             print(f"Selected Feature: {best_feature}, R-squared: {best_r2:.4f}")
+#         else:
+#             break
+
+#     return selected_features
+
+# # Apply Forward Selection
+# selected_features = forward_selection(X, y)
+# print(f"Selected Features (Forward Selection): {selected_features}")
+
+##### foward selection
+
+# import pandas as pd
+# import statsmodels.api as sm
+# from sklearn.model_selection import train_test_split
+# from sklearn.metrics import mean_squared_error, r2_score
+
+# # Load dataset
+# df = pd.read_csv("ME2_Dataset-v5.csv")
+
+# Define dependent and independent variables
+X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]
+y = df['Satisfaction_Score']
+
+# Split data into training and testing sets
+# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# # Forward selection
+# def forward_selection(X, y):
+#     initial_features = []
+#     remaining_features = list(X.columns)
+#     selected_features = []
+#     current_score, best_new_score = float('inf'), float('inf')
+
+#     while remaining_features:
+#         scores_with_candidates = []
+#         for candidate in remaining_features:
+#             features_to_test = initial_features + [candidate]
+#             X_train_sm = sm.add_constant(X[features_to_test])
+#             model = sm.OLS(y, X_train_sm).fit()
+#             scores_with_candidates.append((model.aic, candidate))
+
+#         scores_with_candidates.sort()
+#         best_new_score, best_candidate = scores_with_candidates[0]
+
+#         if current_score > best_new_score:
+#             remaining_features.remove(best_candidate)
+#             initial_features.append(best_candidate)
+#             selected_features.append(best_candidate)
+#             current_score = best_new_score
+#         else:
+#             break
+
+#     return selected_features
+
+# selected_features_forward = forward_selection(X_train, y_train)
+# print("Selected features using forward selection:", selected_features_forward)
+
+############## backward selection
 
 import pandas as pd
 import statsmodels.api as sm
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
 
-# Load dataset
-df = pd.read_csv("ME2_Dataset-v5.csv")
+# Backward selection
+def backward_selection(X, y):
+    features = list(X.columns)
+    while len(features) > 0:
+        X_train_sm = sm.add_constant(X[features])
+        model = sm.OLS(y, X_train_sm).fit()
+        p_values = model.pvalues.iloc[1:]  # Exclude constant term
+        worst_pval = p_values.max()
 
-# Define dependent and independent variables
-X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 
-        'Store_Visits_Per_Month', 'Customer_Rating']]
-y = df['Satisfaction_Score']
-
-# Forward Selection Function
-def forward_selection(X, y):
-    initial_features = []  # Start with no features
-    remaining_features = list(X.columns)  # All features available
-    selected_features = []
-    best_r2 = -1
-
-    while remaining_features:
-        best_feature = None
-        for feature in remaining_features:
-            # Fit model with current feature + already selected features
-            features_to_test = initial_features + [feature]
-            X_train = sm.add_constant(X[features_to_test])  # Add constant for statsmodels
-            model = sm.OLS(y, X_train).fit()
-            r2 = model.rsquared
-
-            if r2 > best_r2:
-                best_r2 = r2
-                best_feature = feature
-
-        if best_feature:
-            initial_features.append(best_feature)
-            remaining_features.remove(best_feature)
-            selected_features.append(best_feature)
-            print(f"Selected Feature: {best_feature}, R-squared: {best_r2:.4f}")
+        if worst_pval > 0.05:  # Threshold for significance
+            worst_feature = p_values.idxmax()
+            features.remove(worst_feature)
         else:
             break
 
-    return selected_features
+    return features
 
-# Apply Forward Selection
-selected_features = forward_selection(X, y)
-print(f"Selected Features (Forward Selection): {selected_features}")
-
+selected_features_backward = backward_selection(X_train, y_train)
+print("Selected features using backward selection:", selected_features_backward)
