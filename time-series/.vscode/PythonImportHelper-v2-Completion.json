@@ -27,11 +27,28 @@
         "documentation": {}
     },
     {
+        "label": "plot_acf",
+        "importPath": "statsmodels.graphics.tsaplots",
+        "description": "statsmodels.graphics.tsaplots",
+        "isExtraImport": true,
+        "detail": "statsmodels.graphics.tsaplots",
+        "documentation": {}
+    },
+    {
+        "label": "date_range",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "date_range = pd.date_range(start='2022-01-01', periods=365, freq='D')\ndata = [50 + 0.2 * i + 10 * np.sin(2 * np.pi * i / 365) + np.random.normal(0, 2) for i in range(365)]\ndf = pd.DataFrame({'Date': date_range, 'Value': data})\n#-------------------------------------------------------------------------------------------------------------#\n# Slide # 13\n# Line plot\n# plt.figure(figsize=(10, 5))\n# plt.plot(df['Date'], df['Value'], label='Time Series Data')\n# plt.title(\"Time Series Line Plot\")\n# plt.xlabel(\"Date\")",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
         "label": "data",
         "kind": 5,
         "importPath": "Time Series",
         "description": "Time Series",
-        "peekOfCode": "data = {\n    'Date': pd.date_range(start='2022-01-01', periods=100, freq='D'),\n    'Value': [i + np.random.normal(0, 2) for i in range(100)]\n}\ndf = pd.DataFrame(data)\n#-------------------------------------------------------------------------------------------------------------#\n# Slide 8 - Trend \n# # # Calculate rolling mean for trend\n# df['Trend'] = df['Value'].rolling(window=10).mean()\n# # Plot original data and trend",
+        "peekOfCode": "data = [50 + 0.2 * i + 10 * np.sin(2 * np.pi * i / 365) + np.random.normal(0, 2) for i in range(365)]\ndf = pd.DataFrame({'Date': date_range, 'Value': data})\n#-------------------------------------------------------------------------------------------------------------#\n# Slide # 13\n# Line plot\n# plt.figure(figsize=(10, 5))\n# plt.plot(df['Date'], df['Value'], label='Time Series Data')\n# plt.title(\"Time Series Line Plot\")\n# plt.xlabel(\"Date\")\n# plt.ylabel(\"Value\")",
         "detail": "Time Series",
         "documentation": {}
     },
@@ -40,16 +57,7 @@
         "kind": 5,
         "importPath": "Time Series",
         "description": "Time Series",
-        "peekOfCode": "df = pd.DataFrame(data)\n#-------------------------------------------------------------------------------------------------------------#\n# Slide 8 - Trend \n# # # Calculate rolling mean for trend\n# df['Trend'] = df['Value'].rolling(window=10).mean()\n# # Plot original data and trend\n# plt.figure(figsize=(10, 5))\n# plt.plot(df['Date'], df['Value'], label='Original Data', alpha=0.7)\n# plt.plot(df['Date'], df['Trend'], label='Trend (Rolling Mean)', color='red')\n# plt.title(\"Trend Component\")",
-        "detail": "Time Series",
-        "documentation": {}
-    },
-    {
-        "label": "df['Noise']",
-        "kind": 5,
-        "importPath": "Time Series",
-        "description": "Time Series",
-        "peekOfCode": "df['Noise'] = np.random.normal(0, 2, size=len(df))\n# Plot noise\nplt.figure(figsize=(10, 5))\nplt.plot(df['Date'], df['Noise'], label='Noise')\nplt.title(\"Irregular Component (Noise)\")\nplt.xlabel(\"Date\")\nplt.ylabel(\"Value\")\nplt.legend()\nplt.show()\n#-------------------------------------------------------------------------------------------------------------#",
+        "peekOfCode": "df = pd.DataFrame({'Date': date_range, 'Value': data})\n#-------------------------------------------------------------------------------------------------------------#\n# Slide # 13\n# Line plot\n# plt.figure(figsize=(10, 5))\n# plt.plot(df['Date'], df['Value'], label='Time Series Data')\n# plt.title(\"Time Series Line Plot\")\n# plt.xlabel(\"Date\")\n# plt.ylabel(\"Value\")\n# plt.legend()",
         "detail": "Time Series",
         "documentation": {}
     }

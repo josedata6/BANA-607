@@ -61,11 +61,11 @@ import numpy as np
 #-------------------------------------------------------------------------------------------------------------#
 
 # Create a sample dataset for slides 8,9, 10, 11
-data = {
-    'Date': pd.date_range(start='2022-01-01', periods=100, freq='D'),
-    'Value': [i + np.random.normal(0, 2) for i in range(100)]
-}
-df = pd.DataFrame(data)
+# data = {
+#     'Date': pd.date_range(start='2022-01-01', periods=100, freq='D'),
+#     'Value': [i + np.random.normal(0, 2) for i in range(100)]
+# }
+# df = pd.DataFrame(data)
 
 #-------------------------------------------------------------------------------------------------------------#
 
@@ -121,16 +121,16 @@ df = pd.DataFrame(data)
 # Slide # 11 - Noise
 
 # Add noise to the dataset
-df['Noise'] = np.random.normal(0, 2, size=len(df))
+# df['Noise'] = np.random.normal(0, 2, size=len(df))
 
-# Plot noise
-plt.figure(figsize=(10, 5))
-plt.plot(df['Date'], df['Noise'], label='Noise')
-plt.title("Irregular Component (Noise)")
-plt.xlabel("Date")
-plt.ylabel("Value")
-plt.legend()
-plt.show()
+# # Plot noise
+# plt.figure(figsize=(10, 5))
+# plt.plot(df['Date'], df['Noise'], label='Noise')
+# plt.title("Irregular Component (Noise)")
+# plt.xlabel("Date")
+# plt.ylabel("Value")
+# plt.legend()
+# plt.show()
 
 #-------------------------------------------------------------------------------------------------------------#
 
@@ -148,15 +148,15 @@ plt.show()
 # Data for slides 13, 14, 15, 16, 21, 32, 41, 43, 44, 45, 46, 51, 53, 54, 56, 59, 60, 61
 
 # # Create synthetic data
-# date_range = pd.date_range(start='2022-01-01', periods=365, freq='D')
-# data = [50 + 0.2 * i + 10 * np.sin(2 * np.pi * i / 365) + np.random.normal(0, 2) for i in range(365)]
-# df = pd.DataFrame({'Date': date_range, 'Value': data})
+date_range = pd.date_range(start='2022-01-01', periods=365, freq='D')
+data = [50 + 0.2 * i + 10 * np.sin(2 * np.pi * i / 365) + np.random.normal(0, 2) for i in range(365)]
+df = pd.DataFrame({'Date': date_range, 'Value': data})
 
 #-------------------------------------------------------------------------------------------------------------#
 
 # Slide # 13
 
-# # Line plot
+# Line plot
 # plt.figure(figsize=(10, 5))
 # plt.plot(df['Date'], df['Value'], label='Time Series Data')
 # plt.title("Time Series Line Plot")
@@ -226,12 +226,12 @@ plt.show()
 # Slide # 21
 
 # # Plot autocorrelation with comments
-# from statsmodels.graphics.tsaplots import plot_acf
+from statsmodels.graphics.tsaplots import plot_acf
 
-# plt.figure(figsize=(10, 5))
-# plot_acf(df['Value'].dropna(), lags=50, title="Autocorrelation Plot with Lag Analysis")
-# plt.grid()
-# plt.show()
+plt.figure(figsize=(10, 5))
+plot_acf(df['Value'].dropna(), lags=70, title="Autocorrelation Plot with Lag Analysis")
+plt.grid()
+plt.show()
 
 #-------------------------------------------------------------------------------------------------------------#
 
