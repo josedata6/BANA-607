@@ -27,11 +27,36 @@
         "documentation": {}
     },
     {
-        "label": "plot_acf",
-        "importPath": "statsmodels.graphics.tsaplots",
-        "description": "statsmodels.graphics.tsaplots",
+        "label": "ARIMA",
+        "importPath": "statsmodels.tsa.arima.model",
+        "description": "statsmodels.tsa.arima.model",
         "isExtraImport": true,
-        "detail": "statsmodels.graphics.tsaplots",
+        "detail": "statsmodels.tsa.arima.model",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_percentage_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
         "documentation": {}
     },
     {
@@ -58,6 +83,87 @@
         "importPath": "Time Series",
         "description": "Time Series",
         "peekOfCode": "df = pd.DataFrame({'Date': date_range, 'Value': data})\n#-------------------------------------------------------------------------------------------------------------#\n# Slide # 13\n# Line plot\n# plt.figure(figsize=(10, 5))\n# plt.plot(df['Date'], df['Value'], label='Time Series Data')\n# plt.title(\"Time Series Line Plot\")\n# plt.xlabel(\"Date\")\n# plt.ylabel(\"Value\")\n# plt.legend()",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "train_size",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "train_size = int(len(df) * 0.8)\ntrain, test = df[:train_size], df[train_size:]\n# Fit ARIMA model on train data\narima_model = ARIMA(train['Value'], order=(2, 1, 2)).fit()\n# Print model summary\nprint(arima_model.summary())\n# Forecast on test data\nforecast = arima_model.get_forecast(steps=len(test))\nforecast_values = forecast.predicted_mean\nconf_int = forecast.conf_int(alpha=0.05)",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "arima_model",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "arima_model = ARIMA(train['Value'], order=(2, 1, 2)).fit()\n# Print model summary\nprint(arima_model.summary())\n# Forecast on test data\nforecast = arima_model.get_forecast(steps=len(test))\nforecast_values = forecast.predicted_mean\nconf_int = forecast.conf_int(alpha=0.05)\n# Add forecast values to the test dataframe\ntest['ARIMA Forecast'] = forecast_values\n# Evaluate Accuracy Metrics",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "forecast",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "forecast = arima_model.get_forecast(steps=len(test))\nforecast_values = forecast.predicted_mean\nconf_int = forecast.conf_int(alpha=0.05)\n# Add forecast values to the test dataframe\ntest['ARIMA Forecast'] = forecast_values\n# Evaluate Accuracy Metrics\nmse = mean_squared_error(test['Value'], test['ARIMA Forecast'])\nrmse = np.sqrt(mse)\nmape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])\n# Print metrics",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "forecast_values",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "forecast_values = forecast.predicted_mean\nconf_int = forecast.conf_int(alpha=0.05)\n# Add forecast values to the test dataframe\ntest['ARIMA Forecast'] = forecast_values\n# Evaluate Accuracy Metrics\nmse = mean_squared_error(test['Value'], test['ARIMA Forecast'])\nrmse = np.sqrt(mse)\nmape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])\n# Print metrics\nprint(\"Evaluation Metrics:\")",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "conf_int",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "conf_int = forecast.conf_int(alpha=0.05)\n# Add forecast values to the test dataframe\ntest['ARIMA Forecast'] = forecast_values\n# Evaluate Accuracy Metrics\nmse = mean_squared_error(test['Value'], test['ARIMA Forecast'])\nrmse = np.sqrt(mse)\nmape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])\n# Print metrics\nprint(\"Evaluation Metrics:\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "mse = mean_squared_error(test['Value'], test['ARIMA Forecast'])\nrmse = np.sqrt(mse)\nmape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])\n# Print metrics\nprint(\"Evaluation Metrics:\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"Mean Absolute Percentage Error (MAPE): {mape:.2%}\")\n# Plot original series, ARIMA forecasts, and confidence intervals\nplt.figure(figsize=(12, 6))",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "rmse",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "rmse = np.sqrt(mse)\nmape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])\n# Print metrics\nprint(\"Evaluation Metrics:\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"Mean Absolute Percentage Error (MAPE): {mape:.2%}\")\n# Plot original series, ARIMA forecasts, and confidence intervals\nplt.figure(figsize=(12, 6))\n# Plot train data",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "mape",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "mape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])\n# Print metrics\nprint(\"Evaluation Metrics:\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"Mean Absolute Percentage Error (MAPE): {mape:.2%}\")\n# Plot original series, ARIMA forecasts, and confidence intervals\nplt.figure(figsize=(12, 6))\n# Plot train data\nplt.plot(train['Date'], train['Value'], label='Train Data', alpha=0.7)",
+        "detail": "Time Series",
+        "documentation": {}
+    },
+    {
+        "label": "residuals",
+        "kind": 5,
+        "importPath": "Time Series",
+        "description": "Time Series",
+        "peekOfCode": "residuals = train['Value'] - arima_model.fittedvalues\nplt.figure(figsize=(10, 5))\nplt.plot(residuals, label='Residuals', color='orange')\nplt.axhline(0, linestyle='--', color='gray')\nplt.title(\"Residual Diagnostics\")\nplt.xlabel(\"Time\")\nplt.ylabel(\"Residuals\")\nplt.legend()\nplt.grid()\nplt.show()",
         "detail": "Time Series",
         "documentation": {}
     }

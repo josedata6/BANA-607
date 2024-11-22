@@ -226,12 +226,12 @@ df = pd.DataFrame({'Date': date_range, 'Value': data})
 # Slide # 21
 
 # # Plot autocorrelation with comments
-from statsmodels.graphics.tsaplots import plot_acf
+# from statsmodels.graphics.tsaplots import plot_acf
 
-plt.figure(figsize=(10, 5))
-plot_acf(df['Value'].dropna(), lags=70, title="Autocorrelation Plot with Lag Analysis")
-plt.grid()
-plt.show()
+# plt.figure(figsize=(10, 5))
+# plot_acf(df['Value'].dropna(), lags=70, title="Autocorrelation Plot with Lag Analysis")
+# plt.grid()
+# plt.show()
 
 #-------------------------------------------------------------------------------------------------------------#
 
@@ -245,6 +245,8 @@ plt.show()
 # plt.show()
 
 #-------------------------------------------------------------------------------------------------------------#
+
+############## levi process for fiance
 
 # Slide # 41
 
@@ -270,7 +272,7 @@ plt.show()
 #-------------------------------------------------------------------------------------------------------------#
 
 # Slide # 43
-
+######### stock market predictives
 # Apply differencing
 # df['Differenced'] = df['Value'].diff()
 
@@ -323,12 +325,12 @@ plt.show()
 # plt.show()
 
 #-------------------------------------------------------------------------------------------------------------#
-
+###################### ARIMA to predict stocks #################
 #Slide # 46
 
 # from scipy.stats import linregress
 
-# # Fit a linear trend line
+# Fit a linear trend line
 # x = np.arange(len(df))
 # slope, intercept, _, _, _ = linregress(x, df['Value'])
 # df['Detrended'] = df['Value'] - (slope * x + intercept)
@@ -368,7 +370,7 @@ plt.show()
 
 # from statsmodels.tsa.holtwinters import SimpleExpSmoothing
 
-# # Apply Simple Exponential Smoothing
+# # # Apply Simple Exponential Smoothing
 # ses_model = SimpleExpSmoothing(df['Value']).fit(smoothing_level=0.2, optimized=False)
 # df['SES'] = ses_model.fittedvalues
 
@@ -480,80 +482,80 @@ plt.show()
 
 # Slide # 61
 
-# from statsmodels.tsa.arima.model import ARIMA
-# from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
-# import matplotlib.pyplot as plt
-# import pandas as pd
-# import numpy as np
+from statsmodels.tsa.arima.model import ARIMA
+from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
 
-# # Train-Test Split
-# train_size = int(len(df) * 0.8)
-# train, test = df[:train_size], df[train_size:]
+# Train-Test Split
+train_size = int(len(df) * 0.8)
+train, test = df[:train_size], df[train_size:]
 
-# # Fit ARIMA model on train data
-# arima_model = ARIMA(train['Value'], order=(2, 1, 2)).fit()
+# Fit ARIMA model on train data
+arima_model = ARIMA(train['Value'], order=(2, 1, 2)).fit()
 
-# # Print model summary
-# print(arima_model.summary())
+# Print model summary
+print(arima_model.summary())
 
-# # Forecast on test data
-# forecast = arima_model.get_forecast(steps=len(test))
-# forecast_values = forecast.predicted_mean
-# conf_int = forecast.conf_int(alpha=0.05)
+# Forecast on test data
+forecast = arima_model.get_forecast(steps=len(test))
+forecast_values = forecast.predicted_mean
+conf_int = forecast.conf_int(alpha=0.05)
 
-# # Add forecast values to the test dataframe
-# test['ARIMA Forecast'] = forecast_values
+# Add forecast values to the test dataframe
+test['ARIMA Forecast'] = forecast_values
 
-# # Evaluate Accuracy Metrics
-# mse = mean_squared_error(test['Value'], test['ARIMA Forecast'])
-# rmse = np.sqrt(mse)
-# mape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])
+# Evaluate Accuracy Metrics
+mse = mean_squared_error(test['Value'], test['ARIMA Forecast'])
+rmse = np.sqrt(mse)
+mape = mean_absolute_percentage_error(test['Value'], test['ARIMA Forecast'])
 
-# # Print metrics
-# print("Evaluation Metrics:")
-# print(f"Mean Squared Error (MSE): {mse:.2f}")
-# print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
-# print(f"Mean Absolute Percentage Error (MAPE): {mape:.2%}")
+# Print metrics
+print("Evaluation Metrics:")
+print(f"Mean Squared Error (MSE): {mse:.2f}")
+print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
+print(f"Mean Absolute Percentage Error (MAPE): {mape:.2%}")
 
-# # Plot original series, ARIMA forecasts, and confidence intervals
-# plt.figure(figsize=(12, 6))
+# Plot original series, ARIMA forecasts, and confidence intervals
+plt.figure(figsize=(12, 6))
 
-# # Plot train data
-# plt.plot(train['Date'], train['Value'], label='Train Data', alpha=0.7)
+# Plot train data
+plt.plot(train['Date'], train['Value'], label='Train Data', alpha=0.7)
 
-# # Plot test data
-# plt.plot(test['Date'], test['Value'], label='Test Data', alpha=0.7)
+# Plot test data
+plt.plot(test['Date'], test['Value'], label='Test Data', alpha=0.7)
 
-# # Plot ARIMA forecasts
-# plt.plot(test['Date'], test['ARIMA Forecast'], label='ARIMA Forecast', color='red', linestyle='--')
+# Plot ARIMA forecasts
+plt.plot(test['Date'], test['ARIMA Forecast'], label='ARIMA Forecast', color='red', linestyle='--')
 
-# # Plot confidence intervals
-# plt.fill_between(test['Date'], conf_int.iloc[:, 0], conf_int.iloc[:, 1], color='pink', alpha=0.3, label='95% Confidence Interval')
+# Plot confidence intervals
+plt.fill_between(test['Date'], conf_int.iloc[:, 0], conf_int.iloc[:, 1], color='pink', alpha=0.3, label='95% Confidence Interval')
 
-# plt.title("ARIMA Model Forecasting with Confidence Intervals")
-# plt.xlabel("Date")
-# plt.ylabel("Value")
-# plt.legend()
-# plt.grid()
-# plt.show()
+plt.title("ARIMA Model Forecasting with Confidence Intervals")
+plt.xlabel("Date")
+plt.ylabel("Value")
+plt.legend()
+plt.grid()
+plt.show()
 
-# # Residual Diagnostics
-# residuals = train['Value'] - arima_model.fittedvalues
-# plt.figure(figsize=(10, 5))
-# plt.plot(residuals, label='Residuals', color='orange')
-# plt.axhline(0, linestyle='--', color='gray')
-# plt.title("Residual Diagnostics")
-# plt.xlabel("Time")
-# plt.ylabel("Residuals")
-# plt.legend()
-# plt.grid()
-# plt.show()
+# Residual Diagnostics
+residuals = train['Value'] - arima_model.fittedvalues
+plt.figure(figsize=(10, 5))
+plt.plot(residuals, label='Residuals', color='orange')
+plt.axhline(0, linestyle='--', color='gray')
+plt.title("Residual Diagnostics")
+plt.xlabel("Time")
+plt.ylabel("Residuals")
+plt.legend()
+plt.grid()
+plt.show()
 
-# # Residual Histogram
-# import seaborn as sns
-# sns.histplot(residuals, kde=True, bins=20, color='blue')
-# plt.title("Residual Histogram")
-# plt.xlabel("Residual Value")
-# plt.ylabel("Frequency")
-# plt.grid()
-# plt.show()
+# Residual Histogram
+import seaborn as sns
+sns.histplot(residuals, kde=True, bins=20, color='blue')
+plt.title("Residual Histogram")
+plt.xlabel("Residual Value")
+plt.ylabel("Frequency")
+plt.grid()
+plt.show()
