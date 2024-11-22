@@ -412,110 +412,221 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # Perform Chi-square test
 # chi2, p, dof, expected = chi2_contingency(contingency_table)
 
-# print(f"Chi-square test results: chi2={chi2:.2f}, p-value={p:.4f}, degrees of freedom={dof}")
+# # print(f"Chi-square test results: chi2={chi2:.2f}, p-value={p:.4f}, degrees of freedom={dof}")
 
-#######################
-######### Age and Store_Visits_Per_Month
-#### H₀: Age has no relationship with the number of store visits per month.
-#### H₁: Age significantly affects the number of store visits per month.
-#### Test: Simple Linear Regression
-######
-# Prepare data
-# X = df['Age']  # Independent variable
-# y = df['Store_Visits_Per_Month']  # Dependent variable
-
-# # Add constant
-# X = sm.add_constant(X)
-
-# # Perform regression
-# model = sm.OLS(y, X).fit()
-
-# # Print regression results
-# print(model.summary())
-
-#######################
-# ####### 6. Purchase_Frequency and Customer_Rating
-# ###### H₀: Purchase frequency has no impact on customer ratings.
-# ##### H₁: Purchase frequency significantly impacts customer ratings.
-# ##### Test: T-test
-# ####### 
-# from scipy.stats import ttest_ind
-
-# # Create groups
-# high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']
-# low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']
-
-# # Perform t-test
-# t_stat, p_value = ttest_ind(high_freq, low_freq)
-
-# print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")
-
-##############
-####### 7. Satisfaction_Score and Spending_Score
-# ###### H₀: Satisfaction score has no relationship with spending score.
-# ######m H₁: Satisfaction score is significantly related to spending score.
-# ######## Test: Simple Linear Regression
+# #######################
+# ######### Age and Store_Visits_Per_Month
+# #### H₀: Age has no relationship with the number of store visits per month.
+# #### H₁: Age significantly affects the number of store visits per month.
+# #### Test: Simple Linear Regression
+# ######
 # # Prepare data
-# X = df['Satisfaction_Score']  # Independent variable
-# y = df['Spending_Score']  # Dependent variable
+# # X = df['Age']  # Independent variable
+# # y = df['Store_Visits_Per_Month']  # Dependent variable
 
-# # Add constant
-# X = sm.add_constant(X)
+# # # Add constant
+# # X = sm.add_constant(X)
 
-# # Perform regression
-# model = sm.OLS(y, X).fit()
+# # # Perform regression
+# # model = sm.OLS(y, X).fit()
 
-# # Print regression results
-# print(model.summary())
+# # # Print regression results
+# # print(model.summary())
 
-#################
-# ########## 8. Credit_Score and Income
-# ######### H₀: Credit score has no correlation with income.
-# ######### H₁: Credit score is significantly correlated with income.
-# ############ Test: F-test or Simple Linear Regression
-# # Prepare data
-# X = df['Income']  # Independent variable
-# y = df['Credit_Score']  # Dependent variable
+# #######################
+# # ####### 6. Purchase_Frequency and Customer_Rating
+# # ###### H₀: Purchase frequency has no impact on customer ratings.
+# # ##### H₁: Purchase frequency significantly impacts customer ratings.
+# # ##### Test: T-test
+# # ####### 
+# # from scipy.stats import ttest_ind
 
-# # Add constant
-# X = sm.add_constant(X)
+# # # Create groups
+# # high_freq = df[df['Purchase_Frequency'] > df['Purchase_Frequency'].median()]['Customer_Rating']
+# # low_freq = df[df['Purchase_Frequency'] <= df['Purchase_Frequency'].median()]['Customer_Rating']
 
-# # Perform regression
-# model = sm.OLS(y, X).fit()
+# # # Perform t-test
+# # t_stat, p_value = ttest_ind(high_freq, low_freq)
 
-# # F-test is included in regression results
-# print(model.summary())
+# # print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")
 
-###############
-# ####### 9. Store_Visits_Per_Month and Online_Shopping_Frequency
-# ##### H₀: The number of store visits per month is not related to online shopping frequency.
-# ##### H₁: The number of store visits per month is significantly related to online shopping frequency.
-# #### Test: Chi-square Test
-# from scipy.stats import chi2_contingency
+# ##############
+# ####### 7. Satisfaction_Score and Spending_Score
+# # ###### H₀: Satisfaction score has no relationship with spending score.
+# # ######m H₁: Satisfaction score is significantly related to spending score.
+# # ######## Test: Simple Linear Regression
+# # # Prepare data
+# # X = df['Satisfaction_Score']  # Independent variable
+# # y = df['Spending_Score']  # Dependent variable
 
-# # Create contingency table
-# contingency_table = pd.crosstab(df['Store_Visits_Per_Month'], df['Online_Shopping_Frequency'])
+# # # Add constant
+# # X = sm.add_constant(X)
 
-# # Perform Chi-square test
-# chi2, p, dof, expected = chi2_contingency(contingency_table)
+# # # Perform regression
+# # model = sm.OLS(y, X).fit()
 
-# print(f"Chi-square test results: chi2={chi2:.2f}, p-value={p:.4f}, degrees of freedom={dof}")
+# # # Print regression results
+# # print(model.summary())
 
-###############
-############## 10. Customer_Rating and Satisfaction_Score
-############## H₀: Customer ratings have no relationship with satisfaction scores.
-############## H₁: Customer ratings are significantly related to satisfaction scores.
-############## Test: Simple Linear Regression
-#############
-# Prepare data
-X = df['Customer_Rating']  # Independent variable
-y = df['Satisfaction_Score']  # Dependent variable
+# #################
+# # ########## 8. Credit_Score and Income
+# # ######### H₀: Credit score has no correlation with income.
+# # ######### H₁: Credit score is significantly correlated with income.
+# # ############ Test: F-test or Simple Linear Regression
+# # # Prepare data
+# # X = df['Income']  # Independent variable
+# # y = df['Credit_Score']  # Dependent variable
 
-# Add constant
-X = sm.add_constant(X)
+# # # Add constant
+# # X = sm.add_constant(X)
 
-# Perform regression
-model = sm.OLS(y, X).fit()
+# # # Perform regression
+# # model = sm.OLS(y, X).fit()
 
-# Print regression results
-print(model.summary())
+# # # F-test is included in regression results
+# # print(model.summary())
+
+# ###############
+# # ####### 9. Store_Visits_Per_Month and Online_Shopping_Frequency
+# # ##### H₀: The number of store visits per month is not related to online shopping frequency.
+# # ##### H₁: The number of store visits per month is significantly related to online shopping frequency.
+# # #### Test: Chi-square Test
+# # from scipy.stats import chi2_contingency
+
+# # # Create contingency table
+# # contingency_table = pd.crosstab(df['Store_Visits_Per_Month'], df['Online_Shopping_Frequency'])
+
+# # # Perform Chi-square test
+# # chi2, p, dof, expected = chi2_contingency(contingency_table)
+
+# # print(f"Chi-square test results: chi2={chi2:.2f}, p-value={p:.4f}, degrees of freedom={dof}")
+
+# # ###############
+# # ############## 10. Customer_Rating and Satisfaction_Score
+# # ############## H₀: Customer ratings have no relationship with satisfaction scores.
+# # ############## H₁: Customer ratings are significantly related to satisfaction scores.
+# # ############## Test: Simple Linear Regression
+# # #############
+# # # Prepare data
+# # X = df['Customer_Rating']  # Independent variable
+# # y = df['Satisfaction_Score']  # Dependent variable
+
+# # # Add constant
+# # X = sm.add_constant(X)
+
+# # # Perform regression
+# # model = sm.OLS(y, X).fit()
+
+# # # Print regression results
+# # print(model.summary())
+
+# #############################################################
+# ################ 5. Predictive Modeling #############################
+# ######## using "Satisfaction_Score" as the dependent variable and identify
+# ######## appropriate independent variables
+# ################### Select Independent Variables:
+# import pandas as pd
+# import statsmodels.api as sm
+# from sklearn.model_selection import train_test_split
+# from sklearn.linear_model import LinearRegression
+# from sklearn.metrics import mean_squared_error, r2_score
+
+# # Load dataset
+# df = pd.read_csv("ME2_Dataset-v5.csv")
+
+# # Select relevant columns for modeling
+# columns = ['Satisfaction_Score', 'Spending_Score', 'Income', 'Online_Shopping_Frequency', 
+#            'Store_Visits_Per_Month', 'Customer_Rating']
+
+# # Define dependent and independent variables
+# X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]
+# y = df['Satisfaction_Score']
+
+# # Split data into training and testing sets
+# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# # Initialize and train the model
+# model = LinearRegression()
+# model.fit(X_train, y_train)
+
+# # Predict on the test set
+# y_pred = model.predict(X_test)
+
+# # Evaluate model performance
+# mse = mean_squared_error(y_test, y_pred)
+# r2 = r2_score(y_test, y_pred)
+
+# print(f"Mean Squared Error: {mse:.2f}")
+# print(f"R-squared: {r2:.2f}")
+
+# # Add constant for statsmodels regression
+# X_train_sm = sm.add_constant(X_train)
+
+# # Fit model
+# ols_model = sm.OLS(y_train, X_train_sm).fit()
+
+# # Print summary
+# print(ols_model.summary())
+
+#########------------------------------
+
+import matplotlib.pyplot as plt
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+import seaborn as sns
+
+# Calculate metrics
+mse = mean_squared_error(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+# Print metrics
+print(f"Mean Absolute Error (MAE): {mae:.2f}")
+print(f"Mean Squared Error (MSE): {mse:.2f}")
+print(f"R-squared: {r2:.2f}")
+
+# Scatter plot
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x=y_test, y=y_pred)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line
+plt.title("Actual vs Predicted Values")
+plt.xlabel("Actual Satisfaction Score")
+plt.ylabel("Predicted Satisfaction Score")
+plt.grid(True)
+plt.show()
+
+# Calculate residuals
+residuals = y_test - y_pred
+
+# Residuals plot
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x=y_pred, y=residuals)
+plt.axhline(0, color='red', linestyle='--', linewidth=2)
+plt.title("Residuals vs Predicted Values")
+plt.xlabel("Predicted Satisfaction Score")
+plt.ylabel("Residuals")
+plt.grid(True)
+plt.show()
+
+# Histogram of residuals
+plt.figure(figsize=(8, 6))
+sns.histplot(residuals, kde=True, bins=30)
+plt.title("Histogram of Residuals")
+plt.xlabel("Residuals")
+plt.ylabel("Frequency")
+plt.grid(True)
+plt.show()
+
+# Extract coefficients
+coef = pd.DataFrame({
+    'Feature': X_train.columns,
+    'Coefficient': model.coef_
+})
+
+# Bar plot of coefficients
+plt.figure(figsize=(10, 6))
+sns.barplot(data=coef, x='Coefficient', y='Feature', orient='h')
+plt.title("Feature Importance (Linear Regression Coefficients)")
+plt.xlabel("Coefficient Value")
+plt.ylabel("Feature")
+plt.grid(True)
+plt.show()

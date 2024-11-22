@@ -44,6 +44,30 @@
         "documentation": {}
     },
     {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
         "label": "#df",
         "kind": 5,
         "importPath": "midterm2",
@@ -62,38 +86,47 @@
         "documentation": {}
     },
     {
-        "label": "X",
+        "label": "mse",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "X = df['Customer_Rating']  # Independent variable\ny = df['Satisfaction_Score']  # Dependent variable\n# Add constant\nX = sm.add_constant(X)\n# Perform regression\nmodel = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\nmae = mean_absolute_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\n# Print metrics\nprint(f\"Mean Absolute Error (MAE): {mae:.2f}\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Scatter plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_test, y=y_pred)",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "y",
+        "label": "mae",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "y = df['Satisfaction_Score']  # Dependent variable\n# Add constant\nX = sm.add_constant(X)\n# Perform regression\nmodel = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
+        "peekOfCode": "mae = mean_absolute_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\n# Print metrics\nprint(f\"Mean Absolute Error (MAE): {mae:.2f}\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Scatter plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_test, y=y_pred)\nplt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "X",
+        "label": "r2",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "X = sm.add_constant(X)\n# Perform regression\nmodel = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
+        "peekOfCode": "r2 = r2_score(y_test, y_pred)\n# Print metrics\nprint(f\"Mean Absolute Error (MAE): {mae:.2f}\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Scatter plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_test, y=y_pred)\nplt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line\nplt.title(\"Actual vs Predicted Values\")",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "model",
+        "label": "residuals",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "model = sm.OLS(y, X).fit()\n# Print regression results\nprint(model.summary())",
+        "peekOfCode": "residuals = y_test - y_pred\n# Residuals plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_pred, y=residuals)\nplt.axhline(0, color='red', linestyle='--', linewidth=2)\nplt.title(\"Residuals vs Predicted Values\")\nplt.xlabel(\"Predicted Satisfaction Score\")\nplt.ylabel(\"Residuals\")\nplt.grid(True)\nplt.show()",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "coef",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "coef = pd.DataFrame({\n    'Feature': X_train.columns,\n    'Coefficient': model.coef_\n})\n# Bar plot of coefficients\nplt.figure(figsize=(10, 6))\nsns.barplot(data=coef, x='Coefficient', y='Feature', orient='h')\nplt.title(\"Feature Importance (Linear Regression Coefficients)\")\nplt.xlabel(\"Coefficient Value\")\nplt.ylabel(\"Feature\")",
         "detail": "midterm2",
         "documentation": {}
     }

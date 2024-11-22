@@ -99,25 +99,64 @@ import pandas as pd
 # print("\nDataFrame after filling missing values with mean:")
 # print(df_filled_mean)
 
-# # Descriptive statistics
-df = pd.read_csv('correlationGolf_formatted.csv') # importing the csv file
-print(df.describe()) # show summary statistics for each column
+# # # Descriptive statistics
+# df = pd.read_csv('correlationGolf_formatted.csv') # importing the csv file
+# print(df.describe()) # show summary statistics for each column
 
-# saving output into file
-# df.to_csv('correlationGolf.csv')
+# # saving output into file
+# # df.to_csv('correlationGolf.csv')
 
-# #dropping player
-df = df.drop(columns=['Player'])
+# # #dropping player
+# df = df.drop(columns=['Player'])
 
-# #Finding Correlation
-correlation_matrix = df.corr()
-print(correlation_matrix)
+# # #Finding Correlation
+# correlation_matrix = df.corr()
+# print(correlation_matrix)
 
-# # Visualize the finding
-import seaborn as sn
-import matplotlib.pyplot as plt
+# # # Visualize the finding
+# import seaborn as sn
+# import matplotlib.pyplot as plt
 
+# sn.heatmap(correlation_matrix, annot=True)
+# plt.show()
+#############################################################
+################ 5. Predictive Modeling #############################
+######## using "Satisfaction_Score" as the dependent variable and identify
+######## appropriate independent variables
+################### Select Independent Variables:
+# Load dataset
+df = pd.read_csv("ME2_Dataset-v5.csv")
 
-sn.heatmap(correlation_matrix, annot=True)
-plt.show()
+# Select relevant columns for modeling
+columns = ['Satisfaction_Score', 'Spending_Score', 'Income', 'Online_Shopping_Frequency', 
+           'Store_Visits_Per_Month', 'Customer_Rating']
 
+# Define dependent and independent variables
+X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]
+y = df['Satisfaction_Score']
+
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Initialize and train the model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Predict on the test set
+y_pred = model.predict(X_test)
+
+# Evaluate model performance
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"Mean Squared Error: {mse:.2f}")
+print(f"R-squared: {r2:.2f}")
+
+# Add constant for statsmodels regression
+X_train_sm = sm.add_constant(X_train)
+
+# Fit model
+ols_model = sm.OLS(y_train, X_train_sm).fit()
+
+# Print summary
+print(ols_model.summary())

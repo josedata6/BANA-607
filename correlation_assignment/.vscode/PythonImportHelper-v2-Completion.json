@@ -9,47 +9,92 @@
         "documentation": {}
     },
     {
-        "label": "seaborn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "seaborn",
-        "description": "seaborn",
-        "detail": "seaborn",
-        "documentation": {}
-    },
-    {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
         "label": "df",
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "df = pd.read_csv('correlationGolf_formatted.csv') # importing the csv file\nprint(df.describe()) # show summary statistics for each column\n# saving output into file\n# df.to_csv('correlationGolf.csv')\n# #dropping player\ndf = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding",
+        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n# Select relevant columns for modeling\ncolumns = ['Satisfaction_Score', 'Spending_Score', 'Income', 'Online_Shopping_Frequency', \n           'Store_Visits_Per_Month', 'Customer_Rating']\n# Define dependent and independent variables\nX = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Initialize and train the model",
         "detail": "Correlation",
         "documentation": {}
     },
     {
-        "label": "df",
+        "label": "columns",
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "df = df.drop(columns=['Player'])\n# #Finding Correlation\ncorrelation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "peekOfCode": "columns = ['Satisfaction_Score', 'Spending_Score', 'Income', 'Online_Shopping_Frequency', \n           'Store_Visits_Per_Month', 'Customer_Rating']\n# Define dependent and independent variables\nX = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Initialize and train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)",
         "detail": "Correlation",
         "documentation": {}
     },
     {
-        "label": "correlation_matrix",
+        "label": "X",
         "kind": 5,
         "importPath": "Correlation",
         "description": "Correlation",
-        "peekOfCode": "correlation_matrix = df.corr()\nprint(correlation_matrix)\n# # Visualize the finding\nimport seaborn as sn\nimport matplotlib.pyplot as plt\nsn.heatmap(correlation_matrix, annot=True)\nplt.show()",
+        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Initialize and train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Predict on the test set\ny_pred = model.predict(X_test)\n# Evaluate model performance",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "y = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Initialize and train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# Predict on the test set\ny_pred = model.predict(X_test)\n# Evaluate model performance\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# Predict on the test set\ny_pred = model.predict(X_test)\n# Evaluate model performance\nmse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error: {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Add constant for statsmodels regression",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "y_pred = model.predict(X_test)\n# Evaluate model performance\nmse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error: {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Add constant for statsmodels regression\nX_train_sm = sm.add_constant(X_train)\n# Fit model\nols_model = sm.OLS(y_train, X_train_sm).fit()",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error: {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Add constant for statsmodels regression\nX_train_sm = sm.add_constant(X_train)\n# Fit model\nols_model = sm.OLS(y_train, X_train_sm).fit()\n# Print summary\nprint(ols_model.summary())",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "r2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error: {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Add constant for statsmodels regression\nX_train_sm = sm.add_constant(X_train)\n# Fit model\nols_model = sm.OLS(y_train, X_train_sm).fit()\n# Print summary\nprint(ols_model.summary())",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "X_train_sm",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "X_train_sm = sm.add_constant(X_train)\n# Fit model\nols_model = sm.OLS(y_train, X_train_sm).fit()\n# Print summary\nprint(ols_model.summary())",
+        "detail": "Correlation",
+        "documentation": {}
+    },
+    {
+        "label": "ols_model",
+        "kind": 5,
+        "importPath": "Correlation",
+        "description": "Correlation",
+        "peekOfCode": "ols_model = sm.OLS(y_train, X_train_sm).fit()\n# Print summary\nprint(ols_model.summary())",
         "detail": "Correlation",
         "documentation": {}
     }
