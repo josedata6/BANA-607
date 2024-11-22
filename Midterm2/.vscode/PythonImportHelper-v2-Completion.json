@@ -44,27 +44,20 @@
         "documentation": {}
     },
     {
-        "label": "mean_squared_error",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
-        "label": "mean_absolute_error",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "r2_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "forward_selection",
+        "kind": 2,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "def forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []\n    best_r2 = -1\n    while remaining_features:\n        best_feature = None\n        for feature in remaining_features:\n            # Fit model with current feature + already selected features\n            features_to_test = initial_features + [feature]",
+        "detail": "midterm2",
         "documentation": {}
     },
     {
@@ -86,47 +79,38 @@
         "documentation": {}
     },
     {
-        "label": "mse",
+        "label": "df",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\nmae = mean_absolute_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\n# Print metrics\nprint(f\"Mean Absolute Error (MAE): {mae:.2f}\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Scatter plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_test, y=y_pred)",
+        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n# Define dependent and independent variables\nX = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', \n        'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Forward Selection Function\ndef forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "mae",
+        "label": "X",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "mae = mean_absolute_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\n# Print metrics\nprint(f\"Mean Absolute Error (MAE): {mae:.2f}\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Scatter plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_test, y=y_pred)\nplt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line",
+        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', \n        'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Forward Selection Function\ndef forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []\n    best_r2 = -1\n    while remaining_features:",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "r2",
+        "label": "y",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "r2 = r2_score(y_test, y_pred)\n# Print metrics\nprint(f\"Mean Absolute Error (MAE): {mae:.2f}\")\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"R-squared: {r2:.2f}\")\n# Scatter plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_test, y=y_pred)\nplt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line\nplt.title(\"Actual vs Predicted Values\")",
+        "peekOfCode": "y = df['Satisfaction_Score']\n# Forward Selection Function\ndef forward_selection(X, y):\n    initial_features = []  # Start with no features\n    remaining_features = list(X.columns)  # All features available\n    selected_features = []\n    best_r2 = -1\n    while remaining_features:\n        best_feature = None\n        for feature in remaining_features:",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "residuals",
+        "label": "selected_features",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "residuals = y_test - y_pred\n# Residuals plot\nplt.figure(figsize=(8, 6))\nsns.scatterplot(x=y_pred, y=residuals)\nplt.axhline(0, color='red', linestyle='--', linewidth=2)\nplt.title(\"Residuals vs Predicted Values\")\nplt.xlabel(\"Predicted Satisfaction Score\")\nplt.ylabel(\"Residuals\")\nplt.grid(True)\nplt.show()",
-        "detail": "midterm2",
-        "documentation": {}
-    },
-    {
-        "label": "coef",
-        "kind": 5,
-        "importPath": "midterm2",
-        "description": "midterm2",
-        "peekOfCode": "coef = pd.DataFrame({\n    'Feature': X_train.columns,\n    'Coefficient': model.coef_\n})\n# Bar plot of coefficients\nplt.figure(figsize=(10, 6))\nsns.barplot(data=coef, x='Coefficient', y='Feature', orient='h')\nplt.title(\"Feature Importance (Linear Regression Coefficients)\")\nplt.xlabel(\"Coefficient Value\")\nplt.ylabel(\"Feature\")",
+        "peekOfCode": "selected_features = forward_selection(X, y)\nprint(f\"Selected Features (Forward Selection): {selected_features}\")",
         "detail": "midterm2",
         "documentation": {}
     }

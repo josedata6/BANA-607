@@ -568,65 +568,115 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # Print summary
 # print(ols_model.summary())
 
-#########------------------------------
+######### creating predictive model
 
-import matplotlib.pyplot as plt
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-import seaborn as sns
+# import matplotlib.pyplot as plt
+# from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+# import seaborn as sns
 
-# Calculate metrics
-mse = mean_squared_error(y_test, y_pred)
-mae = mean_absolute_error(y_test, y_pred)
-r2 = r2_score(y_test, y_pred)
+# # Calculate metrics
+# mse = mean_squared_error(y_test, y_pred)
+# mae = mean_absolute_error(y_test, y_pred)
+# r2 = r2_score(y_test, y_pred)
 
-# Print metrics
-print(f"Mean Absolute Error (MAE): {mae:.2f}")
-print(f"Mean Squared Error (MSE): {mse:.2f}")
-print(f"R-squared: {r2:.2f}")
+# # Print metrics
+# print(f"Mean Absolute Error (MAE): {mae:.2f}")
+# print(f"Mean Squared Error (MSE): {mse:.2f}")
+# print(f"R-squared: {r2:.2f}")
 
-# Scatter plot
-plt.figure(figsize=(8, 6))
-sns.scatterplot(x=y_test, y=y_pred)
-plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line
-plt.title("Actual vs Predicted Values")
-plt.xlabel("Actual Satisfaction Score")
-plt.ylabel("Predicted Satisfaction Score")
-plt.grid(True)
-plt.show()
+# # Scatter plot
+# plt.figure(figsize=(8, 6))
+# sns.scatterplot(x=y_test, y=y_pred)
+# plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)  # Perfect prediction line
+# plt.title("Actual vs Predicted Values")
+# plt.xlabel("Actual Satisfaction Score")
+# plt.ylabel("Predicted Satisfaction Score")
+# plt.grid(True)
+# plt.show()
 
-# Calculate residuals
-residuals = y_test - y_pred
+# # Calculate residuals
+# residuals = y_test - y_pred
 
-# Residuals plot
-plt.figure(figsize=(8, 6))
-sns.scatterplot(x=y_pred, y=residuals)
-plt.axhline(0, color='red', linestyle='--', linewidth=2)
-plt.title("Residuals vs Predicted Values")
-plt.xlabel("Predicted Satisfaction Score")
-plt.ylabel("Residuals")
-plt.grid(True)
-plt.show()
+# # Residuals plot
+# plt.figure(figsize=(8, 6))
+# sns.scatterplot(x=y_pred, y=residuals)
+# plt.axhline(0, color='red', linestyle='--', linewidth=2)
+# plt.title("Residuals vs Predicted Values")
+# plt.xlabel("Predicted Satisfaction Score")
+# plt.ylabel("Residuals")
+# plt.grid(True)
+# plt.show()
 
-# Histogram of residuals
-plt.figure(figsize=(8, 6))
-sns.histplot(residuals, kde=True, bins=30)
-plt.title("Histogram of Residuals")
-plt.xlabel("Residuals")
-plt.ylabel("Frequency")
-plt.grid(True)
-plt.show()
+# # Histogram of residuals
+# plt.figure(figsize=(8, 6))
+# sns.histplot(residuals, kde=True, bins=30)
+# plt.title("Histogram of Residuals")
+# plt.xlabel("Residuals")
+# plt.ylabel("Frequency")
+# plt.grid(True)
+# plt.show()
 
-# Extract coefficients
-coef = pd.DataFrame({
-    'Feature': X_train.columns,
-    'Coefficient': model.coef_
-})
+# # Extract coefficients
+# coef = pd.DataFrame({
+#     'Feature': X_train.columns,
+#     'Coefficient': model.coef_
+# })
 
-# Bar plot of coefficients
-plt.figure(figsize=(10, 6))
-sns.barplot(data=coef, x='Coefficient', y='Feature', orient='h')
-plt.title("Feature Importance (Linear Regression Coefficients)")
-plt.xlabel("Coefficient Value")
-plt.ylabel("Feature")
-plt.grid(True)
-plt.show()
+# # Bar plot of coefficients
+# plt.figure(figsize=(10, 6))
+# sns.barplot(data=coef, x='Coefficient', y='Feature', orient='h')
+# plt.title("Feature Importance (Linear Regression Coefficients)")
+# plt.xlabel("Coefficient Value")
+# plt.ylabel("Feature")
+# plt.grid(True)
+# plt.show()
+
+################################################################################
+################### 6. Feature Selection ########################################
+
+import pandas as pd
+import statsmodels.api as sm
+from sklearn.model_selection import train_test_split
+
+# Load dataset
+df = pd.read_csv("ME2_Dataset-v5.csv")
+
+# Define dependent and independent variables
+X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 
+        'Store_Visits_Per_Month', 'Customer_Rating']]
+y = df['Satisfaction_Score']
+
+# Forward Selection Function
+def forward_selection(X, y):
+    initial_features = []  # Start with no features
+    remaining_features = list(X.columns)  # All features available
+    selected_features = []
+    best_r2 = -1
+
+    while remaining_features:
+        best_feature = None
+        for feature in remaining_features:
+            # Fit model with current feature + already selected features
+            features_to_test = initial_features + [feature]
+            X_train = sm.add_constant(X[features_to_test])  # Add constant for statsmodels
+            model = sm.OLS(y, X_train).fit()
+            r2 = model.rsquared
+
+            if r2 > best_r2:
+                best_r2 = r2
+                best_feature = feature
+
+        if best_feature:
+            initial_features.append(best_feature)
+            remaining_features.remove(best_feature)
+            selected_features.append(best_feature)
+            print(f"Selected Feature: {best_feature}, R-squared: {best_r2:.4f}")
+        else:
+            break
+
+    return selected_features
+
+# Apply Forward Selection
+selected_features = forward_selection(X, y)
+print(f"Selected Features (Forward Selection): {selected_features}")
+
