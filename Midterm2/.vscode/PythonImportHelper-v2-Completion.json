@@ -52,6 +52,54 @@
         "documentation": {}
     },
     {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
         "label": "mean_squared_error",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
@@ -68,12 +116,43 @@
         "documentation": {}
     },
     {
-        "label": "backward_selection",
-        "kind": 2,
-        "importPath": "midterm2",
-        "description": "midterm2",
-        "peekOfCode": "def backward_selection(X, y):\n    features = list(X.columns)\n    while len(features) > 0:\n        X_train_sm = sm.add_constant(X[features])\n        model = sm.OLS(y, X_train_sm).fit()\n        p_values = model.pvalues.iloc[1:]  # Exclude constant term\n        worst_pval = p_values.max()\n        if worst_pval > 0.05:  # Threshold for significance\n            worst_feature = p_values.idxmax()\n            features.remove(worst_feature)",
-        "detail": "midterm2",
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
         "documentation": {}
     },
     {
@@ -81,7 +160,7 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "#df = pd.read_csv('ME2_Dataset.csv')\n#print(df)\n#################################\n##### Detect Missing Values #####\n#################################\n# # adding missing values from the Customer_ID column with recurring number\n# # # Step 1: Load the CSV file into a DataFrame\n# df = pd.read_csv(\"ME2_Dataset.csv\")\n# # Step 2: Convert the 'customer_ID' column to numerical values (if not already numeric)\n# df['Customer_ID'] = pd.to_numeric(df['Customer_ID'], errors='coerce')",
+        "peekOfCode": "#df = pd.read_csv('ME2_Dataset.csv')\n#print(df)\n#################################\n##### Detect Missing Values #####\n#################################\n###*************** extra rows were added did not used in final submittion\n# # adding missing values from the Customer_ID column with recurring number\n# # # Step 1: Load the CSV file into a DataFrame\n# df = pd.read_csv(\"ME2_Dataset.csv\")\n# # Step 2: Convert the 'customer_ID' column to numerical values (if not already numeric)",
         "detail": "midterm2",
         "documentation": {}
     },
@@ -99,7 +178,7 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\n# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)\n#     selected_features = []\n#     current_score, best_new_score = float('inf'), float('inf')",
+        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# # Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Initialize and train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# # Predict on the test set\ny_pred = model.predict(X_test)\n# # Evaluate model performance",
         "detail": "midterm2",
         "documentation": {}
     },
@@ -108,16 +187,214 @@
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "y = df['Satisfaction_Score']\n# Split data into training and testing sets\n# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)\n#     selected_features = []\n#     current_score, best_new_score = float('inf'), float('inf')\n#     while remaining_features:",
+        "peekOfCode": "y = df['Satisfaction_Score']\n# # Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Initialize and train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# # Predict on the test set\ny_pred = model.predict(X_test)\n# # Evaluate model performance\n# mse = mean_squared_error(y_test, y_pred)",
         "detail": "midterm2",
         "documentation": {}
     },
     {
-        "label": "selected_features_backward",
+        "label": "model",
         "kind": 5,
         "importPath": "midterm2",
         "description": "midterm2",
-        "peekOfCode": "selected_features_backward = backward_selection(X_train, y_train)\nprint(\"Selected features using backward selection:\", selected_features_backward)",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# # Predict on the test set\ny_pred = model.predict(X_test)\n# # Evaluate model performance\n# mse = mean_squared_error(y_test, y_pred)\n# r2 = r2_score(y_test, y_pred)\n# print(f\"Mean Squared Error: {mse:.2f}\")\n# print(f\"R-squared: {r2:.2f}\")\n# # Add constant for statsmodels regression",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "y_pred = model.predict(X_test)\n# # Evaluate model performance\n# mse = mean_squared_error(y_test, y_pred)\n# r2 = r2_score(y_test, y_pred)\n# print(f\"Mean Squared Error: {mse:.2f}\")\n# print(f\"R-squared: {r2:.2f}\")\n# # Add constant for statsmodels regression\nX_train_sm = sm.add_constant(X_train)\n# # Fit model\nols_model = sm.OLS(y_train, X_train_sm).fit()",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "X_train_sm",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "X_train_sm = sm.add_constant(X_train)\n# # Fit model\nols_model = sm.OLS(y_train, X_train_sm).fit()\n# # Print summary\n# print(ols_model.summary())\n######### creating predictive model\n# import matplotlib.pyplot as plt\n# from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score\n# import seaborn as sns\n# # Calculate metrics",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "ols_model",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "ols_model = sm.OLS(y_train, X_train_sm).fit()\n# # Print summary\n# print(ols_model.summary())\n######### creating predictive model\n# import matplotlib.pyplot as plt\n# from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score\n# import seaborn as sns\n# # Calculate metrics\n# mse = mean_squared_error(y_test, y_pred)\n# mae = mean_absolute_error(y_test, y_pred)",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "coef",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "coef = pd.DataFrame({\n    'Feature': X_train.columns,\n    'Coefficient': model.coef_\n})\n# # Bar plot of coefficients\n# plt.figure(figsize=(10, 6))\n# sns.barplot(data=coef, x='Coefficient', y='Feature', orient='h')\n# plt.title(\"Feature Importance (Linear Regression Coefficients)\")\n# plt.xlabel(\"Coefficient Value\")\n# plt.ylabel(\"Feature\")",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n# Define dependent and independent variables\nX = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]\ny = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)\n#     selected_features = []\n#     current_score, best_new_score = float('inf'), float('inf')",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "y = df['Satisfaction_Score']\n# Split data into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# # Forward selection\n# def forward_selection(X, y):\n#     initial_features = []\n#     remaining_features = list(X.columns)\n#     selected_features = []\n#     current_score, best_new_score = float('inf'), float('inf')\n#     while remaining_features:",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "df = pd.read_csv(\"ME2_Dataset-v5.csv\")\n# Step 2: Select features from forward/backward selection\nselected_features = ['Income']  # Replace with the actual selected features\nX = df[selected_features]\ny = df['Satisfaction_Score']\n# Step 3: Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Step 4: Tune a Linear Regression model\n# Initialize and fit the model\nlr_model = LinearRegression()",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "selected_features",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "selected_features = ['Income']  # Replace with the actual selected features\nX = df[selected_features]\ny = df['Satisfaction_Score']\n# Step 3: Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Step 4: Tune a Linear Regression model\n# Initialize and fit the model\nlr_model = LinearRegression()\nlr_model.fit(X_train, y_train)\n# Predict and evaluate",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "X = df[selected_features]\ny = df['Satisfaction_Score']\n# Step 3: Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Step 4: Tune a Linear Regression model\n# Initialize and fit the model\nlr_model = LinearRegression()\nlr_model.fit(X_train, y_train)\n# Predict and evaluate\ny_pred_lr = lr_model.predict(X_test)",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "y = df['Satisfaction_Score']\n# Step 3: Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Step 4: Tune a Linear Regression model\n# Initialize and fit the model\nlr_model = LinearRegression()\nlr_model.fit(X_train, y_train)\n# Predict and evaluate\ny_pred_lr = lr_model.predict(X_test)\nmse_lr = mean_squared_error(y_test, y_pred_lr)",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "lr_model",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "lr_model = LinearRegression()\nlr_model.fit(X_train, y_train)\n# Predict and evaluate\ny_pred_lr = lr_model.predict(X_test)\nmse_lr = mean_squared_error(y_test, y_pred_lr)\nr2_lr = r2_score(y_test, y_pred_lr)\nprint(\"Linear Regression Results:\")\nprint(f\"Mean Squared Error: {mse_lr:.2f}\")\nprint(f\"R-squared: {r2_lr:.2f}\")\n# Step 5: Tune a Random Forest model for comparison",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_lr",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "y_pred_lr = lr_model.predict(X_test)\nmse_lr = mean_squared_error(y_test, y_pred_lr)\nr2_lr = r2_score(y_test, y_pred_lr)\nprint(\"Linear Regression Results:\")\nprint(f\"Mean Squared Error: {mse_lr:.2f}\")\nprint(f\"R-squared: {r2_lr:.2f}\")\n# Step 5: Tune a Random Forest model for comparison\n# Set up hyperparameter grid for Random Forest\nrf_params = {\n    'n_estimators': [50, 100, 200],",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "mse_lr",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "mse_lr = mean_squared_error(y_test, y_pred_lr)\nr2_lr = r2_score(y_test, y_pred_lr)\nprint(\"Linear Regression Results:\")\nprint(f\"Mean Squared Error: {mse_lr:.2f}\")\nprint(f\"R-squared: {r2_lr:.2f}\")\n# Step 5: Tune a Random Forest model for comparison\n# Set up hyperparameter grid for Random Forest\nrf_params = {\n    'n_estimators': [50, 100, 200],\n    'max_depth': [None, 10, 20],",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "r2_lr",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "r2_lr = r2_score(y_test, y_pred_lr)\nprint(\"Linear Regression Results:\")\nprint(f\"Mean Squared Error: {mse_lr:.2f}\")\nprint(f\"R-squared: {r2_lr:.2f}\")\n# Step 5: Tune a Random Forest model for comparison\n# Set up hyperparameter grid for Random Forest\nrf_params = {\n    'n_estimators': [50, 100, 200],\n    'max_depth': [None, 10, 20],\n    'min_samples_split': [2, 5, 10]",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "rf_params",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "rf_params = {\n    'n_estimators': [50, 100, 200],\n    'max_depth': [None, 10, 20],\n    'min_samples_split': [2, 5, 10]\n}\nrf_model = RandomForestRegressor(random_state=42)\ngrid_search = GridSearchCV(rf_model, rf_params, cv=5, scoring='neg_mean_squared_error')\ngrid_search.fit(X_train, y_train)\n# Best Random Forest model\nbest_rf = grid_search.best_estimator_",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "rf_model",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "rf_model = RandomForestRegressor(random_state=42)\ngrid_search = GridSearchCV(rf_model, rf_params, cv=5, scoring='neg_mean_squared_error')\ngrid_search.fit(X_train, y_train)\n# Best Random Forest model\nbest_rf = grid_search.best_estimator_\ny_pred_rf = best_rf.predict(X_test)\n# Evaluate Random Forest\nmse_rf = mean_squared_error(y_test, y_pred_rf)\nr2_rf = r2_score(y_test, y_pred_rf)\nprint(\"\\nRandom Forest Results:\")",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "grid_search",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "grid_search = GridSearchCV(rf_model, rf_params, cv=5, scoring='neg_mean_squared_error')\ngrid_search.fit(X_train, y_train)\n# Best Random Forest model\nbest_rf = grid_search.best_estimator_\ny_pred_rf = best_rf.predict(X_test)\n# Evaluate Random Forest\nmse_rf = mean_squared_error(y_test, y_pred_rf)\nr2_rf = r2_score(y_test, y_pred_rf)\nprint(\"\\nRandom Forest Results:\")\nprint(f\"Mean Squared Error: {mse_rf:.2f}\")",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "best_rf",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "best_rf = grid_search.best_estimator_\ny_pred_rf = best_rf.predict(X_test)\n# Evaluate Random Forest\nmse_rf = mean_squared_error(y_test, y_pred_rf)\nr2_rf = r2_score(y_test, y_pred_rf)\nprint(\"\\nRandom Forest Results:\")\nprint(f\"Mean Squared Error: {mse_rf:.2f}\")\nprint(f\"R-squared: {r2_rf:.2f}\")\n# Step 6: Compare and interpret results\nif r2_rf > r2_lr:",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_rf",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "y_pred_rf = best_rf.predict(X_test)\n# Evaluate Random Forest\nmse_rf = mean_squared_error(y_test, y_pred_rf)\nr2_rf = r2_score(y_test, y_pred_rf)\nprint(\"\\nRandom Forest Results:\")\nprint(f\"Mean Squared Error: {mse_rf:.2f}\")\nprint(f\"R-squared: {r2_rf:.2f}\")\n# Step 6: Compare and interpret results\nif r2_rf > r2_lr:\n    print(\"\\nRandom Forest performed better than Linear Regression.\")",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "mse_rf",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "mse_rf = mean_squared_error(y_test, y_pred_rf)\nr2_rf = r2_score(y_test, y_pred_rf)\nprint(\"\\nRandom Forest Results:\")\nprint(f\"Mean Squared Error: {mse_rf:.2f}\")\nprint(f\"R-squared: {r2_rf:.2f}\")\n# Step 6: Compare and interpret results\nif r2_rf > r2_lr:\n    print(\"\\nRandom Forest performed better than Linear Regression.\")\nelse:\n    print(\"\\nLinear Regression performed better than Random Forest.\")",
+        "detail": "midterm2",
+        "documentation": {}
+    },
+    {
+        "label": "r2_rf",
+        "kind": 5,
+        "importPath": "midterm2",
+        "description": "midterm2",
+        "peekOfCode": "r2_rf = r2_score(y_test, y_pred_rf)\nprint(\"\\nRandom Forest Results:\")\nprint(f\"Mean Squared Error: {mse_rf:.2f}\")\nprint(f\"R-squared: {r2_rf:.2f}\")\n# Step 6: Compare and interpret results\nif r2_rf > r2_lr:\n    print(\"\\nRandom Forest performed better than Linear Regression.\")\nelse:\n    print(\"\\nLinear Regression performed better than Random Forest.\")",
         "detail": "midterm2",
         "documentation": {}
     }

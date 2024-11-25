@@ -12,6 +12,7 @@ import statsmodels.api as sm
 ##### Detect Missing Values #####
 #################################
 
+###*************** extra rows were added did not used in final submittion
 # # adding missing values from the Customer_ID column with recurring number
 
 # # # Step 1: Load the CSV file into a DataFrame
@@ -38,7 +39,7 @@ import statsmodels.api as sm
 # # Reset the index after sorting
 # df_filled = df_filled.reset_index(drop=True)
 
-# # Step 6: Save the updated DataFrame back to a CSV file (optional)
+# # Step 6: Save the updated DataFrame back to a CSV file
 # df_filled.to_csv("ME2_Dataset-v2.csv", index=False)
 
 # print(df_filled)
@@ -69,10 +70,10 @@ import statsmodels.api as sm
 #         mode_value = df[column].mode()[0]  # Get the mode (most frequent value)
 #         df[column].fillna(mode_value, inplace=True)  # Fill missing values with the mode
 
-# # Step 4: Save the updated DataFrame back to a CSV file (optional)
+# # Step 4: Save the updated DataFrame back to a CSV file
 # df.to_csv("ME2_Dataset-v3.csv", index=False)
 
-# # Step 5: Print the updated DataFrame (optional)
+# # Step 5: Print the updated DataFrame
 # print(df)
 
 # # adding mean to missing numbercal values of attributes Income, Spending_Score, Avg_Discount_Avail,
@@ -97,10 +98,10 @@ import statsmodels.api as sm
 #         mean_value = df[column].mean()  # Calculate the mean of the column
 #         df[column].fillna(mean_value, inplace=True)  # Fill missing values with the mean
 
-# # Step 4: Save the updated DataFrame back to a CSV file (optional)
+# # Step 4: Save the updated DataFrame back to a CSV file
 # df.to_csv("ME2_Dataset-v4.csv", index=False)
 
-# # Step 5: Print the updated DataFrame (optional)
+# # Step 5: Print the updated DataFrame
 # print(df)
 
 ###### adding mode to missing categotical values for attributes Gender, Education_Level, 
@@ -205,7 +206,7 @@ import statsmodels.api as sm
 # plt.show()
 
 ########################
-########## Outlier for credit score########
+########## Outlier for credit score ########
 # from scipy.stats import median_abs_deviation
 
 # # Calculate Median and MAD
@@ -383,7 +384,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # print(model.summary())
 
 ######################
-#### 3. Days_Since_Last_Purchase and Satisfaction_Score
+#### Days_Since_Last_Purchase and Satisfaction_Score
 ### H₀: Days since the last purchase has no relationship with the satisfaction score.
 ### H₁: Days since the last purchase is significantly related to the satisfaction score.
 #### Test: T-test or Simple Linear Regression
@@ -400,7 +401,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")
 
 ###############
-##### 4. Dependents and Online_Shopping_Frequency
+##### Dependents and Online_Shopping_Frequency
 #### H₀: The number of dependents has no impact on online shopping frequency.
 #### H₁: The number of dependents significantly impacts online shopping frequency.
 ##### Test: Chi-square Test
@@ -434,7 +435,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # print(model.summary())
 
 # #######################
-# # ####### 6. Purchase_Frequency and Customer_Rating
+# # ####### Purchase_Frequency and Customer_Rating
 # # ###### H₀: Purchase frequency has no impact on customer ratings.
 # # ##### H₁: Purchase frequency significantly impacts customer ratings.
 # # ##### Test: T-test
@@ -451,7 +452,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # print(f"T-test results: t-statistic={t_stat:.2f}, p-value={p_value:.4f}")
 
 # ##############
-# ####### 7. Satisfaction_Score and Spending_Score
+# ####### Satisfaction_Score and Spending_Score
 # # ###### H₀: Satisfaction score has no relationship with spending score.
 # # ######m H₁: Satisfaction score is significantly related to spending score.
 # # ######## Test: Simple Linear Regression
@@ -469,7 +470,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # print(model.summary())
 
 # #################
-# # ########## 8. Credit_Score and Income
+# # ########## Credit_Score and Income
 # # ######### H₀: Credit score has no correlation with income.
 # # ######### H₁: Credit score is significantly correlated with income.
 # # ############ Test: F-test or Simple Linear Regression
@@ -487,7 +488,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # print(model.summary())
 
 # ###############
-# # ####### 9. Store_Visits_Per_Month and Online_Shopping_Frequency
+# # ####### Store_Visits_Per_Month and Online_Shopping_Frequency
 # # ##### H₀: The number of store visits per month is not related to online shopping frequency.
 # # ##### H₁: The number of store visits per month is significantly related to online shopping frequency.
 # # #### Test: Chi-square Test
@@ -502,7 +503,7 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # # print(f"Chi-square test results: chi2={chi2:.2f}, p-value={p:.4f}, degrees of freedom={dof}")
 
 # # ###############
-# # ############## 10. Customer_Rating and Satisfaction_Score
+# # ############## Customer_Rating and Satisfaction_Score
 # # ############## H₀: Customer ratings have no relationship with satisfaction scores.
 # # ############## H₁: Customer ratings are significantly related to satisfaction scores.
 # # ############## Test: Simple Linear Regression
@@ -527,8 +528,8 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # ################### Select Independent Variables:
 # import pandas as pd
 # import statsmodels.api as sm
-# from sklearn.model_selection import train_test_split
-# from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 # from sklearn.metrics import mean_squared_error, r2_score
 
 # # Load dataset
@@ -539,18 +540,18 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 #            'Store_Visits_Per_Month', 'Customer_Rating']
 
 # # Define dependent and independent variables
-# X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]
-# y = df['Satisfaction_Score']
+X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]
+y = df['Satisfaction_Score']
 
 # # Split data into training and testing sets
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # # Initialize and train the model
-# model = LinearRegression()
-# model.fit(X_train, y_train)
+model = LinearRegression()
+model.fit(X_train, y_train)
 
 # # Predict on the test set
-# y_pred = model.predict(X_test)
+y_pred = model.predict(X_test)
 
 # # Evaluate model performance
 # mse = mean_squared_error(y_test, y_pred)
@@ -560,10 +561,10 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # print(f"R-squared: {r2:.2f}")
 
 # # Add constant for statsmodels regression
-# X_train_sm = sm.add_constant(X_train)
+X_train_sm = sm.add_constant(X_train)
 
 # # Fit model
-# ols_model = sm.OLS(y_train, X_train_sm).fit()
+ols_model = sm.OLS(y_train, X_train_sm).fit()
 
 # # Print summary
 # print(ols_model.summary())
@@ -617,10 +618,10 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 # plt.show()
 
 # # Extract coefficients
-# coef = pd.DataFrame({
-#     'Feature': X_train.columns,
-#     'Coefficient': model.coef_
-# })
+coef = pd.DataFrame({
+    'Feature': X_train.columns,
+    'Coefficient': model.coef_
+})
 
 # # Bar plot of coefficients
 # plt.figure(figsize=(10, 6))
@@ -633,69 +634,49 @@ df = pd.read_csv("ME2_Dataset-v5.csv")
 
 ################################################################################
 ################### 6. Feature Selection ########################################
-# ############ foward selextion
-# import pandas as pd
-# import statsmodels.api as sm
-# from sklearn.model_selection import train_test_split
+############## backward selection
 
-# # Load dataset
-# df = pd.read_csv("ME2_Dataset-v5.csv")
+import pandas as pd
+import statsmodels.api as sm
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
 
-# # Define dependent and independent variables
-# X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 
-#         'Store_Visits_Per_Month', 'Customer_Rating']]
-# y = df['Satisfaction_Score']
+# # Backward selection
+# def backward_selection(X, y):
+#     features = list(X.columns)
+#     while len(features) > 0:
+#         X_train_sm = sm.add_constant(X[features])
+#         model = sm.OLS(y, X_train_sm).fit()
+#         p_values = model.pvalues.iloc[1:]  # Exclude constant term
+#         worst_pval = p_values.max()
 
-# # Forward Selection Function
-# def forward_selection(X, y):
-#     initial_features = []  # Start with no features
-#     remaining_features = list(X.columns)  # All features available
-#     selected_features = []
-#     best_r2 = -1
-
-#     while remaining_features:
-#         best_feature = None
-#         for feature in remaining_features:
-#             # Fit model with current feature + already selected features
-#             features_to_test = initial_features + [feature]
-#             X_train = sm.add_constant(X[features_to_test])  # Add constant for statsmodels
-#             model = sm.OLS(y, X_train).fit()
-#             r2 = model.rsquared
-
-#             if r2 > best_r2:
-#                 best_r2 = r2
-#                 best_feature = feature
-
-#         if best_feature:
-#             initial_features.append(best_feature)
-#             remaining_features.remove(best_feature)
-#             selected_features.append(best_feature)
-#             print(f"Selected Feature: {best_feature}, R-squared: {best_r2:.4f}")
+#         if worst_pval > 0.05:  # Threshold for significance
+#             worst_feature = p_values.idxmax()
+#             features.remove(worst_feature)
 #         else:
 #             break
 
-#     return selected_features
+#     return features
 
-# # Apply Forward Selection
-# selected_features = forward_selection(X, y)
-# print(f"Selected Features (Forward Selection): {selected_features}")
+# selected_features_backward = backward_selection(X_train, y_train)
+# print("Selected features using backward selection:", selected_features_backward)
 
-##### foward selection
+############## foward selection
 
-# import pandas as pd
-# import statsmodels.api as sm
-# from sklearn.model_selection import train_test_split
-# from sklearn.metrics import mean_squared_error, r2_score
+import pandas as pd
+import statsmodels.api as sm
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
 
-# # Load dataset
-# df = pd.read_csv("ME2_Dataset-v5.csv")
+# Load dataset
+df = pd.read_csv("ME2_Dataset-v5.csv")
 
 # Define dependent and independent variables
 X = df[['Spending_Score', 'Income', 'Online_Shopping_Frequency', 'Store_Visits_Per_Month', 'Customer_Rating']]
 y = df['Satisfaction_Score']
 
 # Split data into training and testing sets
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # # Forward selection
 # def forward_selection(X, y):
@@ -728,29 +709,92 @@ y = df['Satisfaction_Score']
 # selected_features_forward = forward_selection(X_train, y_train)
 # print("Selected features using forward selection:", selected_features_forward)
 
-############## backward selection
+# # Train model using selected features from forward selection
+# X_train_fs = X_train[selected_features_forward]
+# X_test_fs = X_test[selected_features_forward]
 
+# model_fs = LinearRegression()
+# model_fs.fit(X_train_fs, y_train)
+
+# y_pred_fs = model_fs.predict(X_test_fs)
+# mse_fs = mean_squared_error(y_test, y_pred_fs)
+# r2_fs = r2_score(y_test, y_pred_fs)
+
+# print(f"Forward Selection - MSE: {mse_fs:.2f}, R²: {r2_fs:.2f}")
+
+# # Train model using selected features from backward selection
+# X_train_bs = X_train[selected_features_backward]
+# X_test_bs = X_test[selected_features_backward]
+
+# model_bs = LinearRegression()
+# model_bs.fit(X_train_bs, y_train)
+
+# y_pred_bs = model_bs.predict(X_test_bs)
+# mse_bs = mean_squared_error(y_test, y_pred_bs)
+# r2_bs = r2_score(y_test, y_pred_bs)
+
+# print(f"Backward Selection - MSE: {mse_bs:.2f}, R²: {r2_bs:.2f}")
+
+#########################################################
+############ Tuning the Predictive Model ################
+# Import required libraries
 import pandas as pd
-import statsmodels.api as sm
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Backward selection
-def backward_selection(X, y):
-    features = list(X.columns)
-    while len(features) > 0:
-        X_train_sm = sm.add_constant(X[features])
-        model = sm.OLS(y, X_train_sm).fit()
-        p_values = model.pvalues.iloc[1:]  # Exclude constant term
-        worst_pval = p_values.max()
+# Step 1: Load dataset
+df = pd.read_csv("ME2_Dataset-v5.csv")
 
-        if worst_pval > 0.05:  # Threshold for significance
-            worst_feature = p_values.idxmax()
-            features.remove(worst_feature)
-        else:
-            break
+# Step 2: Select features from forward/backward selection
+selected_features = ['Income']  # Replace with the actual selected features
+X = df[selected_features]
+y = df['Satisfaction_Score']
 
-    return features
+# Step 3: Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-selected_features_backward = backward_selection(X_train, y_train)
-print("Selected features using backward selection:", selected_features_backward)
+# Step 4: Tune a Linear Regression model
+# Initialize and fit the model
+lr_model = LinearRegression()
+lr_model.fit(X_train, y_train)
+
+# Predict and evaluate
+y_pred_lr = lr_model.predict(X_test)
+mse_lr = mean_squared_error(y_test, y_pred_lr)
+r2_lr = r2_score(y_test, y_pred_lr)
+
+print("Linear Regression Results:")
+print(f"Mean Squared Error: {mse_lr:.2f}")
+print(f"R-squared: {r2_lr:.2f}")
+
+# Step 5: Tune a Random Forest model for comparison
+# Set up hyperparameter grid for Random Forest
+rf_params = {
+    'n_estimators': [50, 100, 200],
+    'max_depth': [None, 10, 20],
+    'min_samples_split': [2, 5, 10]
+}
+
+rf_model = RandomForestRegressor(random_state=42)
+grid_search = GridSearchCV(rf_model, rf_params, cv=5, scoring='neg_mean_squared_error')
+grid_search.fit(X_train, y_train)
+
+# Best Random Forest model
+best_rf = grid_search.best_estimator_
+y_pred_rf = best_rf.predict(X_test)
+
+# Evaluate Random Forest
+mse_rf = mean_squared_error(y_test, y_pred_rf)
+r2_rf = r2_score(y_test, y_pred_rf)
+
+print("\nRandom Forest Results:")
+print(f"Mean Squared Error: {mse_rf:.2f}")
+print(f"R-squared: {r2_rf:.2f}")
+
+# Step 6: Compare and interpret results
+if r2_rf > r2_lr:
+    print("\nRandom Forest performed better than Linear Regression.")
+else:
+    print("\nLinear Regression performed better than Random Forest.")
